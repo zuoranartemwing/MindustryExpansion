@@ -1,0 +1,17 @@
+name: turret-expansion
+displayName: TURRETS EXPANSION 
+author: zuoran_artemwing & Neon
+description:
+  '''
+  Added new Turrets!
+  
+  Note: THIS IS STILL WORK IN PROGRESS
+  
+  Version: 2.0.0 (Alpha)
+  
+  want fast update??
+  
+  join to our server or check at our github
+  '''
+version: 2.0
+minGameVersion: 146

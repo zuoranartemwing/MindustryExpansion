@@ -1,7 +1,8 @@
 # TurretExpansion.github.io
 This Is Turret Expansion Mod For Mindustry Room
 
-our Project is:
-"Turret Expansion" (still build alpha)
+[![Version](https://img.shields.io/badge/Version-Alpha%20v0.1-2ea44f?color=success)](#) [![Discord](https://img.shields.io/badge/Discord-Join-2ea44f?logo=discord&color=5865F2)](https://discord.gg/pK6Zp2U7jd)
 
-please note: if alpha mod is using Indonesian language
+Our Project is: `Turret Expansion`
+
+Note: Alpha mod is using Indonesian language.

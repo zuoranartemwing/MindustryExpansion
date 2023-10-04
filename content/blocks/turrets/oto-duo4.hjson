@@ -1,0 +1,117 @@
+name: OTO Duo AAX-4
+description: Duo AA X-4 Versi, berfungsi seperti Phalanx CIWS. RoF tinggi dengan DPM Tinggi terhadap Unit Tingkat Tinggi
+type: ItemTurret
+targetAir: true
+targetGround: false
+shootShake: 7
+size: 4
+ammoUseEffect: casing2Double
+liquidCapacity: 10
+range: 272
+health: 430
+maxAmmo: 180
+ammoPerShot: 180
+recoilAmount: 5
+burstSpacing: 10
+inaccuracy: 10
+shootSound: ashot
+chargeSound: a10charge
+rotateSpeed: 2
+shootY: 8
+shoot: {
+    type: shootAlternate
+    barrels: 2
+    spread: 20
+    firstShotDelay: 240
+    shotDelay: 1
+    shots: 360
+}
+consumes: {
+    coolant:{
+        amount: 2.16666666667
+    }
+}
+ammoTypes: {
+    titanium: {
+        damage: 120
+        splashDamage: 30
+        shootEffect: shootBig
+        splashDamageRadius: 20
+        speed: 12
+        smokeEffect: shootBigSmoke
+        lifetime: 22.6666666667
+        width: 20
+        height: 25
+        hitEffect: flakExplosion
+        frontColor: ffa500
+        backColor: ffff00
+         
+    }
+    metaglass: {
+        damage: 133
+        splashDamage: 26
+        shootEffect: shootBig
+        splashDamageRadius: 22
+        speed: 12
+        smokeEffect: shootBigSmoke
+        lifetime: 22.6666666667
+        width: 20
+        height: 25
+        hitEffect: flakExplosion
+        frontColor: ffa500
+        backColor: ffff00
+         
+    }
+    plastanium: {
+        damage: 180
+        splashDamage: 35
+        shootEffect: shootBig
+        splashDamageRadius: 31
+        speed: 8
+        smokeEffect: shootBigSmoke
+        lifetime: 22.6666666667
+        width: 20
+        height: 25
+        hitEffect: flakExplosion
+        frontColor: ffa500
+        backColor: ffff00
+         
+    }
+    thorium: {
+        damage: 200
+        shootEffect: shootBig
+        splashDamage: 50
+        splashDamageRadius: 40
+        speed: 12
+        smokeEffect: shootBigSmoke
+        lifetime: 22.6666666667
+        width: 20
+        height: 25
+        hitEffect: flakExplosion
+        frontColor: 800080
+        backColor: b042ff
+         
+    }
+    silicon: {
+        damage: 140
+        splashDamage: 32
+        shootEffect: shootBig
+        splashDamageRadius: 27
+        speed: 20
+        smokeEffect: shootBigSmoke
+        lifetime: 13.6
+        width: 20
+        height: 25
+        hitEffect: flakExplosion
+        frontColor: ee6b6e
+        backColor: ff0000
+        homingPower: 0.3
+        homingDelay: 30
+        
+    }
+}
+requirements: [
+copper/60
+lead/20
+]
+category: turret
