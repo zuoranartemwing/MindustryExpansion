@@ -1,5 +1,5 @@
-name: Bomb Raining
-description: Test
+name: Burster
+description: A 2 Barelled Artillery with 3 round burst, Good AoE with minimum damage. Best use for Support, Ground Only.
 health: 890
 size: 4
 type: ItemTurret
@@ -8,7 +8,6 @@ maxAmmo: 6
 liquidcapacity: 60
 ammoPerShot: 3
 inaccuracy: 10
-buildCost: 360
 velocityRnd: -1
 reload: 60
 coolantMultiplier: 0.5
@@ -103,7 +102,9 @@ ammoTypes: {
   }
 }
 requirements: [
-  copper/200
-  lead/100
-  titanium/20
+  copper/400
+  lead/346
+  titanium/281
+  plastanium/29
+  thorium/ 20
 ]

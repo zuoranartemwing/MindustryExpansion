@@ -1,5 +1,5 @@
 name: OTO Duo AA
-description: Duo AA Versi, berfungsi seperti Phalanx CIWS. RoF tinggi dengan DPM Tinggi terhadap Unit Tingkat Tinggi
+description: OTO Co. Modified Duo for Anti Air specialization. it has a Mag System which shoot a continouos bullet for several seconds and feeds all ammo stored after every round, work like an Anti Air Machine Gun. high RoF with High DPM against Low Tier Units. Air Only
 type: ItemTurret
 targetAir: true
 targetGround: false
@@ -7,8 +7,8 @@ shootShake: 1
 size: 1
 ammoUseEffect: casing1
 liquidCapacity: 10
-range: 160
-health: 430
+range: 232
+health: 325
 reload: 300
 maxAmmo: 30
 ammoPerShot: 30
@@ -28,8 +28,8 @@ shoot: {
 }
 ammoTypes: {
     copper: {
-        damage: 4
-        splashDamage: 1
+        damage: 0.2
+        splashDamage: 0.09
         splashDamageRadius: 10
         speed: 8
         shootEffect: shootSmall
@@ -43,8 +43,8 @@ ammoTypes: {
          
     }
     lead: {
-        damage: 8
-        splashDamage: 2
+        damage: 0.6
+        splashDamage: 0.1
         splashDamageRadius: 12
         speed: 8
         shootEffect: shootSmall
@@ -58,8 +58,8 @@ ammoTypes: {
          
     }
     metaglass: {
-        damage: 10
-        splashDamage: 5
+        damage: 1.12
+        splashDamage: 0.5
         splashDamageRadius: 10
         speed: 8
         shootEffect: shootSmall
@@ -71,25 +71,10 @@ ammoTypes: {
         frontColor: ffa500
         backColor: ffff00
          
-    }
-    metaglass: {
-        damage: 16
-        splashDamage: 8
-        splashDamageRadius: 10
-        speed: 8
-        shootEffect: shootSmall
-        smokeEffect: shootSmallSmoke
-        lifetime: 20
-        width: 3
-        height: 10
-        hitEffect: flakExplosion
-        frontColor: ffa500
-        backColor: ffff00
-         
-    }
+    }        
     silicon: {
-        damage: 12
-        splashDamage: 8
+        damage: 0.5
+        splashDamage: 0.1
         splashDamageRadius: 10
         speed: 8
         shootEffect: shootSmall

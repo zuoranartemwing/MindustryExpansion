@@ -1,14 +1,13 @@
 name: OTO Duo AAX-4
-description: Duo AA X-4 Versi, berfungsi seperti Phalanx CIWS. RoF tinggi dengan DPM Tinggi terhadap Unit Tingkat Tinggi
+description: OTO Co. Modified Duo for Anti Air specialization, X4 variant. it has a Mag System which shoot a continouos bullet for several seconds and feeds all ammo stored after every round, work like an Anti Air Machine Gun. high RoF with High DPM against Mid Tier Units. Air Only
 type: ItemTurret
 targetAir: true
 targetGround: false
 shootShake: 7
 size: 4
 ammoUseEffect: casing2Double
-liquidCapacity: 10
 range: 272
-health: 430
+health: 820
 maxAmmo: 180
 ammoPerShot: 180
 recoilAmount: 5
@@ -33,7 +32,7 @@ consumes: {
 }
 ammoTypes: {
     titanium: {
-        damage: 120
+        damage: 4.72222222222
         splashDamage: 30
         shootEffect: shootBig
         splashDamageRadius: 20
@@ -48,7 +47,7 @@ ammoTypes: {
          
     }
     metaglass: {
-        damage: 133
+        damage: 11.6666666667
         splashDamage: 26
         shootEffect: shootBig
         splashDamageRadius: 22
@@ -63,7 +62,7 @@ ammoTypes: {
          
     }
     plastanium: {
-        damage: 180
+        damage: 11.6666666667
         splashDamage: 35
         shootEffect: shootBig
         splashDamageRadius: 31
@@ -78,7 +77,7 @@ ammoTypes: {
          
     }
     thorium: {
-        damage: 200
+        damage: 13.8888888889
         shootEffect: shootBig
         splashDamage: 50
         splashDamageRadius: 40
@@ -93,7 +92,7 @@ ammoTypes: {
          
     }
     silicon: {
-        damage: 140
+        damage: 5.55555555556
         splashDamage: 32
         shootEffect: shootBig
         splashDamageRadius: 27
@@ -111,7 +110,9 @@ ammoTypes: {
     }
 }
 requirements: [
-copper/60
-lead/20
+copper/1110
+lead/760
+plastanium/220
+titanium/310
 ]
 category: turret

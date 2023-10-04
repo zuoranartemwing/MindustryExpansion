@@ -1,12 +1,12 @@
-name: Trio Lancer
-descriptiom: Lancer dengan 3x Tembakan Satu salvo nya
-healt: 450
+name: Threeway Lancer
+descriptiom: Modified Lancer from Aerillion Pact with 3 Laser Point Blaster, Bit more efficient than regular Lancer but consume much power. Ground only.
+health: 450
 size: 2
 type: PowerTurret
-range: 128
+range: 200
+targetAir: false
 liquidCapacity: 20
 inaccuracy: 4
-buildCost: 240
 category: turret
 reload: 80
 consumes: {
@@ -45,5 +45,5 @@ shootType: {
 requirements: [
     copper/200
     lead/100
-    titanium/20
+    titanium/40
   ]
