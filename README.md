@@ -7,4 +7,6 @@ This Is Turret Expansion Mod For Mindustry Room
 
 Our Project is: `Turret Expansion`
 
+**You can use Our code for free for personal use | Permission required for publication or sharing**
+
 Note: Alpha mod is using Indonesian language.
