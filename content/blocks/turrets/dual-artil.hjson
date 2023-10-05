@@ -1,6 +1,4 @@
-name: Burster
-description: A 2 Barelled Artillery with 3 round burst, Good AoE with minimum damage. Best use for Support, Ground Only.
-health: 3001
+health: 890
 size: 4
 type: ItemTurret
 range: 460
