@@ -1,0 +1,17 @@
+type: RepairTurret
+size: 4
+repairSpeed: 8.33333333333
+coolantUse: 7
+coolantMultiplier: 3
+health: 4200
+repairRadius: 240
+powerUse: 53.33333333333333
+acceptCoolant: true
+requirements: [
+    copper/2000
+    lead/102
+    surge-alloy/50
+    plastanium/102
+    metaglass/220
+]
+category: units

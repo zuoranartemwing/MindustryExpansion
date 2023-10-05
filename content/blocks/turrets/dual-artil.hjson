@@ -1,4 +1,4 @@
-health: 890
+health: 3001
 size: 4
 type: ItemTurret
 range: 460
@@ -53,7 +53,6 @@ ammoTypes: {
     hitEffect: hitBulletBig
     despawnEffect: hitBulletBig
     smokeEffect: shootBigSmoke
-    AmmoMultiplier: 3
     splashDamage: 20
     splashDamageRadius: 34
     scaleLife: true
@@ -71,7 +70,6 @@ ammoTypes: {
     hitEffect: hitBulletBig
     despawnEffect: hitBulletBig
     smokeEffect: shootBigSmoke
-    AmmoMultiplier: 3
     splashDamage: 40
     splashDamageRadius: 48
     scaleLife: true
@@ -89,7 +87,6 @@ ammoTypes: {
     hitEffect: hitBulletBig
     despawnEffect: hitBulletBig
     smokeEffect: shootBigSmoke
-    AmmoMultiplier: 3
     splashDamage: 40
     splashDamageRadius: 48
     scaleLife: true
