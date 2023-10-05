@@ -1,0 +1,97 @@
+name: OTO Duo AA
+description: OTO Co. Modified Duo for Anti Air specialization. it has a Mag System which shoot a continouos bullet for several seconds and feeds all ammo stored after every round, work like an Anti Air Machine Gun. high RoF with High DPM against Low Tier Units. Air Only
+type: ItemTurret
+targetAir: true
+targetGround: false
+shootShake: 1
+size: 1
+ammoUseEffect: casing1
+liquidCapacity: 10
+range: 232
+health: 325
+reload: 300
+maxAmmo: 30
+ammoPerShot: 30
+recoilAmount: 1
+burstSpacing: 10
+inaccuracy: 10
+shootSound: ashot
+chargeSound: a10charge
+rotateSpeed: 7
+shoot: {
+    type: shootAlternate
+    barrels: 2
+    spread: 4
+    firstShotDelay: 60
+    shotDelay: 1
+    shots: 180
+}
+ammoTypes: {
+    copper: {
+        damage: 0.2
+        splashDamage: 0.09
+        splashDamageRadius: 10
+        speed: 8
+        shootEffect: shootSmall
+        smokeEffect: shootSmallSmoke
+        lifetime: 20
+        width: 3
+        height: 10
+        hitEffect: flakExplosion
+        frontColor: ffa500
+        backColor: ffff00
+         
+    }
+    lead: {
+        damage: 0.6
+        splashDamage: 0.1
+        splashDamageRadius: 12
+        speed: 8
+        shootEffect: shootSmall
+        smokeEffect: shootSmallSmoke
+        lifetime: 20
+        width: 3
+        height: 10
+        hitEffect: flakExplosion
+        frontColor: ffa500
+        backColor: ffff00
+         
+    }
+    metaglass: {
+        damage: 1.12
+        splashDamage: 0.5
+        splashDamageRadius: 10
+        speed: 8
+        shootEffect: shootSmall
+        smokeEffect: shootSmallSmoke
+        lifetime: 20
+        width: 3
+        height: 10
+        hitEffect: flakExplosion
+        frontColor: ffa500
+        backColor: ffff00
+         
+    }        
+    silicon: {
+        damage: 0.5
+        splashDamage: 0.1
+        splashDamageRadius: 10
+        speed: 8
+        shootEffect: shootSmall
+        smokeEffect: shootSmallSmoke
+        lifetime: 20
+        width: 3
+        height: 10
+        hitEffect: flakExplosion
+        frontColor: ee6b6e
+        backColor: ff0000
+        homingPower: 0.3
+        homingDelay: 30
+        
+    }
+}
+requirements: [
+copper/60
+lead/20
+]
+category: turret
