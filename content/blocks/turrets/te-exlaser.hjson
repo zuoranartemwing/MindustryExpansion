@@ -1,5 +1,5 @@
-name: Turret Expansion - Experimental Laser
-description: Meriam Experimental yang dikembangkan oleh pemilik mod ini yaitu zuroan_artemwing
+name: Experimental Laser
+description: Experimental Laser Cannon created by zuroan_artemwing (Mod Creator)
 targetair: true
 targetground: true
 health: 900
