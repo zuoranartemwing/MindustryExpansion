@@ -1,5 +1,3 @@
-name: WS Marlin Type: Enforcer
-description: A heavily modified Ancient WS Marlin from planet Earth that can shoot 5 round per second on a medium range, Ground Only.
 type: ItemTurret
 targetAir: false
 targetGround: true

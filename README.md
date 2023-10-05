@@ -1,4 +1,7 @@
-# TURRET EXPANSION MINDUSTRY MOD ALPHA ACCESS
+# TE - Turret Expansion [Early Access]
+
+<p align="center"><img src="https://imgur.com/U24DTKm.png" alt="logo" width="200"></p>
+
 This Is Turret Expansion Mod For Mindustry Room
 
 [![Version](https://img.shields.io/badge/Version-Alpha%20v2.0-2ea44f?color=success)](#) [![Discord](https://img.shields.io/badge/Discord-Join-2ea44f?logo=discord&color=5865F2)](https://discord.gg/pK6Zp2U7jd)
