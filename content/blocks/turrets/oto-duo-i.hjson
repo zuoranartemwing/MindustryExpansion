@@ -1,5 +1,3 @@
-name: OTO Duo AA
-description: OTO Co. Modified Duo for Anti Air specialization. it has a Mag System which shoot a continouos bullet for several seconds and feeds all ammo stored after every round, work like an Anti Air Machine Gun. high RoF with High DPM against Low Tier Units. Air Only
 type: ItemTurret
 targetAir: true
 targetGround: false
