@@ -1,6 +1,6 @@
 name: Threeway Lancer
 descriptiom: Modified Lancer from Aerillion Pact with 3 Laser Point Blaster, Bit more efficient than regular Lancer but consume much power. Ground only.
-health: 450
+health: 620
 size: 2
 type: PowerTurret
 range: 200
