@@ -1,6 +1,6 @@
 # TE - Turret Expansion [Early Access]
 
-<p align="center"><img src="https://imgur.com/U24DTKm" alt="logo" width="200"></p>
+<p align="center"><img src="https://imgur.com/U24DTKm.png" alt="logo" width="200"></p>
 
 This Is Turret Expansion Mod For Mindustry Room
 
