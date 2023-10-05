@@ -7,7 +7,7 @@ shootShake: 7
 size: 4
 ammoUseEffect: casing2Double
 range: 272
-health: 820
+health: 2450
 maxAmmo: 180
 ammoPerShot: 180
 recoilAmount: 5
@@ -42,8 +42,6 @@ ammoTypes: {
         width: 20
         height: 25
         hitEffect: flakExplosion
-        frontColor: ffa500
-        backColor: ffff00
          
     }
     metaglass: {
@@ -57,8 +55,6 @@ ammoTypes: {
         width: 20
         height: 25
         hitEffect: flakExplosion
-        frontColor: ffa500
-        backColor: ffff00
          
     }
     plastanium: {
@@ -72,8 +68,6 @@ ammoTypes: {
         width: 20
         height: 25
         hitEffect: flakExplosion
-        frontColor: ffa500
-        backColor: ffff00
          
     }
     thorium: {
