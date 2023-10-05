@@ -38,8 +38,6 @@ ammoTypes: {
         width: 3
         height: 10
         hitEffect: flakExplosion
-        frontColor: ffa500
-        backColor: ffff00
          
     }
     lead: {
@@ -53,8 +51,6 @@ ammoTypes: {
         width: 3
         height: 10
         hitEffect: flakExplosion
-        frontColor: ffa500
-        backColor: ffff00
          
     }
     metaglass: {
@@ -68,8 +64,6 @@ ammoTypes: {
         width: 3
         height: 10
         hitEffect: flakExplosion
-        frontColor: ffa500
-        backColor: ffff00
          
     }        
     silicon: {
