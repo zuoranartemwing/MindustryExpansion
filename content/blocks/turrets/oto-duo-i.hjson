@@ -1,3 +1,5 @@
+//oe tod ini damagenya bkn 0.2 ya anjim tp 0 **koma** 2 biar per magazin bisa 100 brp damagenya(anggap bercanda ygy gw ga beneran ngamuk)
+
 type: ItemTurret
 targetAir: true
 targetGround: false
@@ -30,6 +32,7 @@ ammoTypes: {
         splashDamage: 0.09
         splashDamageRadius: 10
         speed: 8
+        ammoMultiplier: 1
         shootEffect: shootSmall
         smokeEffect: shootSmallSmoke
         lifetime: 20
@@ -43,6 +46,7 @@ ammoTypes: {
         splashDamage: 0.1
         splashDamageRadius: 12
         speed: 8
+        ammoMultiplier: 1
         shootEffect: shootSmall
         smokeEffect: shootSmallSmoke
         lifetime: 20
@@ -53,6 +57,7 @@ ammoTypes: {
     }
     metaglass: {
         damage: 1.12
+        ammoMultiplier: 1
         splashDamage: 0.5
         splashDamageRadius: 10
         speed: 8
@@ -67,6 +72,7 @@ ammoTypes: {
     silicon: {
         damage: 0.5
         splashDamage: 0.1
+        ammoMultiplier: 1
         splashDamageRadius: 10
         speed: 8
         shootEffect: shootSmall

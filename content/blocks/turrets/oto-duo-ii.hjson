@@ -1,3 +1,5 @@
+//oe tod ini damagenya bkn 11 ribu ya anjim tp 11 **koma** 6666 blah (anggap bercanda ygy gw ga beneran ngamuk)
+
 type: ItemTurret
 targetAir: true
 targetGround: false
@@ -31,6 +33,7 @@ consumes: {
 ammoTypes: {
     titanium: {
         damage: 4.72222222222
+        ammoMultiplier: 1
         splashDamage: 30
         shootEffect: shootBig
         splashDamageRadius: 20
@@ -43,9 +46,10 @@ ammoTypes: {
          
     }
     metaglass: {
-        damage: 11.6666666667
+        damage: 6.66666666667
         splashDamage: 26
         shootEffect: shootBig
+        ammoMultiplier: 1
         splashDamageRadius: 22
         speed: 12
         smokeEffect: shootBigSmoke
@@ -59,6 +63,7 @@ ammoTypes: {
         damage: 11.6666666667
         splashDamage: 35
         shootEffect: shootBig
+        ammoMultiplier: 1
         splashDamageRadius: 31
         speed: 8
         smokeEffect: shootBigSmoke
@@ -74,6 +79,7 @@ ammoTypes: {
         splashDamage: 50
         splashDamageRadius: 40
         speed: 12
+        ammoMultiplier: 1
         smokeEffect: shootBigSmoke
         lifetime: 22.6666666667
         width: 20
@@ -88,6 +94,7 @@ ammoTypes: {
         splashDamage: 32
         shootEffect: shootBig
         splashDamageRadius: 27
+        ammoMultiplier: 1
         speed: 20
         smokeEffect: shootBigSmoke
         lifetime: 13.6
