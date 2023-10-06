@@ -1,0 +1,63 @@
+{
+    "type":"ItemTurret",
+    "category":"turret",
+    "size": 2,
+    "health": 730,
+    "ammoPerShot": 3,
+    "maxAmmo": 30,
+    "targetAir": false,
+    "targetGround": false,
+    "targetHealing": true,
+    "recoil": 3,
+    "reload": 60,
+    "range": 160,
+    "shoot": {
+      "type": "shootPattern",
+      "firstShotDelay": 60,
+      "shotDelay": 0,
+      "shots": 1
+    },
+    "ammoTypes": {
+        "titanium": {
+            "type": "BasicBulletType",
+            "damage": 20,
+            "speed": 1,
+            "lifetime": 140,
+            "scaleLife": true,
+            "trailChance": 1,
+            "trailRotation": true,
+            "trailEffect": {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "length": 0,
+              "lifetime": 30,
+              "colorFrom": "5FFFC6FF",
+              "colorTo": "5FFFC600"
+            },
+            "splashDamage": 12,
+            "ammoMultiplier": 1,
+            "scaledSplashDamage": true,
+            "splashDamageRadius": 20,
+            "unitDamageMultiplier":0.7,
+            "width": 2,
+            "heigth": 6,
+            "frontColor": "FFFFFFFF",
+            "backColor": "4BFFC1FF",
+            "healAmount": 70,
+            "hitSound": "explosionbig",
+            "collidesTeam": true
+        }
+    },
+    "consumes": {
+        "power": 1.5
+      },
+      "requirements": [
+        "lead/250",
+        "titanium/230",
+        "silicon/250"
+      ],
+      "research": "hail",
+      "shootSound": "cannon"
+}
