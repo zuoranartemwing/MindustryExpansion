@@ -1,0 +1,35 @@
+targetair: true
+targetground: true
+health: 620
+size: 2
+type: LaserTurret
+range: 130
+liquidCapacity: 10
+category: turret
+coolantMultiplier: 15
+liquidCapacity: 10
+heatColor: ffa500
+recoil: 1
+reload: 480
+shootSound: laserbig
+shootDuration: 222
+moveWhileCharging: true 
+consumes: {
+    power: 1.81566666667
+    coolant: {
+        amount: 0.16666666666
+    } 
+}
+ 
+shootType: {
+    type: ContinuousLaserBulletType
+    width: 4
+    damage: 8.33333333333
+    length: 130 
+    ammoMultiplier: 1
+}
+requirements: [
+    lead/320
+    titanium/46
+    plastanium/ 21
+]
