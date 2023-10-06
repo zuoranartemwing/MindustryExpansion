@@ -42,7 +42,7 @@
             "splashDamageRadius": 20,
             "unitDamageMultiplier":0.7,
             "width": 2,
-            "heigth": 6,
+            "height": 6,
             "frontColor": "FFFFFFFF",
             "backColor": "4BFFC1FF",
             "healAmount": 70,
