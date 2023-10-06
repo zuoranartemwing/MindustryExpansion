@@ -1,0 +1,105 @@
+health: 3001
+size: 4
+type: ItemTurret
+range: 460
+maxAmmo: 6
+liquidcapacity: 60
+ammoPerShot: 3
+inaccuracy: 10
+velocityRnd: -1
+reload: 60
+coolantMultiplier: 0.5
+consumes: { 
+  coolant: {
+  amount: 1
+  }
+}
+hasLiquids: true
+xRand: 2
+rotateSpeed: 2.0
+shoot: {
+  type: ShootMulti
+  source: {
+    type: ShootAlternate
+    barrels: 2
+    shots: 8
+    spread: 8
+  }
+  dest: [
+    {
+    shots: 3
+    shotDelay: 10
+    }
+  ]
+}
+minRange: 80
+targetAir: false
+heatColor: ff5349
+ammoUseEffect: casing2Double
+shootSound: artillery
+shootEffect: shootBig
+recoil: 3
+shake: 1
+category: turret
+ammoTypes: {
+  metaglass: {
+    type: ArtilleryBulletType
+    speed: 2
+    trailSize: 7.0
+    lifetime: 30
+    damage: 230
+    width: 20
+    height: 17
+    hitEffect: hitBulletBig
+    despawnEffect: hitBulletBig
+    smokeEffect: shootBigSmoke
+    splashDamage: 20
+    splashDamageRadius: 34
+    scaleLife: true
+    traileffect: artilleryTrail
+
+  }
+ blast-compound: {
+    type: ArtilleryBulletType
+    speed: 2
+    trailMult: 10
+    lifetime: 30
+    damage: 260
+    width: 20
+    height: 17
+    hitEffect: hitBulletBig
+    despawnEffect: hitBulletBig
+    smokeEffect: shootBigSmoke
+    splashDamage: 40
+    splashDamageRadius: 48
+    scaleLife: true
+    traileffect: artilleryTrail
+    status: blasted
+  }
+  pyratite: {
+    type: ArtilleryBulletType
+    speed: 2
+    trailMult: 10
+    lifetime: 30
+    damage: 130
+    width: 20
+    height: 17
+    hitEffect: hitBulletBig
+    despawnEffect: hitBulletBig
+    smokeEffect: shootBigSmoke
+    splashDamage: 40
+    splashDamageRadius: 48
+    scaleLife: true
+    traileffect: artilleryTrail
+    status: burning
+    frontColor: ffa500
+    backColor: ffa500
+  }
+}
+requirements: [
+  copper/400
+  lead/346
+  titanium/281
+  plastanium/29
+  thorium/ 20
+]
