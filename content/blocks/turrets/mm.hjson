@@ -27,9 +27,12 @@ shootType: {
     damage: 8.33333333333
     length: 130 
     ammoMultiplier: 1
+    status: melting
 }
 requirements: [
-    lead/320
-    titanium/46
-    plastanium/ 21
+    copper/128
+    lead/37
+    graphite/ 32
+    silicon/34
+    plastanium/34
 ]
