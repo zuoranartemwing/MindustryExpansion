@@ -2,6 +2,7 @@ health: 620
 size: 2
 type: PowerTurret
 range: 200
+shootCone: 3
 targetAir: false
 liquidCapacity: 20
 inaccuracy: 4
