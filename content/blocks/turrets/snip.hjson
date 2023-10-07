@@ -1,6 +1,7 @@
 type: ItemTurret
 shootShake: 4
 size: 4
+maxAmmo: 100
 ammoUseEffect: casing2
 liquidCapacity: 20
 range: 232
