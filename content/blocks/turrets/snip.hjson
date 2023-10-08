@@ -51,10 +51,10 @@ ammoTypes: {
 
 requirements: [
     copper/920
-    titanium/720
-    silicon/580
-    plastanium/ 300
-    thorium/ 350
+    titanium/620
+    silicon/320
+    plastanium/ 170
+    thorium/ 3
 ]
 consumes: {
     coolant: {
