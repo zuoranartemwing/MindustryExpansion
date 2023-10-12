@@ -1,0 +1,81 @@
+type: ItemTurret
+shootShake: 4
+size: 4
+ammoUseEffect: none
+liquidCapacity: 20
+range: 880
+reload: 1200
+ammoPerShot: 20
+predictTarget: false
+maxAmmo: 60
+health: 2500
+targetAir: false
+recoil: 5
+coolantMultiplier: 0.75
+cooldownTime: 60
+shootSound: missileLaunch
+rotateSpeed: 2
+category: turret
+drawer: {
+    type: DrawTurret
+    parts: [
+        {
+            type: RegionPart
+            suffix: -barrel
+            under: true
+            y: 23
+            moveY: -5
+            progress: recoil
+        }
+        {
+            suffix: -wing
+            under: true
+            mirror: true
+            y: -23
+            moveX: 20
+            moveY: 8
+            moveRot: -45
+            progress: warmup
+            heatProgress: smoothReload
+            heatColor: FF0000
+        }
+        {
+            type: RegionPart
+            suffix: -blade
+            under: true
+            outline:false
+            layerOffset: -0.01
+            y: 18
+            moveY: 5
+            progress: smoothReload
+            color: FFFFFF
+            colorTo: 01010100
+            mixColorTo: 2D2B2A
+            mixColor: 01010100
+        }
+    ]
+}
+ammoTypes: {
+    thorium: {
+        type: BasicBulletType
+        shootEffect: shootBig
+        smokeEffect: shootSmokeMissile
+        ammoMultiplier: 1
+        spawnUnit: turret-expansion-nuke
+    }
+}
+
+requirements: [
+    copper/2000
+    titanium/820
+    graphite/320
+    plastanium/220
+    surge-alloy/250
+    blast-compound/120
+]
+consumes: {
+    coolant: {
+        amount: 2.4
+    }
+    power: 5.16666666667
+}
