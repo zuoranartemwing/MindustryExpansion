@@ -10,9 +10,9 @@ liquidCapacity: 10
 range: 232
 health: 325
 reload: 300
-maxAmmo: 30
+maxAmmo: 60
 ammoPerShot: 30
-recoilAmount: 1
+recoil: 1
 burstSpacing: 10
 inaccuracy: 10
 shootSound: ashot
@@ -89,7 +89,8 @@ ammoTypes: {
     }
 }
 requirements: [
-copper/60
-lead/20
+copper/280
+lead/63
+graphite/26
 ]
 category: turret

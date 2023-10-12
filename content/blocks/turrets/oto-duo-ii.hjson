@@ -9,8 +9,8 @@ ammoUseEffect: casing2Double
 range: 272
 health: 2450
 maxAmmo: 180
-ammoPerShot: 180
-recoilAmount: 5
+ammoPerShot: 60
+recoil: 5
 burstSpacing: 10
 inaccuracy: 10
 shootSound: ashot
@@ -110,8 +110,8 @@ ammoTypes: {
 }
 requirements: [
 copper/1110
-lead/760
-plastanium/220
-titanium/310
+lead/790
+plastanium/240
+titanium/370
 ]
 category: turret
