@@ -1,20 +1,21 @@
-{
-    name: turret-expansion
-    displayName: Turrets Expansion
-    author: "zuoranartemwing"
-    description:
-      '''
-      Added more new Turrets!
-    
-      THIS IS STILL WORK IN DEVELOPMENT
-    
-      Want fast update??
-      Join to our server or check at our github
-    
-      Contributor:
-      NEON-XZR > Spriting & Coder
-      Kanaede > Publisher Mod & Helper Feedback
-      '''
-    version: "2.2.0 Alpha"
-    minGameVersion: 146
-}
+name: turret-expansion
+displayName: Turret Expansion
+author: zuoranartemwing
+description:
+  '''
+  Add more Turrets!
+  
+  Note: THIS IS STILL IN DEVELOPMENT
+  Version: 2.1.2 (Alpha)
+  
+  Want fast update??
+  join to our server or check at our github
+
+  You can use Our code for free for personal use | Permission required for publication or sharing
+
+  Contributors:
+  Kanaede
+  NEON-XZR
+  '''
+version: 2.0
+minGameVersion: 146
