@@ -1,0 +1,61 @@
+type: missile
+template: MissileUnitType
+controller: MissileAI
+lowAltitude: true
+speed: 4
+lifetime: 300
+rotateSpeed: 1
+physics: false
+flying: true
+hidden: true
+health: 920
+hitSize: 4
+missileAccelTime: 120
+engineLayer: 110
+outlineColor: 36363c
+engineColor: ffff00
+trailColor: ffff00
+engineSize: 5
+engineOffset: 18
+drawCell: false
+hittable: true
+maxRange: 6
+trailLength: 22
+trailEffect: none
+loopSound: missileTrail
+loopSoundVolume: 0.6
+deathSound: titanExplosion
+weapons: [
+    {
+        name: warhead
+        shootCone: 360
+        shootOnDeath: true
+        controllable: true
+        shootSound: none
+        bullet: {
+            type: ExplosionBulletType
+            collidesAir: false
+            hitEffect: impactReactorExplosion
+            hitSoundVolume: 3
+            hitSound: titanExplosion
+            buildingDamageMultiplier: 1
+            splashDamage: 13602
+            damage: 120
+            splashDamageRadius: 200
+            scaledSplashDamage: true
+            status: blasted
+            statusDuration: 100
+            ammoMultiplier: 1
+        }
+    }
+]
+abilities: [
+    {
+        type: MoveEffectAbility
+        effect: missileTrailSmoke
+        rotation: 180
+        y: -18
+        color: FFD700
+        interval: 7
+    }
+]
