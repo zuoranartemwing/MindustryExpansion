@@ -2,7 +2,7 @@
     "type": "ItemTurret",
     "category":"turret",
     "health": 2800,
-    "reload": 180,
+    "reload": 260,
     "size": 2,
     "targetAir": true,
     "targetGround": true,
@@ -13,6 +13,7 @@
     "minWarmup": 0.8,
     "ammoPerShot": 3,
     "range": 400,
+    "shootSound": "sniper",
     "shoot": {
         "firstShotDelay": 80,
         "shots": 1,
@@ -89,7 +90,7 @@
         "titanium/300"
     ],
     "consumes": {
-        "power":3,
+        "power":15,
         "coolant": {
             "amount": 0.19
         }
