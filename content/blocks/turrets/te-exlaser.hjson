@@ -1,5 +1,6 @@
 targetair: true
 targetground: true
+hidden:true
 health: 900
 size: 2
 type: PowerTurret
