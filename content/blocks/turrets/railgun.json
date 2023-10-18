@@ -1,0 +1,137 @@
+{
+    "type":"ItemTurret",
+    "category":"turret",
+    "health":24000,
+    "size":12,
+    "range":870,
+    "maxAmmo":60,
+    "ammoPerShot":25,
+    "reload":1200,
+    "cooldown":1200,
+    "shake":5,
+    "tergetAir":true,
+    "tergetGround":true,
+    "ammoUseEffect":"none",
+    "rotateSpeed": 0.3,
+    "shootSound":"sniper-short",
+    "displayAmmoMultiplier":false,
+    "minRange":180,
+    "coolantMultiplier":8,
+    "predictTarget":false,
+    "ammoTypes":{
+        "plastanium":{
+            "type":"BasicBulletType",
+            "height":38,
+            "width":26,
+            "speed":100,
+            "lifetime":10,
+            "ammoMultiplier":1,
+            "damage":42000,
+            "splashDamage":900,
+            "scaledSplashDamage": true,
+            "splashDamageRadius": 40,
+            "frontColor": "FFFFFFFF",
+            "backColor": "FCC01CFF",
+            "hitEffect": "hitBulletBig",
+            "despawnEffect": "flakExplosion",
+            "buildingDamageMultiplier": 0.5,
+            "smokeEffect": "shootBigSmoke",
+            "hittable":false,
+            "trailChance": 1,
+            "trailRotation": true,
+            "trailEffect": {
+                "type":"multiEffect",
+                "effects":[
+                    {
+                    "type": "ParticleEffect",
+                    "particles": 1,
+                    "sizeFrom": 100,
+                    "sizeTo": 50,
+                    "length":20,
+                    "lifetime": 40,
+                    "colorFrom": "FCC01CFF",
+                    "colorTo": "FCC01C00",
+                    "region": "turret-expansion-rail",
+                    "sinScl":0
+                    },
+                    {
+                    "type": "ParticleEffect",
+                    "particles": 1,
+                    "sizeFrom": 100,
+                    "sizeTo": 100,
+                    "length":20,
+                    "lifetime": 40,
+                    "colorFrom": "FCC01CFF",
+                    "colorTo": "FCC01C00",
+                    "region": "turret-expansion-railguns",
+                    "sinScl":0
+                    }
+                ]
+            }
+        },
+        "surge-alloy":{
+            "type":"BasicBulletType",
+            "height":38,
+            "width":26,
+            "lifetime":9,
+            "speed":100,
+            "ammoMultiplier":1,
+            "damage":67000,
+            "splashDamage":1800,
+            "scaledSplashDamage": true,
+            "splashDamageRadius": 40,
+            "frontColor": "FFFFFFFF",
+            "backColor": "FCC01CFF",
+            "hitEffect": "hitBulletBig",
+            "despawnEffect": "flakExplosion",
+            "buildingDamageMultiplier": 0.5,
+            "smokeEffect": "shootBigSmoke",
+            "hittable":false,
+            "trailChance": 1,
+            "trailRotation": true,
+            "trailEffect": {
+                "type":"multiEffect",
+                "effects":[
+                    {
+                    "type": "ParticleEffect",
+                    "particles": 1,
+                    "sizeFrom": 100,
+                    "sizeTo": 50,
+                    "length":1,
+                    "lifetime": 40,
+                    "colorFrom": "FCC01CFF",
+                    "colorTo": "FCC01C00",
+                    "region": "turret-expansion-rail",
+                    "sinScl":0
+                    },
+                    {
+                    "type": "ParticleEffect",
+                    "particles": 1,
+                    "sizeFrom": 100,
+                    "sizeTo": 100,
+                    "length":1,
+                    "lifetime": 40,
+                    "colorFrom": "FCC01CFF",
+                    "colorTo": "FCC01C00",
+                    "region": "turret-expansion-railguns",
+                    "sinScl":0
+                    }
+                ]
+            }
+        }
+    },
+    "requirements":[
+        "copper/2600",
+        "lead/2600",
+        "thorium/2400",
+        "plastanium/2500",
+        "surge-alloy/2400"
+    ],
+    "research":"foreshadow",
+    "consumes":{
+        "power":20,
+        "coolant":{
+            "amount":1.2
+        }
+    }
+}
