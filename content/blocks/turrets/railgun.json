@@ -16,7 +16,7 @@
     "shootSound":"sniper-short",
     "displayAmmoMultiplier":false,
     "minRange":180,
-    "coolantMultiplier":8,
+    "coolantMultiplier":3,
     "predictTarget":false,
     "ammoTypes":{
         "plastanium":{
