@@ -4,7 +4,7 @@ controller: MissileAI
 lowAltitude: true
 speed: 4
 lifetime: 300
-rotateSpeed: -1
+rotateSpeed: 1
 physics: false
 flying: true
 hidden: true
