@@ -11,7 +11,7 @@ hidden: true
 health: 920
 hitSize: 4
 missileAccelTime: 120
-engineLayer: 110
+engineLayer: -1
 outlineColor: 36363c
 engineColor: ffff00
 trailColor: ffff00
