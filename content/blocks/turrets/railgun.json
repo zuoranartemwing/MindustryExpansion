@@ -17,12 +17,12 @@
     "displayAmmoMultiplier":false,
     "minRange":180,
     "coolantMultiplier":3,
-    "predictTarget":false,
+    "predictTarget":true,
     "ammoTypes":{
         "plastanium":{
             "type":"BasicBulletType",
-            "height":38,
-            "width":26,
+            "height":70,
+            "width":50,
             "speed":100,
             "lifetime":10,
             "ammoMultiplier":1,
@@ -47,23 +47,11 @@
                     "particles": 1,
                     "sizeFrom": 100,
                     "sizeTo": 50,
-                    "length":20,
+                    "length":1,
                     "lifetime": 40,
                     "colorFrom": "FCC01CFF",
                     "colorTo": "FCC01C00",
                     "region": "turret-expansion-rail",
-                    "sinScl":0
-                    },
-                    {
-                    "type": "ParticleEffect",
-                    "particles": 1,
-                    "sizeFrom": 100,
-                    "sizeTo": 100,
-                    "length":20,
-                    "lifetime": 40,
-                    "colorFrom": "FCC01CFF",
-                    "colorTo": "FCC01C00",
-                    "region": "turret-expansion-railguns",
                     "sinScl":0
                     }
                 ]
@@ -71,8 +59,8 @@
         },
         "surge-alloy":{
             "type":"BasicBulletType",
-            "height":38,
-            "width":26,
+            "height":70,
+            "width":50,
             "lifetime":9,
             "speed":100,
             "ammoMultiplier":1,
@@ -103,18 +91,6 @@
                     "colorTo": "FCC01C00",
                     "region": "turret-expansion-rail",
                     "sinScl":0
-                    },
-                    {
-                    "type": "ParticleEffect",
-                    "particles": 1,
-                    "sizeFrom": 100,
-                    "sizeTo": 100,
-                    "length":1,
-                    "lifetime": 40,
-                    "colorFrom": "FCC01CFF",
-                    "colorTo": "FCC01C00",
-                    "region": "turret-expansion-railguns",
-                    "sinScl":0
                     }
                 ]
             }
@@ -129,7 +105,7 @@
     ],
     "research":"foreshadow",
     "consumes":{
-        "power":20,
+        "power":40,
         "coolant":{
             "amount":1.2
         }
