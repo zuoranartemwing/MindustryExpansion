@@ -14,7 +14,7 @@ recoil: 5
 coolantMultiplier: 0.75
 cooldownTime: 60
 shootSound: missileLaunch
-rotateSpeed: 2
+rotateSpeed: 0.9
 category: turret
 drawer: {
     type: DrawTurret
