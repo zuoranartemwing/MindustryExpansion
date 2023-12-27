@@ -39,6 +39,7 @@
             "hittable":false,
             "trailChance": 1,
             "trailRotation": true,
+            "predictTarget":false,
             "trailEffect": {
                 "type":"multiEffect",
                 "effects":[
@@ -77,6 +78,7 @@
             "hittable":false,
             "trailChance": 1,
             "trailRotation": true,
+            "predictTarget":false,
             "trailEffect": {
                 "type":"multiEffect",
                 "effects":[
