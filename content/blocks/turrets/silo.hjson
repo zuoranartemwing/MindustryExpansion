@@ -1,0 +1,69 @@
+type: ItemTurret
+health: 3900
+size: 6
+ammoUseEffect: none
+range: 960
+reload: 1200
+ammoPerShot: 30
+shootCone: 360
+predictTarget: false
+maxAmmo: 90
+targetAir: false
+recoil: 0
+coolantMultiplier: 0
+shootSound: missileLaunch
+rotateSpeed: 0
+category: turret
+ammoTypes: {
+    thorium: {
+        type: BasicBulletType
+        shootEffect: shootBig
+        smokeEffect: shootSmokeMissile
+        ammoMultiplier: 1
+        spawnUnit: turret-expansion-bulaven
+    }
+}
+shoot: {
+    type: ShootPattern
+    firstShotDelay: 120
+}
+drawer: {
+    type: DrawTurret
+    parts: [
+        {
+            type: RegionPart
+            suffix: -body
+            layerOffset: 0.004
+        }
+        {
+            type: RegionPart
+            suffix: -hatch
+            mirror: true
+            moveX: 15
+            progress: warmup
+            layerOffset: 0.006
+        }
+        {
+            type: RegionPart
+            suffix: -bulaven-in
+            under: true
+            outline:false
+            layerOffset: 0.005
+            progress: recoil
+            color: FFFFFF
+            colorTo: 01010100
+            mixColorTo: 2D2B2A
+            mixColor: 01010100
+        }
+    ]
+}
+consumes: {
+    power: 8
+}
+requirements: [
+    copper/2100
+    lead/320
+    titanium/2090
+    thorium/290
+    surge-alloy/50
+]

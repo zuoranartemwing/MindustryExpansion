@@ -12,7 +12,7 @@ health: 2500
 targetAir: false
 recoil: 5
 coolantMultiplier: 0.75
-cooldownTime: 60
+cooldownTime: 600
 shootSound: missileLaunch
 rotateSpeed: 0.9
 category: turret
@@ -21,11 +21,20 @@ drawer: {
     parts: [
         {
             type: RegionPart
+            suffix: -body
+            moveY: -5
+            progress: recoil
+            outline: false
+            layerOffset: 0.03
+        }
+        {
+            type: RegionPart
             suffix: -barrel
             under: true
             y: 23
             moveY: -5
             progress: recoil
+            layerOffset: 0.02
         }
         {
             suffix: -wing
@@ -36,15 +45,15 @@ drawer: {
             moveY: 8
             moveRot: -45
             progress: warmup
-            heatProgress: smoothReload
-            heatColor: FF0000
+            heatProgress: heat
+            layerOffset: 0.01
         }
         {
             type: RegionPart
             suffix: -blade
             under: true
             outline:false
-            layerOffset: -0.01
+            layerOffset: 0.009
             y: 18
             moveY: 5
             progress: smoothReload

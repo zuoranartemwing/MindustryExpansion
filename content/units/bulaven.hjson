@@ -2,32 +2,31 @@ type: missile
 template: MissileUnitType
 controller: MissileAI
 lowAltitude: true
-speed: 4
-lifetime: 300
-rotateSpeed: 1
+speed: 2
+lifetime: 720
+rotateSpeed: 0.7
 physics: false
 flying: true
 hidden: true
-health: 920
-hitSize: 4
-missileAccelTime: 120
+health: 1200
+hitSize: 6
+missileAccelTime: 240
 engineLayer: -1
 outlineColor: 36363c
-engineColor: ffffff
-trailColor: ffffff
-engineSize: 5
-engineOffset: 18
+engineColor: ffff00
+trailColor: ffff00
+engineSize: 6
+engineOffset: 23
 drawCell: false
 hittable: true
-maxRange: 6
-trailLength: 22
+trailLength: 30
 trailEffect: none
 loopSound: missileTrail
 loopSoundVolume: 0.6
 deathSound: titanExplosion
 weapons: [
     {
-        name: warhead
+        name: NUKEEE
         shootCone: 360
         shootOnDeath: true
         controllable: true
@@ -39,12 +38,12 @@ weapons: [
             hitSoundVolume: 3
             hitSound: titanExplosion
             buildingDamageMultiplier: 1
-            splashDamage: 13602
+            splashDamage: 23909
             damage: 120
-            splashDamageRadius: 200
+            splashDamageRadius: 320
             scaledSplashDamage: true
             status: blasted
-            statusDuration: 100
+            statusDuration: 240
             ammoMultiplier: 1
         }
     }
@@ -54,17 +53,17 @@ abilities: [
         type: MoveEffectAbility
         effect: {
             type: ParticleEffect
-            particles: 6
-            lightOpacity: 1
-            sizeFrom: 8
+            particles: 10
+            lightOpacity: 1.6
+            sizeFrom: 10
             sizeTo: 1
-            lifetime: 60
-            colorFrom: ffffff
-            colorTo: ffff00s
+            lifetime: 80
+            colorFrom: ffff00
+            colorTo: ff0000
         }
         rotateEffect: true
         rotation: 180
-        y: -18
-        interval: 3
+        y: -23
+        interval: 1
     }
 ]
