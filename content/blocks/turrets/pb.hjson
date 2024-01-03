@@ -46,14 +46,14 @@ drawer: {
             moveRot: -45
             progress: warmup
             heatProgress: heat
-            layerOffset: 0.01
+            layerOffset: 0.009
         }
         {
             type: RegionPart
             suffix: -blade
             under: true
             outline:false
-            layerOffset: 0.009
+            layerOffset: 0.01
             y: 18
             moveY: 5
             progress: smoothReload
