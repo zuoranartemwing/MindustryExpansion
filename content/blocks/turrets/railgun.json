@@ -16,7 +16,7 @@
     "shootSound":"sniper-short",
     "displayAmmoMultiplier":false,
     "minRange":180,
-    "coolantMultiplier":3,
+    "coolantMultiplier":0.5,
     "predictTarget":true,
     "ammoTypes":{
         "plastanium":{
@@ -96,7 +96,44 @@
                     }
                 ]
             }
-        }
+        }/*,
+        "primax":{
+            "type":"BasicBulletType",
+            "height":70,
+            "width":50,
+            "lifeTime":9,
+            "speed":100,
+            "ammoMultiplier":1,
+            "damage":58000,
+            "splashDamage":800,
+            "splashDamageRadius":20,
+            "frontColor":"FFFFFFFF",
+            "backColor":"FCC01CFF",
+            "despawnEffect":"flakExplosion",
+            "buildingDamageMultiplier":0.5,
+            "smokeEffect":"shootBigSmoke",
+            "hittable":false,
+            "trailChance":1,
+            "trailRotation":false,
+            "predictTarget":false,
+            "trailEffect":{
+                "type":"multiEffect",
+                "effects":[
+                    {
+                        "type":"ParticleEffect",
+                        "particles":1,
+                        "sizeFrom":100,
+                        "sizeTo":50,
+                        "length":1,
+                        "lifetime": 40,
+                        "colorFrom": "FCC01CFF",
+                        "colorTo": "FCC01C00",
+                        "region": "turret-expansion-rail",
+                        "sinScl":0
+                    }
+                ]
+            }
+        }*/
     },
     "requirements":[
         "copper/2600",
