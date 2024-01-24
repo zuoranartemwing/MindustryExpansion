@@ -70,7 +70,7 @@ ammoTypes: {
         shootEffect: shootBig
         smokeEffect: shootSmokeMissile
         ammoMultiplier: 1
-        spawnUnit: turret-expansion-nuke
+        spawnUnit: mindustry-expansion-nuke
     }
 }
 
