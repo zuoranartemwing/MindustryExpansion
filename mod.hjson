@@ -6,7 +6,6 @@ description:
   Add more Things !!
   
   [RED]THIS IS STILL IN DEVELOPMENT[]
-  Version: 2.3.0 (Early)
   
   Want fast update??
   join to our server or check at our github
@@ -15,5 +14,6 @@ description:
   Kanaede
   NEON-XZR
   '''
-version: 2.3.0
+version: 2.3.1
 minGameVersion: 145
+dependencies: [mindustry-fundation]
