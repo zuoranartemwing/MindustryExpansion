@@ -1,6 +1,19 @@
-"name": "turret-expansion"
-"displayName": "Turret Expansion"
-"author": "zuoranartemwing"
-"description": "Add more Turrets! \n\n[RED]THIS IS STILL IN DEVELOPMENT[] \nVersion: 2.2.1 (Beta) \n\nWant fast update?? \nJoin to our server or check at our github \n\nContributors: \nKanaede \nNEON-XZR
-"version": "2.2.4"
-"minGameVersion": 145
+name: mindustry-expansion
+displayName: Mindustry Expansion
+author: zuoranartemwing
+description:
+  '''
+  Add more Things !!
+  
+  [RED]THIS IS STILL IN DEVELOPMENT[]
+  Version: 2.3.0 (Early)
+  
+  Want fast update??
+  join to our server or check at our github
+
+  Contributors:
+  Kanaede
+  NEON-XZR
+  '''
+version: 2.3.0
+minGameVersion: 145
