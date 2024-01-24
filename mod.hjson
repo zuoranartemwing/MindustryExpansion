@@ -1,12 +1,12 @@
-name: turret-expansion
-displayName: Turret Expansion
+name: mindustry-expansion
+displayName: Mindustry Expansion
 author: zuoranartemwing
 description:
   '''
-  Add more Turrets!
+  Add more Things !!
   
   [RED]THIS IS STILL IN DEVELOPMENT[]
-  Version: 2.2.1 (Alpha)
+  Version: 2.3.0 (Early)
   
   Want fast update??
   join to our server or check at our github
@@ -15,5 +15,5 @@ description:
   Kanaede
   NEON-XZR
   '''
-version: 2.2.1
+version: 2.3.0
 minGameVersion: 145
