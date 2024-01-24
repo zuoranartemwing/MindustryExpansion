@@ -19,7 +19,7 @@
   "coolantMultiplier":0.5,
   "predictTarget":true,
   "ammoTypes":{
-      "fuse-stone":{
+      "mindustry-fundation-fuse-stone":{
           "type":"BasicBulletType",
           "height":70,
           "width":50,
