@@ -4,10 +4,10 @@ size: 6
 ammoUseEffect: none
 range: 960
 reload: 1200
-ammoPerShot: 30
+ammoPerShot: 1
 shootCone: 360
 predictTarget: false
-maxAmmo: 90
+maxAmmo: 1
 targetAir: false
 recoil: 0
 coolantMultiplier: 0
@@ -15,7 +15,7 @@ shootSound: missileLaunch
 rotateSpeed: 0
 category: turret
 ammoTypes: {
-    thorium: {
+    warhead: {
         type: BasicBulletType
         shootEffect: shootBig
         smokeEffect: shootSmokeMissile

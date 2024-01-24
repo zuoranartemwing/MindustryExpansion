@@ -5,9 +5,9 @@ ammoUseEffect: none
 liquidCapacity: 20
 range: 880
 reload: 1200
-ammoPerShot: 20
+ammoPerShot: 1
 predictTarget: false
-maxAmmo: 60
+maxAmmo: 1
 health: 2500
 targetAir: false
 recoil: 5
@@ -65,7 +65,7 @@ drawer: {
     ]
 }
 ammoTypes: {
-    thorium: {
+    warhead: {
         type: BasicBulletType
         shootEffect: shootBig
         smokeEffect: shootSmokeMissile

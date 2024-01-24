@@ -1,0 +1,12 @@
+{
+  "explosiveness": 1.2,
+  "radioactivity": 0.04,
+  "buildable": false,
+  "research": {
+      "parent": "thorium",
+      "requirements": [
+        "thorium/70",
+        "lead/120"
+      ]
+  }
+}
