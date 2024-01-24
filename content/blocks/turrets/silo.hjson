@@ -20,7 +20,7 @@ ammoTypes: {
         shootEffect: shootBig
         smokeEffect: shootSmokeMissile
         ammoMultiplier: 1
-        spawnUnit: turret-expansion-bulaven
+        spawnUnit: mindustry-expansion-bulaven
     }
 }
 shoot: {
