@@ -27,7 +27,7 @@ loopSoundVolume: 0.6
 deathSound: titanExplosion
 weapons: [
     {
-        name: warhead
+        name: nuke-warhead
         shootCone: 360
         shootOnDeath: true
         controllable: true
