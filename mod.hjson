@@ -8,12 +8,16 @@ description:
   [RED]THIS IS STILL IN DEVELOPMENT[]
   
   Want fast update??
-  join to our server or check at our github
+  Join to our server or check at our github
 
   Contributors:
   Kanaede
   NEON-XZR
+
+  MF Version: 0.1.0
   '''
-version: 2.3.2
+version: 2.3.3
 minGameVersion: 145
-dependencies: [mindustry-fundation]
+dependencies: []
+
+// I Hate HJSON

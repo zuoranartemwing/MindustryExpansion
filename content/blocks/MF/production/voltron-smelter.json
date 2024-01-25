@@ -1,0 +1,25 @@
+{
+  "type": "GenericCrafter",
+  "category": "crafting",
+  "hasItems": true,
+  "hasPower": true,
+  "hasLiquid": true,
+  "size": 3,
+  "craftTime": 60,
+  "consumes": {
+    "items": {
+      "items": [
+        {"item":"titanium","amount":1},
+        {"item":"silver","amount":1}
+      ]
+    },
+    "liquid": {"liquid":"water","amount":0.1},
+    "power": 3
+  },
+  "outputLiquid": {"liquid":"nevoltron","amount":0.1},
+  "requirements": [
+    {"item":"base-container","amount":320},
+    {"item":"building-container","amount":400},
+    {"item":"silver","amount":360}
+  ]
+}

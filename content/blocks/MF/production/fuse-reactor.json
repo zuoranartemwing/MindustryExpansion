@@ -1,0 +1,87 @@
+{
+  "type":"GenericCrafter",
+  "category":"crafting",
+  "hasPower":true,
+  "hasLiquid":true,
+  "size":4,
+  "craftTime":300,
+  "outputItem": {"item":"fuse-stone","amount":1},
+  "consumes":{
+    "power":100,
+    "items":[
+      {"item":"titanium","amount":60},
+      {"item":"plastanium","amount":40},
+      {"item":"surge-alloy","amount":40}
+    ],
+    "liquid":"slag/1"
+  },
+  "requirements":[
+    {"item":"thorium","amount":400},
+    {"item":"plastanium","amount":270},
+    {"item":"phase-fabric","amount":430}
+  ],
+  "research":"alloy-smelter",
+  "drawer":{
+    "type":"MultiDraw",
+    "drawers":[
+      {
+        "type": "DrawParticles",
+        "color": "9681fb",
+        "alpha": 0.4,
+        "blending": "additive",
+        "particleSize": 4,
+        "particleRad": 16,
+        "particles": 43,
+        "fadeMargin": 0.8,
+        "rotateScl": 4,
+        "particleLife": 40
+      },
+      {
+        "type": "DrawCrucibleFlame",
+        "flameColor": "9681fb",
+        "midColor": "bf92f9",
+        "alpha": 0.6,
+        "particleSize": 4,
+        "particleRad": 11,
+        "particles": 43,
+        "fadeMargin": 0.8,
+        "rotateScl": 4,
+        "particleLife": 80
+      },
+      {
+        "type": "DrawPlasma",
+        "suffix": "-plasma-",
+        "plasma1": "9681fb",
+        "plasma2": "bf92f9"
+      },
+      {
+        "type": "DrawDefault"
+      }
+    ]
+  },
+  "effectChance": 0.5,
+  "generateEffectRange": 1,
+  "generateEffect": {
+    "type": "RadialEffect",
+    "effect": {
+      "type": "multiEffect",
+      "effects": [
+        {
+          "type": "ParticleEffect",
+          "particles": 3,
+          "lifetime": 60,
+          "interp": "circleOut",
+          "length": 30,
+          "cone": -8,
+          "sizeFrom": 3,
+          "sizeTo": 0,
+          "colorFrom": "9681fb",
+          "colorTo": "9681fb"
+        }
+      ]
+    },
+    "rotationOffset": 45,
+    "lengthOffset": 12,
+    "amount": 4
+  }
+}

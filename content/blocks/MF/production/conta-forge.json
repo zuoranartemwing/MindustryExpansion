@@ -1,0 +1,25 @@
+{
+  "type": "GenericCrafter",
+  "category": "crafting",
+  "hasItems": true,
+  "hasPower": true,
+  "hasLiquid": false,
+  "size": 2,
+  "craftTime": 60,
+  "consumes": {
+    "items": {
+      "items": [
+        {"item":"base-container","amount":1},
+        {"item":"lead","amount":1},
+        {"item":"titanium","amount":1}
+      ]
+    },
+    "power": 3
+  },
+  "outputItem": {"item":"building-container","amount":1},
+  "requirements": [
+    {"item":"base-container","amount":200},
+    {"item":"titanium","amount":220},
+    {"item":"silicon","amount":200}
+  ]
+}
