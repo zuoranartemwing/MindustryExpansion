@@ -1,0 +1,17 @@
+{
+  "type": "Wall",
+  "category": "defense",
+  "health":6800,
+  "size": 4,
+  "lightningChance": 0.5,
+  "lightningDamage": 70,
+  "lightningLength": 20,
+  "hasPower": true,
+  "connectedPower": true,
+  "conductivePower": true,
+  "insulated": true,
+  "consumesPower": true,
+  "requirements": [
+    {"item":"fortress-container","amount":8}
+  ]
+}
