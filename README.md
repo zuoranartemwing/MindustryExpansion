@@ -12,3 +12,5 @@ Mindustry Expansion mod aim for extending the Mindustry Expansion content with v
 **You can use Our code for free for personal use | Permission required for publication or sharing**
 
 Note: Now support english, Translation not yet accepted.
+
+**IMPORTANT NOTE:** This Mod Have Depencies Named **Expansion Foundation** this will support the mod to run smoothly and more experience
