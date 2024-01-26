@@ -4,7 +4,7 @@
     "size": 2,
     "research": {
         "root": true,
-        "name": "[#FF000000]LHI",
+        "name": "[red]LHI",
         "requiresUnlock": false
     }
 }
