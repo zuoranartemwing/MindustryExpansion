@@ -1,0 +1,43 @@
+{
+    "type": "Drill",
+    "health": 1280,
+    "hardnessDrillMultiplier": 26,
+    "size": 4,
+    "hasLiquid": true,
+    "tier": 4,
+    "drillTime": 130,
+    "itemCapacity": 20,
+    "liquidBoostIntensity": 1.5,
+    "liquidCapacity": 20,
+    "warmupSpeed": 0.005,
+    "drillEffectChance": 20,
+    "updateEffectChance": 0.1,
+    "updateEffect": "pulverizeRed",
+    "rotateSpeed": 11,
+    "drawRim": true,
+    "separateItemCapacity": true,
+    "consumes": {
+        "power": 2, 
+        "liquid": {
+            "liquid": "cryofluid",
+            "amount": 0.1,
+            "optional": false
+        }
+    },
+    "requirements": [
+        "silicon/120",
+        "thorium/90",
+        "titanium/180",
+        "copper/230"
+    ],
+    "category": "production",
+    "research": {
+        "parent": "blast-drill",
+        "requirements": [
+          "copper/2600",
+          "titanium/1800",
+          "thorium/2900",
+          "silicon/2300"
+        ]
+      }
+}
