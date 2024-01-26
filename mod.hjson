@@ -16,7 +16,7 @@ description:
 
   MF Version: 0.1.0
   '''
-version: 2.3.3
+version: 2.3.4
 minGameVersion: 145
 dependencies: []
 
