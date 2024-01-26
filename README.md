@@ -2,7 +2,9 @@
 
 <p align="center"><img src="icon.png" alt="logo" width="200"></p>
 
-![version](https://img.shields.io/badge/Version-Alpha_2.3.1-green?logoColor=white&color=green) [![Discord](https://img.shields.io/badge/Discord-Join-2ea44f?logo=discord&color=5865F2)](https://discord.gg/pK6Zp2U7jd) [![wikipedia](https://img.shields.io/badge/Wiki-blue?logo=wikipedia&logoColor=white&color=blue)](https://kanaede.github.io/MindustryExpansion/)
+[![Download](https://img.shields.io/github/v/release/zuranartemwing/MindustryExpansion?color=green&include_prereleases&label=DOWNLOAD%20LATEST%20RELEASE&logo=github&logoColor=green&style=for-the-badge)](https://github.com/zuranartemwing/MindustryExpansion/releases) [![Total Downloads](https://img.shields.io/github/downloads/zuoranartemwing/MindustryExpansion/total?color=555555&label=%20&style=for-the-badge&logo=docusign&logoColor=green)](https://github.com/zuoranartemwing/MindustryExpansion/releases)
+
+[![Discord](https://img.shields.io/badge/Discord-Join-2ea44f?logo=discord&color=5865F2)](https://discord.gg/pK6Zp2U7jd) [![wikipedia](https://img.shields.io/badge/Wiki-blue?logo=wikipedia&logoColor=white&color=blue)](https://kanaede.github.io/MindustryExpansion/)
 
 ![Banner](assests/img/banner.png)
 
