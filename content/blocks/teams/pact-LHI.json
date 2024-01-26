@@ -1,0 +1,10 @@
+{
+    "type": "LightBlock",
+    "health": 1000,
+    "size": 2,
+    "research": {
+        "root": true,
+        "name": "[#FF000000]LHI",
+        "requiresUnlock": false
+    }
+}
