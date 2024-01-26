@@ -2,9 +2,10 @@
 
 <p align="center"><img src="icon.png" alt="logo" width="200"></p>
 
-[![Download](https://img.shields.io/github/v/release/zuoranartemwing/MindustryExpansion?color=green&include_prereleases&label=DOWNLOAD%20LATEST%20RELEASE&logo=github&logoColor=white&style=for-the-badge)](https://github.com/zuoranartemwing/MindustryExpansion/releases) [![Total Downloads](https://img.shields.io/github/downloads/zuoranartemwing/MindustryExpansion/total?color=555555&label=%20&style=for-the-badge&logo=docusign&logoColor=green)](https://github.com/zuoranartemwing/MindustryExpansion/releases)
-
-[![Discord](https://img.shields.io/badge/Discord-Join-2ea44f?logo=discord&color=5865F2)](https://discord.gg/pK6Zp2U7jd)
+<p align="center">
+  <a href="https://github.com/zuoranartemwing/MindustryExpansion/releases"><img src="https://img.shields.io/github/v/release/zuoranartemwing/MindustryExpansion?color=green&include_prereleases&label=DOWNLOAD%20LATEST%20RELEASE&logo=github&logoColor=white&style=for-the-badge"></a>
+  <a href="https://discord.gg/pK6Zp2U7jd"><img src="https://img.shields.io/badge/Discord_Community-Join-2ea44f?logo=discord&color=5865F2&style=for-the-badge"></a>
+</p>
 
 ![Banner](assests/img/banner.png)
 
