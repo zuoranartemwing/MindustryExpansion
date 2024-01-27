@@ -2,10 +2,10 @@ health: 620
 size: 2
 type: PowerTurret
 range: 200
-shootCone: 3
 targetAir: false
 liquidCapacity: 20
-inaccuracy: 4
+inaccuracy: 0
+predictTarget: true
 category: turret
 reload: 80
 consumes: {
@@ -14,32 +14,28 @@ consumes: {
         amount: 0.56666666666
     }
 }
-heatColor: ffff00
+heatColor: ff0000
 recoils: 1
 shootSound: laser
 moveWhileCharging: false
-chargeEffect: lancerLaserCharge
+accurateDelay: false
 shoot: {
     type: ShootAlternate
     shots: 3
     barrels: 3
-    spread: 5
+    spread: 3
     firstShotDelay: 40
     shotDelay: 5
 }
 shootType: {
     type: LaserBulletType
-    speed: 1
-    lifetime: 8
+    lifetime: 16
     damage:80
-    pierce: true
-    pierceBuilding: true
-    pierceCap: 4
-    pierceDamageFactor: 0.5
-    width: 6
+    hitSize: 6
+    width: 20
     hitEffect: hitLancer
-    chargeEffect: lancerLaserCharge
-
+    chargeEffect: [lancerLaserCharge, lancerLaserChargeBegin]
+    pierceCap: 4
 }
 requirements: [
     copper/200
