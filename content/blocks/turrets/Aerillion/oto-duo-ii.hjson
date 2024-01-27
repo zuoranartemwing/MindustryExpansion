@@ -1,0 +1,117 @@
+//oe tod ini damagenya bkn 11 ribu ya anjim tp 11 **koma** 6666 blah (anggap bercanda ygy gw ga beneran ngamuk)
+
+type: ItemTurret
+targetAir: true
+targetGround: false
+shootShake: 7
+size: 4
+ammoUseEffect: casing2Double
+range: 272
+health: 2450
+maxAmmo: 180
+ammoPerShot: 60
+recoil: 5
+burstSpacing: 10
+inaccuracy: 10
+shootSound: ashot
+chargeSound: a10charge
+rotateSpeed: 2
+shootY: 8
+shoot: {
+    type: shootAlternate
+    barrels: 2
+    spread: 20
+    firstShotDelay: 240
+    shotDelay: 1
+    shots: 360
+}
+consumes: {
+    coolant:{
+        amount: 2.16666666667
+    }
+}
+ammoTypes: {
+    titanium: {
+        damage: 4.72222222222
+        ammoMultiplier: 1
+        splashDamage: 30
+        shootEffect: shootBig
+        splashDamageRadius: 20
+        speed: 12
+        smokeEffect: shootBigSmoke
+        lifetime: 22.6666666667
+        width: 20
+        height: 25
+        hitEffect: flakExplosion
+         
+    }
+    metaglass: {
+        damage: 6.66666666667
+        splashDamage: 26
+        shootEffect: shootBig
+        ammoMultiplier: 1
+        splashDamageRadius: 22
+        speed: 12
+        smokeEffect: shootBigSmoke
+        lifetime: 22.6666666667
+        width: 20
+        height: 25
+        hitEffect: flakExplosion
+         
+    }
+    plastanium: {
+        damage: 11.6666666667
+        splashDamage: 35
+        shootEffect: shootBig
+        ammoMultiplier: 1
+        splashDamageRadius: 31
+        speed: 8
+        smokeEffect: shootBigSmoke
+        lifetime: 22.6666666667
+        width: 20
+        height: 25
+        hitEffect: flakExplosion
+         
+    }
+    thorium: {
+        damage: 13.8888888889
+        shootEffect: shootBig
+        splashDamage: 50
+        splashDamageRadius: 40
+        speed: 12
+        ammoMultiplier: 1
+        smokeEffect: shootBigSmoke
+        lifetime: 22.6666666667
+        width: 20
+        height: 25
+        hitEffect: flakExplosion
+        frontColor: 800080
+        backColor: b042ff
+         
+    }
+    silicon: {
+        damage: 5.55555555556
+        splashDamage: 32
+        shootEffect: shootBig
+        splashDamageRadius: 27
+        ammoMultiplier: 1
+        speed: 20
+        smokeEffect: shootBigSmoke
+        lifetime: 13.6
+        width: 20
+        height: 25
+        hitEffect: flakExplosion
+        frontColor: ee6b6e
+        backColor: ff0000
+        homingPower: 0.3
+        homingDelay: 30
+        
+    }
+}
+requirements: [
+copper/1110
+lead/790
+plastanium/240
+titanium/370
+]
+category: turret

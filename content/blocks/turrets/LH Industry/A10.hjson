@@ -1,0 +1,45 @@
+type: ItemTurret
+targetAir: true
+targetGround: true
+shootShake: 25
+size: 1
+shootAlternate: 5
+liquidCapacity: 350
+range: 600
+health: 700
+reload: 0.4
+recoilAmount: 2
+burstSpacing: 5
+inaccuracy: 2
+ammoPerShoot: 3900
+xRand: 8
+rotateSpeed: 20
+ammoTypes: {
+    copper: {
+        damage: 720
+        splashDamage: 550
+        splashDamageRadius: 19
+        speed: 20
+        lifetime: 75
+        width: 12
+        height: 20
+        hitEffect: flakExplosion
+        frontColor: ffffff
+        backColor: a56be8
+        fragBullets: 1
+        fragBullet: {
+            damage: 350
+            speed: 20
+            lifetime: 15
+            frontColor: ffffff
+            backColor: a56be8
+        }
+    }
+}
+research: pact-LHI
+requirements: [
+thorium/5
+copper/55
+]
+category: turret
+shootSound: brrrttt

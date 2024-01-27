@@ -1,0 +1,48 @@
+health: 620
+size: 2
+type: PowerTurret
+range: 200
+shootCone: 3
+targetAir: false
+liquidCapacity: 20
+inaccuracy: 4
+category: turret
+reload: 80
+consumes: {
+    power: 8.66666666667
+    coolant:{
+        amount: 0.56666666666
+    }
+}
+heatColor: ffff00
+recoils: 1
+shootSound: laser
+moveWhileCharging: false
+chargeEffect: lancerLaserCharge
+shoot: {
+    type: ShootAlternate
+    shots: 3
+    barrels: 3
+    spread: 5
+    firstShotDelay: 40
+    shotDelay: 5
+}
+shootType: {
+    type: LaserBulletType
+    speed: 1
+    lifetime: 8
+    damage:80
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 4
+    pierceDamageFactor: 0.5
+    width: 6
+    hitEffect: hitLancer
+    chargeEffect: lancerLaserCharge
+
+}
+requirements: [
+    copper/200
+    lead/100
+    titanium/40
+  ]

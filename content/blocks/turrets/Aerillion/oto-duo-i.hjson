@@ -1,0 +1,104 @@
+//oe tod ini damagenya bkn 0.2 ya anjim tp 0 **koma** 2 biar per magazin bisa 100 brp damagenya(anggap bercanda ygy gw ga beneran ngamuk)
+
+type: ItemTurret
+targetAir: true
+targetGround: false
+shootShake: 1
+size: 1
+ammoUseEffect: casing1
+liquidCapacity: 10
+range: 232
+health: 325
+reload: 300
+maxAmmo: 60
+ammoPerShot: 30
+recoil: 1
+burstSpacing: 10
+inaccuracy: 10
+shootSound: ashot
+chargeSound: a10charge
+rotateSpeed: 7
+shoot: {
+    type: shootAlternate
+    barrels: 2
+    spread: 4
+    firstShotDelay: 60
+    shotDelay: 1
+    shots: 180
+}
+ammoTypes: {
+    copper: {
+        damage: 0.2
+        splashDamage: 0.09
+        splashDamageRadius: 10
+        speed: 8
+        ammoMultiplier: 1
+        shootEffect: shootSmall
+        smokeEffect: shootSmallSmoke
+        lifetime: 20
+        width: 3
+        height: 10
+        hitEffect: flakExplosion
+         
+    }
+    lead: {
+        damage: 0.6
+        splashDamage: 0.1
+        splashDamageRadius: 12
+        speed: 8
+        ammoMultiplier: 1
+        shootEffect: shootSmall
+        smokeEffect: shootSmallSmoke
+        lifetime: 20
+        width: 3
+        height: 10
+        hitEffect: flakExplosion
+         
+    }
+    metaglass: {
+        damage: 1.12
+        ammoMultiplier: 1
+        splashDamage: 0.5
+        splashDamageRadius: 10
+        speed: 8
+        shootEffect: shootSmall
+        smokeEffect: shootSmallSmoke
+        lifetime: 20
+        width: 3
+        height: 10
+        hitEffect: flakExplosion
+         
+    }        
+    silicon: {
+        damage: 0.5
+        splashDamage: 0.1
+        ammoMultiplier: 1
+        splashDamageRadius: 10
+        speed: 8
+        shootEffect: shootSmall
+        smokeEffect: shootSmallSmoke
+        lifetime: 20
+        width: 3
+        height: 10
+        hitEffect: flakExplosion
+        frontColor: ee6b6e
+        backColor: ff0000
+        homingPower: 0.3
+        homingDelay: 30
+        
+    }
+}
+requirements: [
+copper/280
+lead/63
+graphite/26
+]
+research: {
+    parent: monoguzte
+    requirements: [
+      copper/440
+      lead/120
+      graphite/61
+    ]
+  }
+category: turret

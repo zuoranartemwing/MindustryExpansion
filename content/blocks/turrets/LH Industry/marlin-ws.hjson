@@ -1,0 +1,69 @@
+type: ItemTurret
+targetAir: false
+targetGround: true
+shootShake: 1
+size: 1
+liquidCapacity: 10
+range: 184
+health: 230
+reload: 12
+recoilAmount: 1
+burstSpacing: 10
+inaccuracy: 1
+heatColor: ffff00
+ammoPerShoot: 1
+rotateSpeed: 8
+ammoTypes: {
+    copper: {
+        damage: 4
+        splashDamage: 50
+        splashDamageRadius: 10
+        speed: 8
+        lifetime: 23
+        width: 6
+        height: 12
+        hitEffect: flakExplosion
+        frontColor: ffffff
+        backColor: a56be8
+         
+    }
+
+    lead: {
+        damage: 6
+        splashDamage: 50
+        splashDamageRadius: 10
+        speed: 8
+        lifetime: 23
+        width: 6
+        height: 12
+        hitEffect: flakExplosion
+        frontColor: ffffff
+        backColor: a56be8
+         
+   }
+
+    scrap: {
+        damage: 2
+        splashDamage: 50
+        splashDamageRadius: 10
+        speed: 8
+        lifetime: 23
+        width: 6
+        height: 12
+        hitEffect: flakExplosion
+        frontColor: ffffff
+        backColor: a56be8
+         
+   }
+}
+consumes: { 
+  coolant: {
+  amount: 0.4
+  }
+}
+requirements: [
+titanium/5
+copper/55
+]
+category: turret
+shootSound: ws-marlin-shoot
