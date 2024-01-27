@@ -36,7 +36,7 @@ ammoTypes: {
         }
     }
 }
-research: LHI
+research: pact-LHI
 requirements: [
 thorium/5
 copper/55
