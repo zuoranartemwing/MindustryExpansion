@@ -1,6 +1,6 @@
 {
     "name": "Copper Shooting Wall",
-    "description": "A Copper Wall modified for turret module, a bit weaker than Sharded Copper Wall and small damage even if there are many Shooting Walls",
+    "description": "A Copper Wall modified for turret module, a bit weaker than Sharded Copper Wall and small damage even if there are many Shooting Walls.",
     "type": "PowerTurret",
     "targetAir": true,
     "targetGround": true,
