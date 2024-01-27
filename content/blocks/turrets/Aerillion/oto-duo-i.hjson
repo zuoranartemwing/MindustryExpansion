@@ -93,4 +93,12 @@ copper/280
 lead/63
 graphite/26
 ]
+research: {
+    parent: monoguzte
+    requirements: [
+      copper/440
+      lead/120
+      graphite/61
+    ]
+  }
 category: turret
