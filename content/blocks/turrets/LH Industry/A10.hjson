@@ -1,45 +1,55 @@
 type: ItemTurret
 targetAir: true
 targetGround: true
-shootShake: 25
 size: 1
-shootAlternate: 5
-liquidCapacity: 350
-range: 600
-health: 700
-reload: 0.4
-recoilAmount: 2
-burstSpacing: 5
+liquidCapacity: 20
+range: 110
+health: 280
+reload: 60
+recoilAmount: 0
 inaccuracy: 2
-ammoPerShoot: 3900
-xRand: 8
-rotateSpeed: 20
+ammoCapacity: 20
+ammoPerShoot: 1
+rotateSpeed: 7
+drawer: {
+    type: DrawTurret
+    parts: [
+        {
+            type: RegionPart
+            suffix: -barrel
+            layerOffset: 0.007
+            y: 2
+            moveY: -2
+            progress: recoil
+        }
+        {
+            suffix: -top
+            layerOffset: 0.008
+        }
+    ]
+}
+shoot: {
+    type: ShootAlternate
+    barrels: 2
+    spread: 4
+    shots: 24
+    shotDelay: 2.5
+}
 ammoTypes: {
     copper: {
-        damage: 720
-        splashDamage: 550
-        splashDamageRadius: 19
-        speed: 20
-        lifetime: 75
-        width: 12
-        height: 20
+        damage: 0.885
+        speed: 11
+        lifetime: 10
+        width: 8
+        height: 10
         hitEffect: flakExplosion
         frontColor: ffffff
         backColor: a56be8
-        fragBullets: 1
-        fragBullet: {
-            damage: 350
-            speed: 20
-            lifetime: 15
-            frontColor: ffffff
-            backColor: a56be8
-        }
     }
 }
 research: pact-LHI
 requirements: [
-thorium/5
-copper/55
+copper/32
 ]
 category: turret
 shootSound: brrrttt
