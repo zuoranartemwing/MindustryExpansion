@@ -8,7 +8,7 @@
     "type": "legs",
     "speed": 0.8,
     "hitSize": 13,
-    "health": 540,
+    "health": 430,
     "targetAir": true,
     "rotateSpeed": 2,
 
