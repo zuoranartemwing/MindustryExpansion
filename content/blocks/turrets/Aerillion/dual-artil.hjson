@@ -6,7 +6,7 @@ maxAmmo: 6
 liquidcapacity: 60
 ammoPerShot: 3
 inaccuracy: 10
-velocityRnd: -1
+velocityRnd: 0.3
 reload: 60
 coolantMultiplier: 0.5
 consumes: { 
