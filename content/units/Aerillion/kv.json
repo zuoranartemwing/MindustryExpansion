@@ -1,0 +1,65 @@
+{
+    "template": "TankUnitType",
+    "name": "Killer Version 2",
+    "description": "Killer Variant and the second type that survives. Strong armor but long reload time making this tank heavily useless on battle as frontline attacker. Good for tanking uses [Absorb the damages]",
+    "health": 200000,
+    "singleTarget": true,
+    "speed": 0.3,
+    "type": "tank",
+    "rotateSpeed": 0.3,
+    "groundLayer": 60,
+    "crushDamage": 30,
+    "armor": 320,
+    "treadFrames": 20,
+    "targetAir": false,
+    "hitSize": 79,
+    "treadRects": [
+        {
+            "x": 53,
+            "y": -162,
+            "width":63,
+            "height": 316
+        }
+    ]
+    "weapons": [ 
+
+        {
+            "name": "kv-turret",
+            "bullet": {
+                "type": "BasicBulletType",
+                "shootEffect": "shootBig",
+                "smokeEffect": "shootBigSmoke",
+                "damage": 3000,
+                "speed": 8,
+                "lifetime": 45,
+                "hitEffect": "hitBulletBig"
+                "width": 15,
+                "height": 25,
+                "splashDamage": 830,
+                "splashDamageRadius": 40
+            },
+            "reload": 1200,
+            "shootSound": "dullExplosion",
+            "rotateSpeed": 0.3,
+            "x": 0,
+            "y": 4,
+            "mirror": false,
+            "rotate": true,
+            "shootY": 30,
+            "predictTarget": false,
+            "shoot": {
+                "type": "ShootPattern",
+                "firstShotDelay": 180
+            },
+            "parts": [
+                {
+                    "suffix": "-barrel",
+                    "moveY": -5,
+                    "progress": "recoil",
+                    "under": true,
+                    "y": 8
+                }
+            ]
+        }
+    ]
+}
