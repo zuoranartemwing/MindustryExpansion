@@ -20,7 +20,7 @@
             "width":63,
             "height": 316
         }
-    ]
+    ],
     "weapons": [ 
 
         {
@@ -32,7 +32,7 @@
                 "damage": 3000,
                 "speed": 8,
                 "lifetime": 45,
-                "hitEffect": "hitBulletBig"
+                "hitEffect": "hitBulletBig",
                 "width": 15,
                 "height": 25,
                 "splashDamage": 830,
