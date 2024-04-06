@@ -28,7 +28,7 @@ shootType: {
     type: LaserBulletType
     speed: 2
     lifetime: 10
-    damage:190
+    damage:60
     width: 8
     hitEffect: hitLancer
     chargeEffect: lancerLaserCharge
