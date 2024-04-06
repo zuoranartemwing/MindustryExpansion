@@ -17,7 +17,7 @@ description:
   MF Version: 0.1.0
   '''
 version: 2.3.4
-minGameVersion: 145
+minGameVersion: 146
 dependencies: []
 
 // I Hate HJSON
