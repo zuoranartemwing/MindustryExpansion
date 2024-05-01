@@ -1,0 +1,80 @@
+{   
+    "name": "Inzchun Type DD",
+    "description": "Tier 1 of URoa Tech Tree. basic Rotary Ship, Single Target Destroyer Type.",
+    "armor": 1,
+    "speed": 6,
+    "singleTarget": true,
+    "health": 150,
+    "hitSize": 32,
+    "targetAir": true,
+    "rotateSpeed": 10,
+    "flying": true,
+    "range": 104,
+    "engineSize": 0,
+    "weapons": [ 
+        {
+            "name": "inzchundd-body",
+            "alwaysShooting": true,
+            "reload": 60,
+            "x": 0,
+            "y": 0,
+            "display": false,
+            "recoil": 0,
+            "controllable": false,
+            "aiControllable": false,
+            "mirror": false,
+            "layerOffset": -0.001,
+            "shootSound": "none",
+            "bullet": {
+                "type": "BulletType",
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "despawnEffect": "none"
+            },
+            "parts": [
+                {
+                "type": "RegionPart",
+                "suffix": "-rotary",
+                "under": true,
+                "progress": "reload",
+                "moveRot": 360,
+                "x": 0,
+                "y": 0
+                }
+            ]
+        },
+        {
+            "name": "inzchun-weapon",
+            "layerOffset": -0.001,
+            "alternate": false,
+            "recoil": 0,
+            "x": 0,
+            "y": 0,
+            "mirror": false,
+            "continuous": true,
+            "alwaysContinuous": true,
+            "shootY": 10,
+            "shootSound": "beam",
+            "inaccuracy": 0,
+            "bullet": {
+                "type": "ContinuousFlameBulletType",
+                "width": 4,
+                "flareColor": "f7022a",
+                "colors": [
+                    "ad011d8c",
+                    "cb0222b3",
+                    "e80227cc",
+                    "f7022a",
+                    "ffffff"
+                ],
+                "damage": 1.25,
+                "flareRotSpeed": 2,
+                "flareWidth": 8,
+                "flareLength": 30,
+                "hitEffect": "hitFlameSmall",
+                "range": 160
+            }
+        }
+    ],
+    "--comment": "thx to liz for helping the rotary body"
+}
