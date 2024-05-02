@@ -62,7 +62,7 @@
             "recoil": 0,
             "shootSound": "lasershoot",
             "bullet": {
-                "damage": 15,
+                "damage": 17,
                 "splashDamage": 30,
                 "splashDamageRadius": 24,
                 "speed": 16,
@@ -91,7 +91,7 @@
             "recoil": 0,
             "shootSound": "shoot",
             "bullet": {
-                "damage": 15,
+                "damage": 17,
                 "splashDamage": 30,
                 "splashDamageRadius": 24,
                 "speed": 16,
@@ -116,7 +116,7 @@
             "recoil": 0,
             "shootSound": "sniper",
             "bullet": {
-                "damage": 15,
+                "damage": 17,
                 "splashDamage": 30,
                 "splashDamageRadius": 24,
                 "speed": 16,
