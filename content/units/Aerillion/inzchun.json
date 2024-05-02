@@ -1,0 +1,71 @@
+{   
+    "name": "Inzchun Type CC",
+    "description": "Tier 1 of URoa Tech Tree. basic Rotary Ship, Crowd Controlling Type.",
+    "armor": 1,
+    "speed": 6,
+    "health": 150,
+    "hitSize": 32,
+    "targetAir": true,
+    "rotateSpeed": 10,
+    "flying": true,
+    "range": 110,
+    "engineSize": 0,
+    "weapons": [ 
+        {
+            "name": "inzchun-body",
+            "alwaysShooting": true,
+            "reload": 60,
+            "x": 0,
+            "y": 0,
+            "display": false,
+            "recoil": 0,
+            "controllable": false,
+            "aiControllable": false,
+            "mirror": false,
+            "layerOffset": -0.001,
+            "shootSound": "none",
+            "bullet": {
+                "type": "BulletType",
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "despawnEffect": "none"
+            },
+            "parts": [
+                {
+                "type": "RegionPart",
+                "suffix": "-rotary",
+                "under": true,
+                "progress": "reload",
+                "moveRot": 360,
+                "x": 0,
+                "y": 0
+                }
+            ]
+        },
+        {
+            "name": "inzchun-weapon",
+            "layerOffset": -0.001,
+            "reload": 60,
+            "recoil": 0,
+            "shootY": 10,
+            "shootSound": "shoot",
+            "inaccuracy": 30,
+            "predictTarget": false,
+            "bullet": {
+                "type": "BasicBulletType",
+                "width": 6,
+                "height": 12,
+                "lifetime": 15,
+                "speed": 8,
+                "damage": 2,
+                "shootEffect": "shootSmall",
+                "smokeEffect": "shootBigSmoke"
+            },
+            "shoot": {
+                "shots": 30,
+                "shotDelay": 1
+            }
+        }
+    ],
+    "--comment": "thx to liz for helping the rotary body"
+}

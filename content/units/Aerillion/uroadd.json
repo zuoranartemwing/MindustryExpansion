@@ -1,0 +1,135 @@
+{   
+    "name": "URoa Type DD",
+    "description": "Uniter Resource orbitary aerillion is a last tier rotary ship build for crowd control, modified for single target termination. This ship equipped with 3 levels of machine gun that will shoot periodically.",
+    "armor": 30,
+    "speed": 0.6,
+    "health": 22000,
+    "singleTarget": true,
+    "hitSize": 60,
+    "rotateSpeed": 0.7,
+    "flying": true,
+    "range": 8,
+    "maxRange": 224,
+    "engineSize": 0,
+    "weapons": [ 
+        {
+            "name": "uroadd-body",
+            "alwaysShooting": true,
+            "reload": 360,
+            "x": 0,
+            "y": 0,
+            "display": false,
+            "recoil": 0,
+            "controllable": false,
+            "aiControllable": false,
+            "mirror": false,
+            "layerOffset": -0.001,
+            "shootSound": "none",
+            "bullet": {
+                "type": "BulletType",
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "despawnEffect": "none"
+            },
+            "parts": [
+                {
+                "type": "RegionPart",
+                "suffix": "-rotarya",
+                "progress": "reload",
+                "moveRot": 360,
+                "x": 0,
+                "y": 0
+                },
+                {
+                "type": "RegionPart",
+                "suffix": "-rotaryb",
+                "progress": "reload",
+                "moveRot": -360,
+                "x": 0,
+                "y": 0
+                }
+            ]
+        },
+        {
+            "name": "uroadd-machinegun",
+            "reload": 360,
+            "layerOffset": -0.001,
+            "mirror": false,
+            "top": false,
+            "alternate": false,
+            "x": 0,
+            "y": 0,
+            "recoil": 0,
+            "shootSound": "lasershoot",
+            "bullet": {
+                "damage": 17,
+                "splashDamage": 30,
+                "splashDamageRadius": 24,
+                "speed": 16,
+                "ammoMultiplier": 2,
+                "shootEffect": "shootBig",
+                "smokeEffect": "shootBigSmoke",
+                "hitEffect": "hitLancer",
+                "despawnEffect": "hitLancer",
+                "lifetime": 14,
+                "width": 8,
+                "height": 40,
+                "frontColor": "a9d8ff",
+                "backColor": "b042ff"
+            },
+            "shoot": {"type": "shootAlternate", "barrels": 3, "spread": 20, "shots": 240, "shotDelay": 1}
+        },
+        {
+            "name": "uroadd-machinegun1",
+            "reload": 360,
+            "layerOffset": -0.001,
+            "mirror": false,
+            "top": false,
+            "alternate": false,
+            "x": 0,
+            "y": 0,
+            "recoil": 0,
+            "shootSound": "shoot",
+            "bullet": {
+                "damage": 17,
+                "splashDamage": 30,
+                "splashDamageRadius": 24,
+                "speed": 16,
+                "ammoMultiplier": 2,
+                "shootEffect": "shootBig",
+                "smokeEffect": "shootBigSmoke",
+                "lifetime": 14,
+                "width": 12,
+                "height": 60
+            },
+            "shoot": {"type": "shootAlternate", "barrels": 2, "spread": 10, "shots": 180, "shotDelay": 1, "firstShotDelay": 60}
+        },
+        {
+            "name": "uroadd-machinegun2",
+            "reload": 360,
+            "layerOffset": -0.001,
+            "mirror": false,
+            "top": false,
+            "alternate": false,
+            "x": 0,
+            "y": 0,
+            "recoil": 0,
+            "shootSound": "sniper",
+            "bullet": {
+                "damage": 17,
+                "splashDamage": 30,
+                "splashDamageRadius": 24,
+                "speed": 16,
+                "ammoMultiplier": 2,
+                "shootEffect": "shootBig",
+                "smokeEffect": "shootBigSmoke",
+                "lifetime": 14,
+                "width": 20,
+                "height": 60,
+                "frontColor": "ffeaea",
+                "backColor": "c00000"
+            },
+            "shoot": {"type": "shootAlternate", "barrels": 1, "spread": 0, "shots": 120, "shotDelay": 1, "firstShotDelay": 120}
+        }
+    ]
+}

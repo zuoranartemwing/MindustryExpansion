@@ -1,0 +1,169 @@
+{   
+    "name": "URoa Type CC",
+    "description": "Uniter Resource orbitary aerillion is a last tier rotary ship build for crowd control. This ship equipped with 4 way Laser Beam and orbiter gun that fires around the ship for crowd controlling.",
+    "armor": 30,
+    "speed": 0.6,
+    "health": 22000,
+    "hitSize": 60,
+    "targetAir": true,
+    "rotateSpeed": 0.7,
+    "flying": true,
+    "range": 224,
+    "engineSize": 0,
+    "weapons": [ 
+        {
+            "name": "uroa-body",
+            "alwaysShooting": true,
+            "reload": 360,
+            "x": 0,
+            "y": 0,
+            "display": false,
+            "recoil": 0,
+            "controllable": false,
+            "aiControllable": false,
+            "mirror": false,
+            "layerOffset": -0.001,
+            "shootSound": "none",
+            "bullet": {
+                "type": "BulletType",
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "despawnEffect": "none"
+            },
+            "parts": [
+                {
+                "type": "RegionPart",
+                "suffix": "-rotarya",
+                "progress": "reload",
+                "moveRot": 360,
+                "x": 0,
+                "y": 0
+                },
+                {
+                "type": "RegionPart",
+                "suffix": "-rotaryb",
+                "progress": "reload",
+                "moveRot": -360,
+                "x": 0,
+                "y": 0
+                }
+            ]
+        },
+        {
+            "name": "uroa-weapon",
+            "layerOffset": -0.001,
+            "reload": 160,
+            "recoil": 0,
+            "shootSound": "shootBig",
+            "shootCone": 360,
+            "bullet": {
+                "type": "BasicBulletType",
+                "width": 30,
+                "height": 50,
+                "lifetime": 28,
+                "speed": 8,
+                "damage": 15,
+                "splashDamage": 50,
+                "status": "slow",
+                "shootEffect": "shootBig2",
+                "smokeEffect": "shootBigSmoke"
+            },
+            "shoot": {
+                "type": "shootSpread",
+                "shots": 100,
+                "shotDelay": 1,
+                "spread": 5
+            }
+        },
+        {
+            "name": "uroa-blasterup",
+            "layerOffset": -0.001,
+            "predictTarget": false,
+            "shootSound": "beam",
+            "continuous": true,
+            "reload": 360,
+            "mirror": false,
+            "top": false,
+            "x": 0,
+            "y": 0,
+            "recoil": 0,
+            "shootCone": 360,
+            "bullet": {
+                "type": "ContinuousLaserBulletType",
+                "width": 20,
+                "length": 224,
+                "damage": 9.5,
+                "lifetime": 360
+            }
+        },
+        {
+            "name": "uroa-blasterdown",
+            "display": false,
+            "layerOffset": -0.001,
+            "predictTarget": false,
+            "shootSound": "beam",
+            "continuous": true,
+            "reload": 360,
+            "baseRotation": 180,
+            "mirror": false,
+            "top": false,
+            "x": 0,
+            "y": 0,
+            "recoil": 0,
+            "shootCone": 360,
+            "bullet": {
+                "type": "ContinuousLaserBulletType",
+                "width": 20,
+                "length": 224,
+                "damage": 9.5,
+                "lifetime": 360
+            }
+        },
+        {
+            "name": "uroa-blasterright",
+            "display": false,
+            "layerOffset": -0.001,
+            "predictTarget": false,
+            "shootSound": "beam",
+            "continuous": true,
+            "reload": 360,
+            "baseRotation": 90,
+            "mirror": false,
+            "top": false,
+            "x": 0,
+            "y": 0,
+            "recoil": 0,
+            "shootCone": 360,
+            "bullet": {
+                "type": "ContinuousLaserBulletType",
+                "width": 20,
+                "length": 224,
+                "damage": 9.5,
+                "lifetime": 360
+            }
+        },
+        {
+            "name": "uroa-blasterleft",
+            "display": false,
+            "layerOffset": -0.001,
+            "predictTarget": false,
+            "shootSound": "beam",
+            "continuous": true,
+            "reload": 360,
+            "baseRotation": 270,
+            "mirror": false,
+            "top": false,
+            "x": 0,
+            "y": 0,
+            "recoil": 0,
+            "shootCone": 360,
+            "bullet": {
+                "type": "ContinuousLaserBulletType",
+                "width": 20,
+                "length": 224,
+                "damage": 9.5,
+                "lifetime": 360
+            }
+        }
+    ]
+}
