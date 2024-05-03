@@ -1,0 +1,24 @@
+{
+  "type": "GenericCrafter",
+  "category": "crafting",
+  "hasItems": true,
+  "hasPower": true,
+  "hasLiquid": false,
+  "size": 2,
+  "craftTime": 120,
+  "consumes": {
+    "items": {
+      "items": [
+        {"item":"copper","amount":1},
+        {"item":"sand","amount":2}
+      ]
+    },
+    "power": 2
+  },
+  "outputItem": {"item":"base-container","amount":2},
+  "requirements": [
+    {"item":"copper","amount":200},
+    {"item":"graphite","amount":180},
+    {"item":"silicon","amount":120}
+  ]
+}
