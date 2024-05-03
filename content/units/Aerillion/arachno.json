@@ -69,7 +69,6 @@
         {
             "name": "arachno-blaster",
             "parentizeEffects": true,
-            "predictTarget": false,
             "parts": [
                 {
                     "type": "ShapePart",
@@ -142,6 +141,28 @@
                     "radius": 0,
                     "layer": 110,
                     "y": 40
+                },
+                {
+                    "type": "FlarePart",
+                    "progress": "charge",
+                    "color1": "ffffff",
+                    "color2": "c0ecff",
+                    "layer": 110,
+                    "radius": 0,
+                    "radiusTo": 100,
+                    "spinSpeed": 3,
+                    "y": 40
+                },
+                {
+                    "type": "FlarePart",
+                    "progress": "recoil",
+                    "color1": "ffffff",
+                    "color2": "c0ecff",
+                    "layer": 110,
+                    "radius": 0,
+                    "radiusTo":100,
+                    "spinSpeed": 3,
+                    "y": 40
                 }
             ],
             "shoot": {
@@ -210,8 +231,7 @@
             "x": 0,
             "y": 0,
             "shootY": 40,
-            "recoil": 0,
-            "shootCone": 1
+            "recoil": 0
         },
         {
             "name": "arachno-macgun",
@@ -337,6 +357,20 @@
             "layer": 110,
             "stroke": 0,
             "strokeTo": 10
+        },
+        {
+            "type": "haloPart",
+            "haloRadius": 110,
+            "haloRotateSpeed": 0.7,
+            "shapes": 2,
+            "y": -65,
+            "color": "ffff00",
+            "radius": 20,
+            "layer": 110,
+            "tri": true,
+            "triLength": 0,
+            "triLengthTo": 50,
+            "$comment": "thx to @noone023 on discord for orbiting tri idea"
         }
     ],
     "immunities": [

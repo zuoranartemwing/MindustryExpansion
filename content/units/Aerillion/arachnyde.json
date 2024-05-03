@@ -1,0 +1,101 @@
+{   
+    "name": "Arachnyde",
+    "description": "2nd Generation of Arachno Tech Tree and the most Famous one, still known until now. equipped with 2 melting lasers and halo projection prototype that will used in the next generations.",
+    "groundLayer": 75,
+    "drawShields": false,
+    "singleTarget": true,
+    "armor": 10,
+    "type": "legs",
+    "speed": 0.6,
+    "hitSize": 20,
+    "health": 740,
+    "targetAir": true,
+    "rotateSpeed": 1.4,
+    "drownTimeMultiplier": 3,
+    "range": 112,
+
+    "legCount": 10,
+    "legLength": 100,
+    "legSpeed": 0.9,
+    "legStraightness": 0.3,
+    "baseLegStraightness": 0.6,
+    "legGroupSize": 5,
+    "legContinuousMove": true,
+    "legMaxLength": 1.30,
+    "legMinLength": 0.8,
+    "legExtension": -12,
+    "legMoveSpace": 0.7,
+
+    "shadowElevation": 0.8,
+    "flying": false,
+    "allowLegStep": true,
+    "hovering": true,
+    "rippleScale": 5,
+    "immunities": ["burning", "melting"],
+    "weapons": [ 
+            {"name": "arachnyde-weapon", 
+            "bullet": {"type": "LaserBulletType", "lifetime": 36, "damage": 24, "hitEffect": "hitLancer", "status": "melting", "statusDuration": 180, "colors": ["f04a00", " ff7518", "ffffff"], "shootEffect": [{"type": "ParticleEffect", "particles": 12, "sizeFrom": 5, "color": "fffffff", "colorTo": "f04a00", "lifetime": 30, "cone": 90, "line": true}, {"type": "ParticleEffect", "particles": 6, "sizeFrom": 3, "color": "ffff00", "colorTo": "59515e", "lifetime": 60, "cone": 90}]}, 
+            "rotateSpeed": 0, 
+            "mirror": true, 
+            "reload": 30, 
+            "shootSound": "laser", 
+            "x": 16,
+            "y": 4.5,
+            "top": false,
+            "shootY": 15,
+            "inaccuracy": 0,
+            "predictTarget": false
+        }
+    ],
+    "parts": [
+        {
+            "type": "ShapePart",
+            "circle": true,
+            "y": -13,
+            "radius": 3,
+            "color": "c0ecffff",
+            "layer": 110
+        },
+        {
+            "type": "HaloPart",
+            "haloRadius": 0,
+            "haloRotateSpeed": 0.8,
+            "y": -13,
+            "layer": 110,
+            "sides": 3,
+            "stroke": 2,
+            "hollow": true,
+            "color": "c0ecffff",
+            "radius": 18
+        },
+        {
+            "type": "HaloPart",
+            "haloRadius": 0,
+            "haloRotateSpeed": -0.8,
+            "y": -13,
+            "layer": 110,
+            "sides": 3,
+            "stroke": 2,
+            "hollow": true,
+            "color": "c0ecffff",
+            "radius": 18
+        },
+        {
+            "type": "ShapePart",
+            "circle": true,
+            "hollow": true,
+            "y": -13,
+            "radius": 20,
+            "color": "c0ecffff",
+            "layer": 110,
+            "stroke": 3
+        }
+    ],
+    "research": {
+        "parent": "achnyde",
+        "requirements": [
+            "silicon/2800",
+            "metaglass/2800"
+        ]
+    }
+}
