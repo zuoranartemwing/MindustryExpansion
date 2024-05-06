@@ -1,5 +1,6 @@
 {
-  "explosiveness": 1.2,
+  "color": "54d67d",
+  "explosiveness": 1.5,
   "radioactivity": 0.04,
   "buildable": false,
   "research": {
