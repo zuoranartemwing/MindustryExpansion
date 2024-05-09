@@ -29,6 +29,7 @@ shoot: {
 ammoTypes: {
     copper: {
         damage: 0.2
+        collidesGround: false
         splashDamage: 0.09
         splashDamageRadius: 10
         speed: 8
@@ -44,6 +45,7 @@ ammoTypes: {
     lead: {
         damage: 0.6
         splashDamage: 0.1
+        collidesGround: false
         splashDamageRadius: 12
         speed: 8
         ammoMultiplier: 1
@@ -57,6 +59,7 @@ ammoTypes: {
     }
     metaglass: {
         damage: 1.12
+        collidesGround: false
         ammoMultiplier: 1
         splashDamage: 0.5
         splashDamageRadius: 10
@@ -72,6 +75,7 @@ ammoTypes: {
     silicon: {
         damage: 0.5
         splashDamage: 0.1
+        collidesGround: false
         ammoMultiplier: 1
         splashDamageRadius: 10
         speed: 8
