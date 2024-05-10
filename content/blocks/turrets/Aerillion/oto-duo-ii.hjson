@@ -33,6 +33,7 @@ consumes: {
 ammoTypes: {
     titanium: {
         damage: 4.72222222222
+        collidesGround: false
         ammoMultiplier: 1
         splashDamage: 30
         shootEffect: shootBig
@@ -47,6 +48,7 @@ ammoTypes: {
     }
     metaglass: {
         damage: 6.66666666667
+        collidesGround: false
         splashDamage: 26
         shootEffect: shootBig
         ammoMultiplier: 1
@@ -61,6 +63,7 @@ ammoTypes: {
     }
     plastanium: {
         damage: 11.6666666667
+        collidesGround: false
         splashDamage: 35
         shootEffect: shootBig
         ammoMultiplier: 1
@@ -75,6 +78,7 @@ ammoTypes: {
     }
     thorium: {
         damage: 13.8888888889
+        collidesGround: false
         shootEffect: shootBig
         splashDamage: 50
         splashDamageRadius: 40
@@ -91,6 +95,7 @@ ammoTypes: {
     }
     silicon: {
         damage: 5.55555555556
+        collidesGround: false
         splashDamage: 32
         shootEffect: shootBig
         splashDamageRadius: 27

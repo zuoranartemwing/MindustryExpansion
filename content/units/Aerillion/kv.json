@@ -13,6 +13,7 @@
     "treadFrames": 20,
     "targetAir": false,
     "hitSize": 79,
+    "controller": "DefenderAI",
     "treadRects": [
         {
             "x": 53,

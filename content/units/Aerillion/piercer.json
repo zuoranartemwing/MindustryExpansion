@@ -1,0 +1,79 @@
+{
+    "template": "TankUnitType",
+    "name": "Aerillion Piercer",
+    "description": "A Heavy Tank equipped with pointy-piercing weapon in front, Specialist of Siege. It is not recommended to use this tank to fight other unit.",
+    "health": 25000,
+    "singleTarg5t": true,
+    "type": "tank",
+    "speed": 0.4,
+    "rotateSpeed": 0.7,
+    "groundLayer": 60,
+    "crushDamage": 0.2,
+    "armor": 50,
+    "maxRange": 160,
+    "targetAir": false,
+    "treadPullOffset": 2,
+    "treadFrames": 309,
+    "hitSize": 81,
+    "controller": "GroundAI",
+    "treadRects": [
+        {
+            "x": 39,
+            "y": -115,
+            "width": 61,
+            "height": 272
+        },
+        {
+            "x": 106,
+            "y": -129,
+            "width": 52,
+            "height": 309
+        }
+    ],
+    "weapons": [
+        {
+            "name": "piercer-drill",
+            "reload": 60,
+            "shootSound": "boom",
+            "x": 0,
+            "y": 23.2,
+            "shootY": 20,
+            "layerOffset": -0.01,
+            "mirror": false,
+            "rotate": false,
+            "predictTarget": false,
+            "shootCone": 45,
+            "bullet": {
+                "type": "BulletType",
+                "recoil": 0.7,
+                "reflectable": false,
+                "collidesAir": false,
+                "absorbable": false,
+                "maxRange": 48,
+                "hittable": false,
+                "speed": 0,
+                "lifetime": 1,
+                "hitEffect": "none",
+                "despawnEffect": "none",
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "damage": 0,
+                "splashDamage": 368,
+                "buildingDamageMultiplier": 3,
+                "splashDamageRadius": 32,
+                "scaledSplashDamage": true,
+                "instantDisappear": true
+            },
+            "parts": [
+                {
+                    "suffix": "-tip",
+                    "type": "RegionPart",
+                    "moveY": 20,
+                    "progress": {"type": "reload", "amount": 1, "interp": "Exp5Out"},
+                    "under": true
+                }
+            ]
+        }
+    ]
+    
+}
