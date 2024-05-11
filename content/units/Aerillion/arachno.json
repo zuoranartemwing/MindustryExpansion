@@ -72,7 +72,11 @@
             "parts": [
                 {
                     "type": "ShapePart",
-                    "progress": "charge",
+                    "progress": {
+                        "type": "charge",
+                        "op": "curve",
+                        "interp": "pow5In"
+                    },
                     "color": "c0ecff00",
                     "colorTo": "c0ecffff",
                     "hollow": false,
@@ -86,7 +90,12 @@
                 },
                 {
                     "type": "ShapePart",
-                    "progress": "charge",
+                                        "type": "ShapePart",
+                    "progress": {
+                        "type": "charge",
+                        "op": "curve",
+                        "interp": "pow5In"
+                    },
                     "color": "c0ecff00",
                     "colorTo": "c0ecffff",
                     "hollow": false,
@@ -100,7 +109,12 @@
                 },
                 {
                     "type": "ShapePart",
-                    "progress": "charge",
+                    "type": "ShapePart",
+                    "progress": {
+                        "type": "charge",
+                        "op": "curve",
+                        "interp": "pow5In"
+                    },
                     "color": "c0ecff00",
                     "colorTo": "c0ecffff",
                     "hollow": false,
@@ -112,10 +126,14 @@
                     "layer": 110,
                     "y": 40
                 },
-
                 {
                     "type": "shapePart",
-                    "progress": "charge",
+                    "type": "ShapePart",
+                    "progress": {
+                        "type": "charge",
+                        "op": "curve",
+                        "interp": "pow5In"
+                    },
                     "color": "c0ecffff",
                     "colorTo": "c0ecffff",
                     "hollow": true,
@@ -130,7 +148,11 @@
                 },
                 {
                     "type": "ShapePart",
-                    "progress": "charge",
+                    "progress": {
+                        "type": "charge",
+                        "op": "curve",
+                        "interp": "pow5In"
+                    },
                     "color": "c0ecffff",
                     "colorTo": "c0ecffff",
                     "hollow": true,
@@ -144,7 +166,11 @@
                 },
                 {
                     "type": "FlarePart",
-                    "progress": "charge",
+                    "progress": {
+                        "type": "charge",
+                        "op": "curve",
+                        "interp": "pow5In"
+                    },
                     "color1": "ffffff",
                     "color2": "c0ecff",
                     "layer": 110,
@@ -155,7 +181,11 @@
                 },
                 {
                     "type": "FlarePart",
-                    "progress": "recoil",
+                    "progress": {
+                        "type": "recoil",
+                        "op": "curve",
+                        "interp": "pow10In"
+                    },
                     "color1": "ffffff",
                     "color2": "c0ecff",
                     "layer": 110,
@@ -201,7 +231,8 @@
                             "colorFrom": "c0ecffff",
                             "colorTo": "c0ecff00",
                             "strokeFrom": 0,
-                            "strokeTo": 30
+                            "strokeTo": 30,
+                            "interp": "pow5Out"
                         },
                         {
                             "type": "WaveEffect",
@@ -213,7 +244,8 @@
                             "colorFrom": "c0ecffff",
                             "colorTo": "c0ecffff",
                             "strokeFrom": 10,
-                            "strokeTo": 30
+                            "strokeTo": 30,
+                            "interp": "pow5Out"
                         }
                     ],
                 "width": 30,
