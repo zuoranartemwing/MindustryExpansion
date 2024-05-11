@@ -45,8 +45,8 @@ ammoTypes: {
   metaglass: {
     type: ArtilleryBulletType
     speed: 2
-    trailSize: 7.0
     lifetime: 30
+    trailSize: 5
     damage: 230
     width: 20
     height: 17
@@ -56,14 +56,12 @@ ammoTypes: {
     splashDamage: 20
     splashDamageRadius: 34
     scaleLife: true
-    traileffect: artilleryTrail
-
   }
  blast-compound: {
     type: ArtilleryBulletType
     speed: 2
-    trailMult: 10
     lifetime: 30
+    trailSize: 5
     damage: 260
     width: 20
     height: 17
@@ -73,13 +71,12 @@ ammoTypes: {
     splashDamage: 40
     splashDamageRadius: 48
     scaleLife: true
-    traileffect: artilleryTrail
     status: blasted
   }
   pyratite: {
     type: ArtilleryBulletType
     speed: 2
-    trailMult: 10
+    trailSize: 5
     lifetime: 30
     damage: 130
     width: 20
@@ -90,7 +87,6 @@ ammoTypes: {
     splashDamage: 40
     splashDamageRadius: 48
     scaleLife: true
-    traileffect: artilleryTrail
     status: burning
     frontColor: ffa500
     backColor: ffa500
