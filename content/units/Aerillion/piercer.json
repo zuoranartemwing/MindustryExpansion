@@ -1,7 +1,5 @@
 {
     "template": "TankUnitType",
-    "name": "Aerillion Piercer",
-    "description": "A Heavy Tank equipped with pointy-piercing weapon in front, Specialist of Siege. It is not recommended to use this tank to fight other unit.",
     "health": 25000,
     "singleTarg5t": true,
     "type": "tank",

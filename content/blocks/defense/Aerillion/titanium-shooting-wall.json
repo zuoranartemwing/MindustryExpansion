@@ -1,6 +1,4 @@
 {
-  "name": "Titanium Shooting Wall",
-  "description": "A Titanium Wall modified for turret module, a bit weaker than Sharded Titanium Wall and small damage even if there are many Shooting Walls.",
   "type": "PowerTurret",
   "targetAir": true,
   "targetGround": true,

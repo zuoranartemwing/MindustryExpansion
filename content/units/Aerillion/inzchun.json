@@ -1,6 +1,4 @@
 {   
-    "name": "Inzchun Type CC",
-    "description": "Tier 1 of URoa Tech Tree. basic Rotary Ship, Crowd Controlling Type.",
     "armor": 1,
     "speed": 6,
     "health": 150,

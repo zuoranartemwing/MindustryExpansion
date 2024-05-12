@@ -1,7 +1,5 @@
 {
     "template": "TankUnitType",
-    "name": "Killer Version 2",
-    "description": "Killer Variant and the second type that survives. Strong armor but long reload time making this tank heavily useless on battle as frontline attacker. Good for tanking uses [Absorb the damages]",
     "health": 200000,
     "singleTarget": true,
     "speed": 0.3,

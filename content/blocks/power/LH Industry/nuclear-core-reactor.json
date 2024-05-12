@@ -1,0 +1,100 @@
+{
+    "type": "ConsumeGenerator",
+    "health": 1200,
+    "size": 5,
+    "itemDuration": 300,
+    "liquidCapacity": 200,
+    "itemCapacity": 4,
+    "warmupSpeed": 600,
+    "consumes": {
+        "items": ["warhead/1"],
+        "liquids": ["water/2.08333333333"]
+    },
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "water",
+                "suffix": "-liquid"
+            },
+            {
+                "type": "DrawDefault"
+            },
+            {
+                "type": "DrawGlowRegion",
+                "color": "80cb71",
+                "glowIntensity": 2,
+                "glowScale": 60,
+                "suffix": "-glow"
+            }
+        ]
+    },
+    "explosionRadius": 160,
+    "explosionDamage": 2000,
+    "explosionShake": 3,
+    "explodeOnFull": true,
+    "powerProduction": 300,
+    "outputLiquid": "mindustry-expansion-boiled-water/2.08333333333",
+    "requirements": [
+        "lead/620",
+        "metaglass/100",
+        "titanium/120",
+        "thorium/200",
+        "silicon/200"
+    ],
+    "ambientSound": "machine",
+    "loopSound": "electricHum",
+    "loopSoundVolume": 0.8,
+    "explosionSound": "massiveExplosion",
+    "explosionPuddleRange": 30,
+    "consumeEffect": {
+        "type":  "WaveEffect",
+        "colorFrom": "80cb71ff",
+        "colorTo": "80cb7100",
+        "interp": "pow5Out",
+        "lifetime": 300
+    },
+    "explodeEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "ParticleEffect",
+                "particles": 50,
+                "length": 1320,
+                "interp": "pow5Out",
+                "sizeFrom": 60,
+                "lifetime": 600,
+                "colorFrom": "fdcf58",
+                "colorTo": "f27d0c",
+                "lightColor": "fdcf58"
+            },
+            {
+                "type": "WaveEffect",
+                "colorFrom": "fdcf58",
+                "colorTo": "c7d5e0",
+                "sizeTo": 1320,
+                "strokeFrom": 20,
+                "lifetime": 600,
+                "interp": "pow10Out"
+            },
+            {
+                "type": "ParticleEffect",
+                "particles": 1,
+                "randLength": false,
+                "length": 0,
+                "sizeFrom": 370,
+                "colorFrom": "fdcf58",
+                "colorTo": "1b2838",
+                "lightColor": "fdcf58",
+                "lifetime": 540,
+                "interp": "exp10In"
+            }
+        ]
+    },
+    "category": "power"
+}

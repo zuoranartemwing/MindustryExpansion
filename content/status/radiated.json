@@ -1,0 +1,17 @@
+{
+    "type": "StatusEffect",
+    "name": "Radiated",
+    "healthMultiplier": 0.8,
+    "speedMultiplier": 0.7,
+    "damage": 0.2,
+    "effectChance": 0.3,
+    "color": "80cb71",
+    "opposites": [
+        "wet"
+    ],
+    "affinities": [
+        "blasted"
+    ],
+    "transitionDamage": 10,
+    "outline": false
+}

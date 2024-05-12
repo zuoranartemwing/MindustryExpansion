@@ -1,0 +1,19 @@
+{
+    "type": "liquid",
+    "color": "ea8878",
+    "gasColor": "feb380",
+    "temperature": 0.8,
+    "heatCapacity": 0,
+    "coolant": "false",
+    "effect": "wet",
+    "hidden": false,
+    "particleEffect": {
+        "type": "ParticleEffect",
+        "colorTo": "ffffff00",
+        "colorFrom": "ffffffb3",
+        "cone": 360,
+        "interp": "pow5Out",
+        "lifetime": 180,
+        "baseLength": 10
+    }
+}

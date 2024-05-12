@@ -1,6 +1,4 @@
 {   
-    "name": "Inzchun Type DD",
-    "description": "Tier 1 of URoa Tech Tree. basic Rotary Ship, Single Target Destroyer Type.",
     "armor": 1,
     "speed": 6,
     "singleTarget": true,

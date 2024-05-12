@@ -1,6 +1,4 @@
 {   
-    "name": "Arachno",
-    "description": "A gigantic spider unit. An Aerillion masterpiece before its popularity was eroded by time, and now it's just an ancient guard.",
     "groundLayer": 80,
     "drawShields": false,
     "singleTarget": true,
@@ -90,7 +88,6 @@
                 },
                 {
                     "type": "ShapePart",
-                                        "type": "ShapePart",
                     "progress": {
                         "type": "charge",
                         "op": "curve",
@@ -108,7 +105,6 @@
                     "y": 40
                 },
                 {
-                    "type": "ShapePart",
                     "type": "ShapePart",
                     "progress": {
                         "type": "charge",
@@ -128,7 +124,6 @@
                 },
                 {
                     "type": "shapePart",
-                    "type": "ShapePart",
                     "progress": {
                         "type": "charge",
                         "op": "curve",

@@ -1,0 +1,129 @@
+{
+    "type": "GenericCrafter",
+    "size": 4,
+    "outputLiquid": "water/2.16666666667",
+    "liquidCapacity": 200,
+    "consumes": {
+        "liquid": "mindustry-expansion-boiled-water/2.08333333333"
+    },
+    "craftTime": 30,
+    "craftEffect": {
+        "type": "MultiEffect" ,
+        "effects": [
+            {
+                "type": "ParticleEffect",
+                "particles": 10,
+                "colorFrom": "c7d5e0",
+                "colorTo": "2a475e00",
+                "length": 120,
+                "interp": "pow3Out",
+                "sizeFrom": 10,
+                "sizeTo": 0,
+                "lifetime": 300,
+                "lightOpacity": 0,
+                "lightScl": 0,
+                "cone": 20,
+                "baseRotation": -125
+            },
+            {
+                "type": "ParticleEffect",
+                "particles": 10,
+                "colorFrom": "c7d5e0",
+                "colorTo": "2a475e00",
+                "length": 120,
+                "interp": "pow3Out",
+                "sizeFrom": 10,
+                "sizeTo": 0,
+                "lifetime": 300,
+                "lightOpacity": 0,
+                "lightScl": 0,
+                "cone": 20,
+                "baseRotation": -125
+            },
+            {
+                "type": "ParticleEffect",
+                "particles": 10,
+                "colorFrom": "c7d5e0",
+                "colorTo": "2a475e00",
+                "length": 120,
+                "interp": "pow3Out",
+                "sizeFrom": 10,
+                "sizeTo": 0,
+                "lifetime": 420,
+                "lightOpacity": 0,
+                "lightScl": 0,
+                "cone": 20,
+                "baseRotation": -125
+            },
+            {
+                "type": "ParticleEffect",
+                "particles": 10,
+                "colorFrom": "c7d5e0",
+                "colorTo": "2a475e00",
+                "length": 120,
+                "interp": "pow3Out",
+                "sizeFrom": 10,
+                "sizeTo": 0,
+                "lifetime": 420,
+                "lightOpacity": 0,
+                "lightScl": 0,
+                "cone": 20,
+                "baseRotation": -125
+            },
+            {
+                "type": "ParticleEffect",
+                "particles": 10,
+                "colorFrom": "c7d5e0",
+                "colorTo": "2a475e00",
+                "length": 160,
+                "interp": "pow3Out",
+                "sizeFrom": 10,
+                "sizeTo": 0,
+                "lifetime": 540,
+                "lightOpacity": 0,
+                "lightScl": 0,
+                "cone": 20,
+                "baseRotation": -125
+            },
+            {
+                "type": "ParticleEffect",
+                "particles": 10,
+                "colorFrom": "c7d5e0",
+                "colorTo": "2a475e00",
+                "length": 160,
+                "interp": "pow3Out",
+                "sizeFrom": 10,
+                "sizeTo": 0,
+                "lifetime": 540,
+                "lightOpacity": 0,
+                "lightScl": 0,
+                "cone": 20,
+                "baseRotation": -125
+            }
+        ]
+    },
+    "drawer":{
+        "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-bottom"
+            },
+            {
+                "type": "DrawLiquidTile",
+                "drawLiquid": "water",
+                "suffix": "-pool"
+            },
+            {
+                "type": "DrawDefault"
+            }
+        ]
+    },
+    "requirements": [
+        "lead/280",
+        "thorium/50",
+        "silicon/320",
+        "metaglass/20"
+    ],
+    "category": "power"
+}
