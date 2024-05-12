@@ -1,6 +1,4 @@
 {
-  "name": "Thorium Shooting Wall",
-  "description": "A Thorium Wall mounted with heavy gun, stronger than Sharded Copper Wall and small damage to high tier units.",
   "type": "PowerTurret",
   "targetAir": true,
   "targetGround": true,

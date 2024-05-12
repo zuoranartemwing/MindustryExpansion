@@ -1,6 +1,4 @@
 {   
-    "name": "URoa Type DD",
-    "description": "Uniter Resource orbitary aerillion is a last tier rotary ship build for crowd control, modified for single target termination. This ship equipped with 3 levels of machine gun that will shoot periodically.",
     "armor": 30,
     "speed": 0.6,
     "health": 22000,

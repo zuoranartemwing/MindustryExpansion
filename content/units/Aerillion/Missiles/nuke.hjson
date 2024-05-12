@@ -46,6 +46,8 @@ weapons: [
             status: blasted
             statusDuration: 100
             ammoMultiplier: 1
+            status: mindustry-expansion-radiated
+            statusDuration: 300
         }
     }
 ]

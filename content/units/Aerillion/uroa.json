@@ -1,6 +1,4 @@
 {   
-    "name": "URoa Type CC",
-    "description": "Uniter Resource orbitary aerillion is a last tier rotary ship build for crowd control. This ship equipped with 4 way Laser Beam and orbiter gun that fires around the ship for crowd controlling.",
     "armor": 30,
     "speed": 0.6,
     "health": 22000,

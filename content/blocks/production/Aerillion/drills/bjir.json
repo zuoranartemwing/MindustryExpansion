@@ -1,6 +1,4 @@
 {
-    "name": "B.J.I.R Drill",
-    "description": "BoreJet Ionized Rocker Drill is an plasma ion powered drill with a bit of nuclear power that will consume less power and drilling in a faster rate.",
     "type": "Drill",
     "health": 1280,
     "hardnessDrillMultiplier": 26,

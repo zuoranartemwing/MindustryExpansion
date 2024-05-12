@@ -1,6 +1,4 @@
 {   
-    "name": "Achnyde",
-    "description": "The 1st generation of Arachno Tech Tree, the oldest unit compared to other. While Achnyde is rather weak, it have a strong punch with it's shotgun.",
     "groundLayer": 74,
     "drawShields": false,
     "singleTarget": true,
@@ -58,7 +56,7 @@
             "velocityRnd": 0.1,
             "inaccuracy": 20,
             "shoot": {
-                "type": ShootMulti,
+                "type": "ShootMulti",
                 "source": {
                     "type": "ShootBarrel",
                     "shots": 20,
