@@ -1,10 +1,11 @@
 {
     "type": "GenericCrafter",
     "size": 4,
-    "outputLiquid": "water/2.16666666667",
-    "liquidCapacity": 200,
+    "outputLiquid": "water/8.33333333333",
+    "liquidCapacity": 500,
     "consumes": {
-        "liquid": "mindustry-expansion-boiled-water/2.08333333333"
+        "liquid": "mindustry-expansion-boiled-water/2.08333333333",
+        "power": 5.33333333333
     },
     "craftTime": 30,
     "craftEffect": {

@@ -3,12 +3,11 @@
     "health": 1200,
     "size": 5,
     "itemDuration": 300,
-    "liquidCapacity": 200,
+    "liquidCapacity": 500,
     "itemCapacity": 4,
-    "warmupSpeed": 600,
     "consumes": {
         "items": ["warhead/1"],
-        "liquids": ["water/2.08333333333"]
+        "liquids": ["water/8.31666666667"]
     },
     "drawer": {
         "type": "DrawMulti",
@@ -38,7 +37,7 @@
     "explosionDamage": 2000,
     "explosionShake": 3,
     "explodeOnFull": true,
-    "powerProduction": 300,
+    "powerProduction": 172,
     "outputLiquid": "mindustry-expansion-boiled-water/2.08333333333",
     "requirements": [
         "lead/620",
