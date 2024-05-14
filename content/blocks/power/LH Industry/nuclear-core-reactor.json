@@ -49,8 +49,9 @@
     "ambientSound": "machine",
     "loopSound": "electricHum",
     "loopSoundVolume": 0.8,
-    "explosionSound": "massiveExplosion",
+    "explodeSound": "nuclearExplosion",
     "explosionPuddleRange": 30,
+    "explosionPuddleLiquid": "mindustry-expansion-boiled-water",
     "consumeEffect": {
         "type":  "WaveEffect",
         "colorFrom": "80cb71ff",
