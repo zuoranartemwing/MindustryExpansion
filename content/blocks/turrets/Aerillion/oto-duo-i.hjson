@@ -7,81 +7,77 @@ shootShake: 1
 size: 1
 ammoUseEffect: casing1
 liquidCapacity: 10
-range: 232
-health: 325
-reload: 300
+range: 256
+health: 640
+reload: 1
 maxAmmo: 60
-ammoPerShot: 30
+ammoPerShot: 1
 recoil: 1
 burstSpacing: 10
 inaccuracy: 10
 shootSound: ashot
-chargeSound: a10charge
 rotateSpeed: 7
+minWarmup: 1
+shootWarmupSpeed: 0.00555555555
+warmupMaintainTime: 120
+linearWarmup: true
 shoot: {
     type: shootAlternate
     barrels: 2
     spread: 4
-    firstShotDelay: 60
-    shotDelay: 1
-    shots: 180
 }
 ammoTypes: {
     copper: {
-        damage: 0.2
+        damage: 4.763
         collidesGround: false
         splashDamage: 0.09
         splashDamageRadius: 10
         speed: 8
-        ammoMultiplier: 1
-        shootEffect: shootSmall
+        shootEffect: none
         smokeEffect: shootSmallSmoke
-        lifetime: 20
+        lifetime: 32
         width: 3
         height: 10
         hitEffect: flakExplosion
-         
+        ammoMultiplier: 60
     }
     lead: {
-        damage: 0.6
+        damage: 5.77333333333
         splashDamage: 0.1
         collidesGround: false
         splashDamageRadius: 12
         speed: 8
-        ammoMultiplier: 1
-        shootEffect: shootSmall
+        shootEffect: none
         smokeEffect: shootSmallSmoke
-        lifetime: 20
+        lifetime: 32
         width: 3
         height: 10
         hitEffect: flakExplosion
-         
+        ammoMultiplier: 60
     }
     metaglass: {
-        damage: 1.12
+        damage: 6.495
         collidesGround: false
-        ammoMultiplier: 1
         splashDamage: 0.5
         splashDamageRadius: 10
         speed: 8
-        shootEffect: shootSmall
+        shootEffect: none
         smokeEffect: shootSmallSmoke
-        lifetime: 20
+        lifetime: 35
         width: 3
         height: 10
-        hitEffect: flakExplosion
-         
+        hitEffect: flakExplosion 
+        ammoMultiplier: 60  
     }        
     silicon: {
-        damage: 0.5
+        damage: 3.60833333333
         splashDamage: 0.1
         collidesGround: false
-        ammoMultiplier: 1
         splashDamageRadius: 10
         speed: 8
-        shootEffect: shootSmall
+        shootEffect: none
         smokeEffect: shootSmallSmoke
-        lifetime: 20
+        lifetime: 27
         width: 3
         height: 10
         hitEffect: flakExplosion
@@ -89,7 +85,7 @@ ammoTypes: {
         backColor: ff0000
         homingPower: 0.3
         homingDelay: 30
-        
+        ammoMultiplier: 60
     }
 }
 requirements: [

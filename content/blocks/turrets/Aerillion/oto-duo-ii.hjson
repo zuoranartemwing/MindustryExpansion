@@ -6,24 +6,24 @@ targetGround: false
 shootShake: 7
 size: 4
 ammoUseEffect: casing2Double
-range: 272
-health: 2450
+range: 344
+health: 1500
 maxAmmo: 180
-ammoPerShot: 60
+reload: 1
 recoil: 5
 burstSpacing: 10
 inaccuracy: 10
 shootSound: ashot
-chargeSound: a10charge
 rotateSpeed: 2
 shootY: 8
+minWarmup: 1
+shootWarmupSpeed: 0.00277777777
+warmupMaintainTime: 420
+linearWarmup: true
 shoot: {
     type: shootAlternate
     barrels: 2
     spread: 20
-    firstShotDelay: 240
-    shotDelay: 1
-    shots: 360
 }
 consumes: {
     coolant:{
@@ -32,74 +32,75 @@ consumes: {
 }
 ammoTypes: {
     titanium: {
-        damage: 4.72222222222
+        damage: 10.6666666667
         collidesGround: false
-        ammoMultiplier: 1
-        splashDamage: 30
+        ammoMultiplier: 60
+        splashDamage: 1.9875
         shootEffect: shootBig
         splashDamageRadius: 20
-        speed: 12
+        speed: 8
         smokeEffect: shootBigSmoke
-        lifetime: 22.6666666667
+        lifetime: 43
         width: 20
         height: 25
         hitEffect: flakExplosion
          
     }
     metaglass: {
-        damage: 6.66666666667
+        damage: 14.9833333333
         collidesGround: false
-        splashDamage: 26
+        splashDamage: 3.465
         shootEffect: shootBig
-        ammoMultiplier: 1
+        ammoMultiplier: 60
         splashDamageRadius: 22
-        speed: 12
+        speed: 8
         smokeEffect: shootBigSmoke
-        lifetime: 22.6666666667
+        lifetime: 43
         width: 20
         height: 25
         hitEffect: flakExplosion
          
     }
     plastanium: {
-        damage: 11.6666666667
+        damage: 16.6666666667
         collidesGround: false
-        splashDamage: 35
+        splashDamage: 4.3875
         shootEffect: shootBig
-        ammoMultiplier: 1
+        ammoMultiplier: 60
         splashDamageRadius: 31
         speed: 8
         smokeEffect: shootBigSmoke
-        lifetime: 22.6666666667
+        lifetime: 43
         width: 20
         height: 25
         hitEffect: flakExplosion
          
     }
     thorium: {
-        damage: 13.8888888889
+        damage: 14.25
         collidesGround: false
         shootEffect: shootBig
-        splashDamage: 50
+        splashDamage: 4.275
         splashDamageRadius: 40
-        speed: 12
-        ammoMultiplier: 1
+        speed: 8
+        ammoMultiplier: 60
         smokeEffect: shootBigSmoke
-        lifetime: 22.6666666667
+        lifetime: 43
         width: 20
         height: 25
         hitEffect: flakExplosion
         frontColor: 800080
         backColor: b042ff
-         
+        status: radiated
+        statusDuration: 120
     }
     silicon: {
-        damage: 5.55555555556
+        damage: 7.5
         collidesGround: false
-        splashDamage: 32
+        splashDamage: 1.7275
         shootEffect: shootBig
         splashDamageRadius: 27
-        ammoMultiplier: 1
+        ammoMultiplier: 60
         speed: 20
         smokeEffect: shootBigSmoke
         lifetime: 13.6
