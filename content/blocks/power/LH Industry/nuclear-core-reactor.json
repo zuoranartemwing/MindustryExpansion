@@ -65,26 +65,44 @@
             {
                 "type": "ParticleEffect",
                 "particles": 50,
+                "baseLength": 370,
                 "length": 1320,
-                "interp": "pow5Out",
-                "sizeFrom": 60,
+                "interp": "exp10In",
+                "sizeFrom": 140,
+                "sizeTo": 0,
                 "lifetime": 600,
                 "colorFrom": "fdcf58",
-                "colorTo": "f27d0c",
+                "colorTo": "808080",
                 "lightColor": "fdcf58"
+            },
+            {
+                "type": "ParticleEffect",
+                "particles": 50,
+                "baseLength": 370,
+                "length": 1320,
+                "interp": "exp5Out",
+                "sizeFrom": 50,
+                "sizeTo": 0,
+                "lifetime": 60,
+                "colorFrom": "fdcf58",
+                "colorTo": "f27d0c",
+                "lightColor": "fdcf58",
+                "line": true,
+                "lenFrom": 140
             },
             {
                 "type": "WaveEffect",
                 "colorFrom": "fdcf58",
                 "colorTo": "c7d5e0",
+                "sizeFrom": 370,
                 "sizeTo": 1320,
                 "strokeFrom": 20,
                 "lifetime": 600,
-                "interp": "pow10Out"
+                "interp": "pow5In"
             },
             {
                 "type": "ParticleEffect",
-                "particles": 1,
+                "particles": 120,
                 "randLength": false,
                 "length": 0,
                 "sizeFrom": 370,
@@ -93,6 +111,18 @@
                 "lightColor": "fdcf58",
                 "lifetime": 540,
                 "interp": "exp10In"
+            },
+            {
+                "type": "ParticleEffect",
+                "particles": 1,
+                "randLength": false,
+                "length": 0,
+                "sizeFrom": 100000,
+                "sizeTo": 100000,
+                "colorFrom": "ffffff",
+                "colorTo": "ffffff00",
+                "lifetime": 340,
+                "interp": "pow2In"
             }
         ]
     },
