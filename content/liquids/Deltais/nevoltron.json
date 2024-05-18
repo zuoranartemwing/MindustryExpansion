@@ -1,0 +1,8 @@
+{
+  "localizedName": "Nevoltron",
+  "color": "00d1ff",
+  "lightColor": "00d1ff7f",
+  "temperature": 0,
+  "viscosity": 0.3,
+  "coolant": false
+}
