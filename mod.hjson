@@ -1,26 +1,39 @@
-name: mindustry-expansion
-displayName: Mindustry Expansion
-author: "
-[yellow[]]zuoranartemwing[[]]
+name: "mindustry-expansion"
+displayName: "Mindustry Expansion"
+author: '''
+[yellow[]]zuoranartemwing
 
-[gray[]]Contributors:[[]] [blue[]] 
-Kanaede
-chaoticmarzu
-jab[[]]"
-description:
-  '''
-  Add more Things !!
+[gray[]]Contributors:[blue[]]
+Kanaede [yellow[]](has left the team (8 May 2024))[blue[]]
+chaoticmarzu[white[]]
+'''
+description: '''
+Add more Things !!
   
-  [red[]]THIS IS STILL IN DEVELOPMENT[[]]
+[red[]]THIS IS STILL IN DEVELOPMENT[white[]]
   
-  Want fast update??
-  Join to our server or check at our github
+Want fast update??
+Join to our server or check at our github
 
-  MF Version: 0.1.0
-  '''
-version: 2.3.6
-minGameVersion: 146
-dependencies: []
+Deltais Version: 0.1.0
+'''
+version: "2.3.6"
+minGameVersion: "146"
+repo: "zourartemwing/MindustryExpansion"
 
-// I Hate HJSON
-//me too- neon
+//dependencies: []
+
+/*
+- I Hate HJSON
+- me too - Neon
+- fixed your problem :P - Jab005
+- if you hate hjson, why dont you use json instead? :P (pls dont kill me) - Jab005
+
+#=====#
+For Kanaede...
+
+Thanks for the contribution so far... We hope you're good all the time!
+
+- Jab005
+#=====#
+*/
