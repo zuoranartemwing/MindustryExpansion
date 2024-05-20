@@ -16,6 +16,4 @@ Mindustry Expansion mod aim for extending the Mindustry Expansion content with v
 
 Note: Now support english, Translation not yet accepted.
 
-**IMPORTANT NOTE:** This Mod Have Depencies Named **Expansion Foundation** this will support the mod to run smoothly and more experience
-
 See <a href="mod-team.md">Mindustry Expansion - Project Team</a> here.
