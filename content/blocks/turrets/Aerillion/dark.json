@@ -1,0 +1,278 @@
+{
+    "type": "PowerTurret",
+    "size": 2,
+    "range": 200,
+    "health": 1000,
+    "coolantMultiplier": 6,
+    "reload": 360,
+    "recoil": 2,
+    "inaccuracy": 4,
+    "shootSound": "laser",
+    "predictTarget": false,
+    "rotateSpeed": 4,
+    "drawer": {
+        "type": "DrawTurret",
+        "parts": [
+            {
+                "type": "HaloPart",
+                "color": "7090ea",
+                "layer": 110,
+                "y": 8,
+                "haloRadius": 0,
+                "haloRadiusTo": 8,
+                "haloRotateSpeed": 8,
+                "shapes": 2,
+                "tri": true,
+                "triLength": 0,
+                "triLengthTo": 5,
+                "progress": {
+                    "type": "charge",
+                    "op": "curve",
+                    "interp": "pow3In"
+                }
+
+            },
+            {
+                "type": "ShapePart",
+                "circle": true,
+                "hollow": true,
+                "radius": 0,
+                "radiusTo": 8,
+                "y": 8,
+                "stroke": 0,
+                "strokeTo": 2,
+                "color": "7090ea",
+                "progress": {
+                    "type": "charge",
+                    "op": "curve",
+                    "interp": "pow3In"
+                },
+                "layer": 110
+            },
+            {
+                "type": "ShapePart",
+                "circle": true,
+                "radius": 0,
+                "radiusTo": 8,
+                "y": 8,
+                "color": "000000",
+                "progress": {
+                    "type": "charge",
+                    "op": "curve",
+                    "interp": "pow3In"
+                }
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-focuser",
+                "mirror": true,
+                "y": 6,
+                "x": 2,
+                "under": true,
+                "moveY": 2,
+                "moveX": 3,
+                "progress": "warmup"
+            }
+        ]
+    },
+    "shoot": {
+      "type": "ShootPattern",
+      "firstShotDelay": 180
+    },
+    "shootType": {
+        "type": "BulletType",
+        "lifetime": 180,
+        "hitSize": 24,
+        "speed": 1.11111111111,
+        "damage": 0,
+        "scaledSplashDamage": true,
+        "splashDamage": 500,
+        "splashDamageRadius": 24,
+        "knockback": -30,
+        "shootEffect": {
+            "type": "ParticleEffect",
+            "colorFrom": "000000",
+            "colorTo": "000000",
+            "particles": 20,
+            "cone": 30,
+            "length": 10,
+            "interp": "pow3Out",
+            "sizeFrom": 4,
+            "layer": 99
+        },
+        "smokeEffect": {
+            "type": "ParticleEffect",
+            "colorFrom": "7090ea",
+            "colorTo": "7090ea",
+            "particles": 20,
+            "cone": 30,
+            "length": 10,
+            "interp": "pow3Out",
+            "sizeFrom": 4,
+            "layer": 110
+        },
+        "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+                {
+                    "type": "ParticleEffect",
+                    "particles": 1,
+                    "randLength": false,
+                    "length": 0,
+                    "sizeFrom": 24,
+                    "sizeTo": 0,
+                    "colorFrom": "000000",
+                    "colorTo": "000000",
+                    "lifetime": 180,
+                    "layer": 90,
+                    "interp":"pow3In"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 50,
+                    "length": -30,
+                    "baseLength": 30,
+                    "sizeFrom": 8,
+                    "sizeTo": 0,
+                    "colorFrom": "00000000",
+                    "colorTo": "000000ff",
+                    "lifetime": 180,
+                    "layer": 90,
+                    "interp":"pow2In"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 50,
+                    "length": -30,
+                    "baseLength": 30,
+                    "sizeFrom": 8,
+                    "sizeTo": 0,
+                    "colorFrom": "00000000",
+                    "colorTo": "000000ff",
+                    "lifetime": 180,
+                    "layer": 90,
+                    "interp":"pow2In"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 50,
+                    "length": -30,
+                    "baseLength": 30,
+                    "sizeFrom": 8,
+                    "sizeTo": 0,
+                    "colorFrom": "00000000",
+                    "colorTo": "000000ff",
+                    "lifetime": 60,
+                    "layer": 90,
+                    "interp":"pow2In"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 50,
+                    "length": -30,
+                    "baseLength": 30,
+                    "sizeFrom": 8,
+                    "sizeTo": 0,
+                    "colorFrom": "00000000",
+                    "colorTo": "000000ff",
+                    "lifetime": 60,
+                    "layer": 90,
+                    "interp":"pow2In"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 50,
+                    "length": -30,
+                    "baseLength": 30,
+                    "sizeFrom": 8,
+                    "sizeTo": 0,
+                    "colorFrom": "00000000",
+                    "colorTo": "000000ff",
+                    "lifetime": 120,
+                    "layer": 90,
+                    "interp":"pow2In"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 50,
+                    "length": -30,
+                    "baseLength": 30,
+                    "sizeFrom": 8,
+                    "sizeTo": 0,
+                    "colorFrom": "00000000",
+                    "colorTo": "000000ff",
+                    "lifetime": 120,
+                    "layer": 90,
+                    "interp":"pow2In"
+                }
+            ]
+        },
+        "parts": [
+            {
+                "type": "HaloPart",
+                "color": "7090ea",
+                "layer": 110,
+                "y": 8,
+                "haloRadius": 8,
+                "haloRadiusTo": 1,
+                "haloRotateSpeed": 8,
+                "shapes": 2,
+                "tri": true,
+                "triLength": 5,
+                "triLengthTo": 0,
+                "progress": {
+                    "type": "life",
+                    "op": "curve",
+                    "interp": "pow3In"
+                }
+
+            },
+            {
+                "type": "ShapePart",
+                "circle": true,
+                "hollow": true,
+                "radius": 8,
+                "radiusTo": 1,
+                "y": 8,
+                "stroke": 2,
+                "strokeTo": 0,
+                "color": "7090ea",
+                "progress": {
+                    "type": "life",
+                    "op": "curve",
+                    "interp": "pow3In"
+                },
+                "layer": 110
+            },
+            {
+                "type": "ShapePart",
+                "circle": true,
+                "radius": 8,
+                "radiusTo": 1,
+                "y": 8,
+                "color": "000000ff",
+                "layer": 80,
+                "progress": {
+                    "type": "life",
+                    "op": "curve",
+                    "interp": "pow3In"
+                }
+            }
+        ]
+    },
+    "consumes": {
+      "coolant": {
+        "amount": 0.2
+      },
+      "power": 3.33333333333
+    },
+    "requirements": [
+      "copper/40",
+      "lead/20",
+      "silicon/20"
+    ],
+    "research": {
+      "parent": "lanc"
+    },
+    "category": "turret"
+}
