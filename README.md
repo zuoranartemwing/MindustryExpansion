@@ -7,8 +7,7 @@
 
 > [!NOTE]  
 > This mod under Early-Access, please be patience for full release
-
-![Banner](assests/img/banner.png)
+> This Mod was developed by zuoraartemwing with colaboration by NEON-XZR(Marzu) and Kanaede
 
 Our Project is: `Mindustry Expansion`  
 Mindustry Expansion mod aim for extending the Mindustry Expansion content with various unique Unit, Turret, Power Generator, Utility (like duct or convenyor and etc) and as close as vanilla does.
