@@ -1,4 +1,4 @@
-# Mindustry Expansion License
+# Mindustry Expansion Special License
 
 ## Terms and Conditions
 
@@ -17,6 +17,7 @@
 ## Contact
 For permissions, contributions, or any other inquiries, please contact the repository owner through GitHub.
 
+### ALL WORK ARE DERIVATIVE OF MINDUSTRY, AND ANUKE (MINDUSTRY CREATOR) ARE CAPABLE TO DO ANYTHING TO THIS MOD REGARDLESS OF LICENSE
 ---
 
 © 2024 zuoranartemwing. All rights reserved.
