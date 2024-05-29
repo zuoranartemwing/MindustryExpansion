@@ -6,7 +6,7 @@ Having goals to expanding more Mindustry contents.
 ### <a href="https://github.com/zuoranartemwing">Zuoranartemwing</a>
 
 The founder and developer of this mod, and also developed **`LH-Industry`** faction. He planned and created this mod which also being helped by Chaotic Marzu/NEON-XZR for the first time ever.<br>Message from him:
-> [!Bruhh]
+> [!TIP]
 > **Skill Issue Of Coding XD**
 <br><br>
 ### <a href="https://github.com/NEON-XZR">Chaotic Marzu / NEON-XZR</a>
