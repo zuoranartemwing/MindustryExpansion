@@ -14,6 +14,9 @@ A pleasure can help you to develop better.
 ### <a href="https://github.com/NEON-XZR">Chaotic Marzu / NEON-XZR</a>
 
 The first contributor of this mod, developed **`Aerillion`** faction. He helped Zuoranartemwing to expand and developing this mod together.<br>
+
+>[!TIP]
+> **Unbalanced contents should be reported to me, i'll fix as soon as possible**
 <br><br>
 ### <a href="https://github.com/Kanaede">Kanaede</a>
 
@@ -28,3 +31,6 @@ Our respect:<br>
 
 <br>We wish you're good all the time Kanaede! You're good contributor who want to help anyone that need help. We will miss you, we will not forget all of your contributions to this project!
 - Jab005
+
+<br>Goodluck with your new work Kanaede! For your memorial, i'll work on your uncompleted sprites and codes if i have a time.
+- Neon XZR
