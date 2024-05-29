@@ -1,6 +1,6 @@
 # ME - Mindustry Expansion [Early Access]
 
-<p align="center"><img src="assets/img/me-logotype.png" alt="LogoType" width="200"></p>
+<p align="center"><img src="assests/img/me-logotype.png" alt="LogoType"></p>
 
 <p align="center">
   <a href="https://github.com/zuoranartemwing/MindustryExpansion/releases"><img src="https://img.shields.io/github/v/release/zuoranartemwing/MindustryExpansion?color=green&include_prereleases&label=DOWNLOAD%20LATEST%20RELEASE&logo=github&logoColor=white&style=for-the-badge"></a>
