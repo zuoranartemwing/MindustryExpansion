@@ -7,6 +7,8 @@
 
 > [!NOTE]  
 > This mod under Early-Access, please be patience for full release
+
+> [!NOTE]
 > This Mod was developed by zuoraartemwing with colaboration by NEON-XZR(Marzu) and Kanaede
 
 Our Project is: `Mindustry Expansion`  
