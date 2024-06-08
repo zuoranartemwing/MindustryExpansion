@@ -26,6 +26,7 @@
     "legForwardScl": 2,
     "legPairOffset": 2,
     "rippleScale": 10,
+    "stepShake": 30,
     "legSplashDamage": 500,
     "legSplashRange": 160,
     "allowLegStep": true,
