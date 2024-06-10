@@ -12,7 +12,9 @@
 Our Project is: `Mindustry Expansion`  
 Mindustry Expansion mod aim for extending the Mindustry Expansion content with various unique Unit, Turret, Power Generator, Utility (like duct or convenyor and etc) and as close as vanilla does.
 
-~~**You can use Our code for free for personal use | Permission required for publication or sharing**~~ <br>
+~~**You can use Our code for free for personal use | Permission required for publication or sharing**~~
+
+ <br>
 you can make forks of our mod if you leave the copyright notices intact and follow the GPLv3 license.<br>
 Note: Now support english, Translation not yet accepted.
 
