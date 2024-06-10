@@ -18,4 +18,5 @@ Mindustry Expansion mod aim for extending the Mindustry Expansion content with v
 you can make forks of our mod if you leave the copyright notices intact and follow the GPLv3 license.<br>
 Note: Now support english, Translation not yet accepted.
 
+
 See <a href="mod-team.md">Mindustry Expansion - Project Team</a> here.
