@@ -18,7 +18,7 @@ The first contributor of this mod, developed **`Aerillion`** faction. He helped 
 <br><br>
 ### <a href="https://github.com/Kanaede">Kanaede</a>
 
-The second contributor of this mod, developed **`Deltanex`** faction (_was named **`Mindustry Foundation (MF)`** and **`Deltais`** before_). She joined this project to help Zuoranartemwing and Chaotic Marzu/NEON-XZR expanding the contents.<br>But unluckily... Since 8 May 2024 she left from this project due to her new works for 5 years.<br>She only left one message:
+The second contributor of this mod, developed **`Deltais`** faction (_was named **`Mindustry Foundation (MF)`** and **`Deltanex`** before_). She joined this project to help Zuoranartemwing and Chaotic Marzu/NEON-XZR expanding the contents.<br>But unluckily... Since 8 May 2024 she left from this project due to her new works for 5 years.<br>She only left one message:
 ```
 "I will be gone for 5 years. Well I think I can't helped anymore to this project, not even 5 years after work I guess.."
 - Kanaede (written by Jab005)
