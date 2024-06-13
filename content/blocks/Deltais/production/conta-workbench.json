@@ -20,5 +20,23 @@
     {"item":"copper","amount":200},
     {"item":"graphite","amount":180},
     {"item":"silicon","amount":120}
-  ]
+  ],
+  "drawer":{
+    "type":"DrawMulti",
+    "drawers":[
+      {
+        "type":"DrawRegion",
+        "suffix":"-bottom"
+      },
+      {
+        "type":"DrawRegion",
+        "suffix":"-mid"
+      },
+      {
+        "type":"DrawGlowRegion",
+        "glowIntensity":0.75,"color":"ad805a"
+      },
+      {"type":"DrawDefault"}
+    ]
+  }
 }
