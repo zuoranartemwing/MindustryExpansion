@@ -21,5 +21,29 @@
     {"item":"base-container","amount":200},
     {"item":"titanium","amount":220},
     {"item":"silicon","amount":200}
-  ]
+  ],
+  "drawer":{
+    "type":"DrawMulti",
+    "drawers":[
+      {
+        "type":"DrawRegion","suffix":"-bottom"
+      },
+      {
+        "type":"DrawRegion","suffix":"-mid"
+      },
+      {
+        "type":"DrawFade","suffix":"-tita1","alpha":0.5,"scale":3
+      },
+      {
+        "type":"DrawFade","suffix":"-lead1","alpha":0.5,"scale":-3
+      },
+      {
+        "type":"DrawFade","suffix":"-tita2","alpha":0.5,"scale":-3
+      },
+      {
+        "type":"DrawFade","suffix":"-lead2","alpha":0.5,"scale":3
+      },
+      {"type":"DrawWeave"},{"type":"DrawDefault"}
+    ]
+  }
 }
