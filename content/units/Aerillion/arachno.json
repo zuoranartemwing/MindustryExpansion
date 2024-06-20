@@ -31,40 +31,8 @@
     "legSplashRange": 160,
     "allowLegStep": true,
     "hovering": true,
-    "range": 960,
+    "range": 600,
     "weapons": [ 
-        {
-            "name": "arachno-silo",
-            "bullet": {
-                "type": "BasicBulletType",
-                "shootEffect": "shootBig",
-                "smokeEffect": "shootSmokeMissile",
-                "spawnUnit": "mindustry-expansion-arachno-bulaven"
-            },
-            "rotateSpeed": 0,
-            "predictTarget": false,
-            "mirror": false,
-            "reload": 1200,
-            "shootCone": 45,
-            "recoil": 0,
-            "shootSound": "missileLaunch",
-            "x": 0,
-            "y": -16,
-            "top": false,
-            "parts": [
-                {
-                    "type": "RegionPart",
-                    "suffix": "-in",
-                    "under": false,
-                    "outline": false,
-                    "progress": "recoil",
-                    "color": "FFFFFF",
-                    "colorTo": "01010100",
-                    "mixColorTo": "2D2B2A",
-                    "mixColor": "01010100"
-                }
-            ]
-        },
         {
             "name": "arachno-blaster",
             "parentizeEffects": true,
@@ -247,7 +215,7 @@
                 "width": 30,
                 "length": 600,
                 "lifetime": 360,
-                "damage": 625,
+                "damage": 980.594166667,
                 "frontLength": 135,
                 "backLength": 30
             },
@@ -259,12 +227,15 @@
             "x": 0,
             "y": 0,
             "shootY": 40,
-            "recoil": 0
+            "recoil": 0,
+            "predictTarget": false,
+            "shootCone": 60
         },
         {
             "name": "arachno-macgun",
             "rotateSpeed": 0.8,
             "rotate": true,
+            "predictTarget": false,
             "mirror": true,
             "reload": 2.5,
             "shootCone": 10,

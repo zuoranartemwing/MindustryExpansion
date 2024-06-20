@@ -1,0 +1,284 @@
+{   
+    "groundLayer": 77,
+    "drawShields": false,
+    "singleTarget": true,
+    "armor": 70,
+    "type": "legs",
+    "speed": 0.4,
+    "hitSize": 103,
+    "health": 12000,
+    "targetAir": false,
+    "rotateSpeed": 1,
+    "drownTimeMultiplier": 7,
+    "range": 440,
+
+    "legCount": 6,
+    "legLength": 160,
+    "legSpeed": 1.4,
+    "legGroupSize": 2,
+    "legContinuousMove": true,
+    "legMaxLength": 1.4,
+    "legMinLength": 0.5,
+    "legExtension": -29,
+    "legMoveSpace": 0.6,
+    "legBaseOffset": 10,
+    "legSplashDamage": 120,
+    "legSplashRange": 64,
+    
+    "shadowElevation": 1,
+    "flying": false,
+    "allowLegStep": true,
+    "hovering": true,
+    "rippleScale": 6,
+    "immunities": ["unmoving", "radiated"],
+    "weapons": [ 
+            {"name": "arachnid-heavycannon", 
+            "bullet": {
+                "type": "ArtilleryBulletType",
+                "speed": 2,
+                "lifetime": 220,
+                "damage": 1300,
+                "splashDamage": 140,
+                "splashDamageRadius": 64,
+                "frontColor": "ffffff",
+                "backColor": "a387eaff",
+                "sprite": "circle-bullet",
+                "scaleLife": true,
+                "ammoMultiplier": 1,
+                "cone": 30,
+                "width": 20,
+                "height": 20,
+                "shrinkX": 0.5,
+                "shrinkY": 0.5,
+                "lightning": 6,
+                "lightningLength": 10,
+                "lightningDamage": 70,
+                "hitShake": 10,
+                "shootEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "line": true,
+                            "colorFrom": "a387eaff",
+                            "colorTo": "a387eaff",
+                            "cone": 30,
+                            "length": 100,
+                            "strokeFrom": 12,
+                            "lenTo": 0,
+                            "lenFrom": 10,
+                            "lifetime": 120,
+                            "interp": "pow10Out"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "line": true,
+                            "colorFrom": "fff8e8",
+                            "colorTo": "fff8e8",
+                            "cone": 30,
+                            "length": 100,
+                            "strokeFrom": 12,
+                            "lenTo": 0,
+                            "lenFrom": 10,
+                            "lifetime": 120,
+                            "interp": "pow10Out"
+                        }
+                    ]
+                },
+                "smokeEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "particles": 10,
+                            "lifetime": 30,
+                            "length": 70,
+                            "sizeFrom": 7,
+                            "cone": 30,
+                            "colorFrom": "a387eaff",
+                            "colorTo": "a387eaff",
+                            "interp": "sineOut"
+                        },
+                        {
+                            "particles": 10,
+                            "lifetime": 60,
+                            "length": 70,
+                            "sizeFrom": 7,
+                            "cone": 30,
+                            "colorFrom": "a387eaff",
+                            "colorTo": "a387eaff",
+                            "interp": "sineOut"
+                        },
+                        {
+                            "particles": 10,
+                            "lifetime": 120,
+                            "length": 70,
+                            "sizeFrom": 7,
+                            "cone": 30,
+                            "colorFrom": "a387eaff",
+                            "colorTo": "a387eaff",
+                            "interp": "sineOut"
+                        },
+                        {
+                            "particles": 10,
+                            "lifetime": 180,
+                            "length": 70,
+                            "sizeFrom": 7,
+                            "cone": 30,
+                            "colorFrom": "a387eaff",
+                            "colorTo": "a387eaff",
+                            "interp": "sineOut"
+                        },
+                        {
+                            "particles": 10,
+                            "lifetime": 30,
+                            "length": 70,
+                            "sizeFrom": 7,
+                            "cone": 30,
+                            "colorFrom": "a387eaff",
+                            "colorTo": "a387eaff",
+                            "interp": "sineOut"
+                        },
+                        {
+                            "particles": 10,
+                            "lifetime": 60,
+                            "length": 70,
+                            "sizeFrom": 7,
+                            "cone": 30,
+                            "colorFrom": "fff8e8",
+                            "colorTo": "fff8e8",
+                            "interp": "sineOut"
+                        },
+                        {
+                            "particles": 10,
+                            "lifetime": 120,
+                            "length": 70,
+                            "sizeFrom": 7,
+                            "cone": 30,
+                            "colorFrom": "fff8e8",
+                            "colorTo": "fff8e8",
+                            "interp": "sineOut"
+                        },
+                        {
+                            "particles": 10,
+                            "lifetime": 180,
+                            "length": 70,
+                            "sizeFrom": 7,
+                            "cone": 30,
+                            "colorFrom": "fff8e8",
+                            "colorTo": "fff8e8",
+                            "interp": "sineOut"
+                        }
+                    ]
+                },
+                "hitEffect": [
+                    {
+                        "type": "WaveEffect",
+                        "colorFrom": "a387eaff",
+                        "colorTo": "a387eaff",
+                        "sizeTo": 60,
+                        "lightScl": 0.1,
+                        "strokeFrom": 3,
+                        "interp": "pow5Out",
+                        "lifetime": 60
+                    },
+                    {
+                        "type": "ParticleEffect",
+                        "colorFrom": "a387eaff",
+                        "colorTo": "a387eaff",
+                        "particles": 10,
+                        "line": true,
+                        "lenFrom": 10,
+                        "lenTo": 0,
+                        "length": 100,
+                        "lightScl": 0.1,
+                        "strokeFrom": 10,
+                        "interp": "sineOut"
+                    }
+                ],
+                "trailEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 2,
+                    "length": 10,
+                    "sizeFrom": 10,
+                    "colorFrom": "a387eaff",
+                    "colorTo": "a387eaff",
+                    "interp": "sineOut"
+                },
+                "trailChance": 30,
+                "fragBullet": {
+                    "type": "BasicBulletType",
+                    "speed": 1,
+                    "lifetime": 120,
+                    "damage": 120,     
+                    "frontColor": "ffffff",
+                    "backColor": "a387eaff",
+                    "width": 10,
+                    "height": 10,
+                    "sprite": "circle-bullet",
+                    "shrinkX": 0,
+                    "shrinkY": 0,
+                    "lightning": 3,
+                    "lightningLength": 5,
+                    "hitShake": 3,
+                    "hitEffect": [
+                        {
+                            "type": "WaveEffect",
+                            "strokeFrom": 6,
+                            "sizeTo": 7,
+                            "colorFrom": "a387eaff",
+                            "colorTo": "a387eaff",
+                            "lightScl": 0.1,
+                            "interp": "pow5Out"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "colorFrom": "a387eaff",
+                            "colorTo": "a387eaff",
+                            "particles": 10,
+                            "line": true,
+                            "lenFrom": 5,
+                            "lenTo": 0,
+                            "length": 10,
+                            "lightScl": 0.1,
+                            "strokeFrom": 3,
+                            "interp": "sineOut"
+                        }
+                    ]
+                },
+                "fragBullets": 5,
+                "fragLifeMin": 0.1,
+                "hitSize": 16,
+                "range": 440
+            }, 
+            "rotateSpeed": 0.3,
+            "shootY": 60,
+            "minWarmup": 0.99,
+            "shootWarmupSpeed": 0.0165,
+            "rotate": true,
+            "rotationLimit": 90, 
+            "mirror": false,
+            "reload": 300, 
+            "recoil": 8,
+            "shootSound": "artillery",
+            "inaccuracy": 10,
+            "x": 0,
+            "y": -10,
+            "parts": [
+                {
+                    "type": "RegionPart",
+                    "suffix": "-energize",
+                    "color": "a387ea00",
+                    "colorTo": "a387eaff",
+                    "heatColor": "a387eaff",
+                    "progress": "warmup",
+                    "heatProgress": "warmup",
+                    "y": -0.8,
+                    "outline": false
+                }
+            ]
+        }
+    ],
+    "research": {
+        "parent": "arachnyde"
+    }
+}
