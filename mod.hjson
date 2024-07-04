@@ -1,27 +1,29 @@
 name: "mindustry-expansion"
 displayName: "Mindustry Expansion"
 author: '''
-[yellow[]]zuoranartemwing
+[yellow[]]Zuoranartemwing
 
 [gray[]]Contributors:[blue[]]
-Kanaede [yellow[]](has left the team (8 May 2024))[blue[]]
-chaoticmarzu[white[]]
+ChaoticMarzu
+Kanaede
+[#00ff[]][white[]]Jab005
 '''
 description: '''
-Add more Things !!
+Adds many things!!
   
-[red[]]THIS IS STILL IN DEVELOPMENT[white[]]
+[red[]]<WARNING: STILL IN DEVELOPMENT!>[white[]]
   
-Want fast update??
-Join to our server or check at our github
+Wanted new update announcements?
+Join to our discord server or check at our github
 
-Deltais Version: 0.1.0
+[yellow[]]<INFO: DELTAIS>
+[white[]]Deltais has been separated from this mod and this current content is uncompleted and will not being deleted. Any new updates of Deltais will not being added here anymore. Kanaede and Jab will focus to updating Deltais project on new Deltais mod.
+[sky[]]New Deltais update soon!
+[white[]]There will be information more after it's completed!
 '''
 version: "2.3.6"
 minGameVersion: "146"
 repo: "zuoranartemwing/MindustryExpansion"
-
-//dependencies: []
 
 /*
 - I Hate HJSON
