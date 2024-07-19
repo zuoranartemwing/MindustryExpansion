@@ -5,7 +5,7 @@ author: '''
 
 [gray[]]Contributors:[blue[]]
 ChaoticMarzu
-Kanaede
+Kanaede [yellow[]](has left the team since 08 May 2024)
 [#00ff[]][white[]]Jab005
 '''
 description: '''
@@ -14,12 +14,7 @@ Adds many things!!
 [red[]]<WARNING: STILL IN DEVELOPMENT!>[white[]]
   
 Wanted new update announcements?
-Join to our discord server or check at our github
-
-[yellow[]]<INFO: DELTAIS>
-[white[]]Deltais has been separated from this mod and this current content is uncompleted and will not being deleted. Any new updates of Deltais will not being added here anymore. Kanaede and Jab will focus to updating Deltais project on new Deltais mod.
-[sky[]]New Deltais update soon!
-[white[]]There will be information more after it's completed!
+Join to our discord server or check at our github.
 '''
 version: "2.3.6"
 minGameVersion: "146"
