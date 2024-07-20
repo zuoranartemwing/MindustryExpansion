@@ -1,0 +1,262 @@
+{
+    "type": "PowerTurret",
+    "targetAir": true,
+    "targetGround": true,
+    "size": 2,
+    "range": 168,
+    "health": 750,
+    "reload": 1,
+    "recoil": 0.4,
+    "inaccuracy": 2,
+    "shootSound": "lasershoot",
+    "shoot": {
+        "type": "ShootPattern",
+        "firstShotDelay": 90
+    },
+    "shootType": {
+        "type": "BasicBulletType",
+        "sprite": "circle-bullet",
+        "width": 8,
+        "status": "unmoving",
+        "statusDuration": 30,
+        "height": 8,
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "frontColor": "ff41ca",
+        "backColor": "2335be",
+        "damage": 9,
+        "splashDamage": 10,
+        "splashDamageRadius": 40,
+        "speed": 2.8,
+        "hitSize": 12,
+        "shootEffect": {
+            "type": "ParticleEffect",
+            "particles": 40,
+            "lifetime": 30,
+            "cone": 40,
+            "lenFrom": 5,
+            "lenTo": 0,
+            "length": 40,
+            "line": true,
+            "colorFrom": "ff41ca",
+            "colorTo": "ff41ca",
+            "layer": 100,
+            "interp": "pow3Out"
+        },
+        "smokeEffect": {
+            "type": "ParticleEffect",
+            "particles": 40,
+            "lifetime": 30,
+            "cone": 40,
+            "length": 40,
+            "colorFrom": "ff41ca",
+            "colorTo": "ff41ca",
+            "layer": 100,
+            "interp": "pow3Out",
+            "strokeFrom": 3
+        },
+        "trailEffect": [
+            {
+                "type": "ParticleEffect",
+                "particles": 10,
+                "lifetime": 60,
+                "cone": 20,
+                "lenFrom": 3,
+                "lenTo": 0,
+                "baseRotation": 180,
+                "length": 24,
+                "line": true,
+                "colorFrom": "ff41ca",
+                "colorTo": "ff41ca",
+                "layer": 100,
+                "interp": "pow3Out"
+            },
+            {
+                "type": "ParticleEffect",
+                "particles": 1,
+                "lifetime": 60,
+                "cone": 20,
+                "baseRotation": 135,
+                "length": 24,
+                "colorFrom": "ff41ca",
+                "colorTo": "ff41ca",
+                "layer": 100,
+                "interp": "pow3Out"
+            },
+            {
+                "type": "ParticleEffect",
+                "particles": 1,
+                "lifetime": 60,
+                "cone": 20,
+                "baseRotation": -135,
+                "length": 24,
+                "colorFrom": "ff41ca",
+                "colorTo": "ff41ca",
+                "layer": 100,
+                "interp": "pow3Out"
+            }
+        ],
+        "hitEffect": {
+            "type": "ParticleEffect",
+            "particles": 30,
+            "lifetime": 180,
+            "cone": 360,
+            "lenFrom": 5,
+            "lenTo": 0,
+            "length": 40,
+            "line": true,
+            "colorFrom": "ff41ca",
+            "colorTo": "ff41ca",
+            "interp": "pow3Out"
+        },
+        "despawnEffect": {
+            "type": "WaveEffect",
+            "colorFrom": "ff41ca",
+            "colorTo": "ff41ca",
+            "sizeTo": 40,
+            "lifetime": 60,
+            "strokeFrom": 4,
+            "interp": "pow3Out"
+        },
+        "trailChance": 1,
+        "trailRotation": true,
+        "layer": 101,
+        "parts": [
+            {
+                "type": "HaloPart",
+                "color": "ff41ca",
+                "colorTo": "ff41ca",
+                "haloRadius": 10,
+                "haloRadiusTo": 10,
+                "haloRotateSpeed": 4,
+                "radius": 3,
+                "radiusTo": 3,
+                "layer": 110,
+                "sides": 3,
+                "shapes": 2,
+                "progress": {
+                    "type": "warmup",
+                    "op": "curve",
+                    "interp": "pow5Out"
+                }
+            }
+        ]
+    },
+    "rotateSpeed": 4,
+    "consumes": {
+      "power": 0.83333333333
+    },
+    "requirements": [
+      "copper/20",
+      "lead/20",
+      "graphite/10",
+      "silicon/5"
+    ],
+    "research": {
+      "parent": "powerbow"
+    },
+    "drawer": {
+        "type": "DrawTurret",
+        "parts": [
+            {
+                "type": "RegionPart",
+                "suffix": "-bottom",
+                "under": true
+            },
+            {
+                "type": "RegionPart",
+                "suffix": "-template",
+                "under": true,
+                "color":"ff41ca",
+                "colorTo":"ff41ca",
+                "heatProgress": "warmup",
+                "heatColor": "ff41ca"
+            },            
+            {
+                "type": "RegionPart",
+                "color":"ff41ca",
+                "colorTo":"ff41ca",
+                "suffix": "-indicator",
+                "y": -5,
+                "yScl": 0,
+                "xScl": 1,
+                "progress": {
+                    "type": "charge",
+                    "interp": "exp5Out",
+                    "op": "curve"
+                },
+                "under": true,
+                "moves": [
+                    {
+                        "type": "PartMove",
+                        "gy": 1,
+                        "progress": {
+                            "type": "charge",
+                            "interp": "exp5Out",
+                            "op": "curve"
+                        }
+                    },
+                    {
+                        "type": "PartMove",
+                        "y": 5,
+                        "progress": {
+                            "type": "charge",
+                            "interp": "exp5Out",
+                            "op": "curve"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "RegionPart",
+                "color":"ff41ca",
+                "colorTo":"ff41ca",
+                "suffix": "-indicator",
+                "moves": [
+                    {
+                        "type": "PartMove",
+                        "y": 3,
+                        "gx": -0.6,
+                        "gy": -1,
+                        "progress": {
+                            "type": "charge",
+                            "interp": "exp5Out",
+                            "op": "curve"
+                        }
+                    }
+                ],
+                "progress": {
+                    "type": "charge",
+                    "interp": "exp5Out",
+                    "op": "curve"
+                },
+                "under": true
+            },
+            {
+                "type": "ShapePart",
+                "circle": "true",
+                "color":"ff41ca",
+                "colorTo":"ff41ca",
+                "layer": 110,
+                "radius": 0,
+                "radiusTo": 3,
+                "y": 8,
+                "progress": "charge"
+            },
+            {
+                "type": "FlarePart",
+                "color1": "ff41ca",
+                "color2": "2335be",
+                "followRotation": false,
+                "layer": 109,
+                "progress": "charge",
+                "spinSpeed": 5,
+                "stroke": 3,
+                "radius": 0,
+                "radiusTo": 10,
+                "y": 8
+            }
+        ]
+    },
+    "category": "turret"
+}

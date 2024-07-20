@@ -272,7 +272,7 @@
       "silicon/20"
     ],
     "research": {
-      "parent": "lanc"
+      "parent": "disable"
     },
     "category": "turret"
 }
