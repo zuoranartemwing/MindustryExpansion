@@ -17,7 +17,6 @@
       "type": "BulletType",
       "speed": 10,
       "ignoreArmor": true,
-      "reflectable": false,
       "hittable": false,
       "reflectable": false,
       "absorbable": false,
@@ -36,7 +35,7 @@
         "particles": 5,
         "length": 30,
         "colorFrom": "FFA9A9",
-        "colorTo": "FFA9A9"
+        "colorTo": "FFA9A9",
         "line": true,
         "strokeFrom": 4,
         "lenFrom": 6,
@@ -51,7 +50,7 @@
         "particles": 5,
         "length": 30,
         "colorFrom": "FFA9A9",
-        "colorTo": "FFA9A9"
+        "colorTo": "FFA9A9",
         "line": true,
         "strokeFrom": 4,
         "lenFrom": 6,
@@ -75,7 +74,7 @@
     },
     "rotateSpeed": 4,
     "consumes": {
-      "power": 3.3333333333333,
+      "power": 3.3333333333333
     },
     "requirements": [
       "copper/50",
