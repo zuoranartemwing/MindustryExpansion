@@ -1,0 +1,217 @@
+{
+    "type": "ItemTurret",
+    "targetAir": true,
+    "targetGround": false,
+    "size": 2,
+    "shootY": -1,
+    "ammoUseEffect": "casing2Double",
+    "range": 280,
+    "health": 600,
+    "coolantMultiplier": 2.25000000006,
+    "reload": 660,
+    "maxAmmo": 20,
+    "recoil": 1,
+    "inaccuracy": 3,
+    "shootSound": "missileLaunch",
+    "rotateSpeed": 3,
+    "shoot": {
+      "type": "shootAlternate",
+      "barrels": 2,
+      "spread": 4,
+      "shots": 7,
+      "shotDelay": 10 
+    },
+    "ammoTypes": {
+      "lead": {
+        "lightRadius": 48,
+        "damage": 12,
+        "hitSize": 24,
+        "splashDamage": 1,
+        "splashDamageRadius": 16,
+        "speed": 9,
+        "ammoMultiplier": 2,
+        "sprite": "missile",
+        "backSprite": "missile-back",
+        "frontColor": "f9c27a",
+        "backColor": "fff8e8",
+        "shootEffect": {
+          "type": "ParticleEffect",
+          "colorFrom": "fff8e8",
+          "colorTo": "f9c27a",
+          "cone": 10,
+          "length": 16,
+          "interp": "pow3Out",
+          "lightScl": 3,
+          "sizeFrom": 4,
+          "lenTo": 0,
+          "lifetime": 20
+        },
+        "smokeEffect": {
+          "type": "ParticleEffect",
+          "colorFrom": "f9c27a",
+          "colorTo": "f9c27a",
+          "cone": 10,
+          "length": 16,
+          "interp": "pow3Out",
+          "lightScl": 0,
+          "sizeFrom": 4,
+          "lenTo": 0,
+          "lifetime": 60
+        },
+        "trailEffect": { 
+          "type": "MultiEffect",
+          "effects": [  
+            {
+              "type": "ParticleEffect",
+              "colorFrom": "fff8e8",
+              "colorTo": "f9c27a",
+              "particle": 10,
+              "length": 16,
+              "lightScl": 1,
+              "sizeFrom": 1,
+              "lenTo": 0,
+              "lifetime": 60,
+              "layer": 100,
+              "shootY": -3.5
+            }
+          ]
+        },
+        "trailInterval": 0.1,
+        "trailRotation": true,
+        "lifetime": 31.1111111111,
+        "width": 5,
+        "height": 12,
+        "homingPower": 0.4,
+        "homingRange": 80,
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "colorFrom": "fff8e8",
+          "colorTo": "f9c27a",
+          "particle": 6,
+          "length": 20,
+          "interp": "pow3Out",
+          "lightScl": 10,
+          "sizeFrom": 2,
+          "lenTo": 0,
+          "lifetime": 120
+        },
+        "despawnEffect": {
+          "type": "ParticleEffect",
+          "colorFrom": "fff8e8",
+          "colorTo": "f9c27a",
+          "particle": 6,
+          "length": 20,
+          "interp": "pow3Out",
+          "lightScl": 10,
+          "sizeFrom": 2,
+          "lenTo": 0,
+          "lifetime": 120
+        }
+      },
+      "coal": {
+        "lightRadius": 48,
+        "damage": 25,
+        "hitSize": 24,
+        "splashDamage": 10,
+        "splashDamageRadius": 16,
+        "speed": 9,
+        "ammoMultiplier": 2,
+        "reloadMultiplier": 0.5,
+        "status": "burning",
+        "statusDuration": 60,
+        "sprite": "missile",
+        "backSprite": "missile-back",
+        "frontColor": "bd370a",
+        "backColor": "f9f37c",
+        "shootEffect": {
+          "type": "ParticleEffect",
+          "colorFrom": "fff8e8",
+          "colorTo": "f9c27a",
+          "cone": 10,
+          "length": 16,
+          "interp": "pow3Out",
+          "lightScl": 3,
+          "sizeFrom": 4,
+          "lenTo": 0,
+          "lifetime": 20
+        },
+        "smokeEffect": {
+          "type": "ParticleEffect",
+          "colorFrom": "f9c27a",
+          "colorTo": "f9c27a",
+          "cone": 10,
+          "length": 16,
+          "interp": "pow3Out",
+          "lightScl": 0,
+          "sizeFrom": 4,
+          "lenTo": 0,
+          "lifetime": 60
+        },
+        "trailEffect": { 
+          "type": "MultiEffect",
+          "effects": [  
+            {
+              "type": "ParticleEffect",
+              "colorFrom": "f9f37c",
+              "colorTo": "bd370a",
+              "particle": 10,
+              "length": 16,
+              "lightScl": 1,
+              "sizeFrom": 1,
+              "lenTo": 0,
+              "lifetime": 60,
+              "layer": 100,
+              "shootY": -3.5
+            }
+          ]
+        },
+        "trailInterval": 0.1,
+        "trailRotation": true,
+        "lifetime": 31.1111111111,
+        "width": 5,
+        "height": 12,
+        "homingPower": 0.4,
+        "homingRange": 80,
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "colorFrom": "f9b64e",
+          "colorTo": "cb353d",
+          "particle": 6,
+          "length": 20,
+          "interp": "pow3Out",
+          "lightScl": 10,
+          "sizeFrom": 2,
+          "lenTo": 0,
+          "lifetime": 120
+        },
+        "despawnEffect": {
+          "type": "ParticleEffect",
+          "colorFrom": "f9b64e",
+          "colorTo": "cb353d",
+          "particle": 6,
+          "length": 20,
+          "interp": "pow3Out",
+          "lightScl": 10,
+          "sizeFrom": 2,
+          "lenTo": 0,
+          "lifetime": 120
+        }
+      }
+    },
+    "consumes": {
+      "coolant": {
+        "type": "ConsumeLiquid",
+        "liquid": "water",
+        "amount": 0.33333333333
+      }
+    },
+    "requirements": [
+      "copper/300",
+      "lead/36",
+      "graphite/41"
+    ],
+    "research": {
+      "parent": "oto-duo-i"
+    },
+    "category": "turret"
+  }
