@@ -14,40 +14,28 @@
         "type": "DrawTurret",
         "parts": [
             {
-                "type": "HaloPart",
-                "color": "7090ea",
-                "layer": 110,
+                "type": "RegionPart",
                 "y": 8,
-                "haloRadius": 0,
-                "haloRadiusTo": 8,
-                "haloRotateSpeed": 8,
-                "shapes": 2,
-                "tri": true,
-                "triLength": 0,
-                "triLengthTo": 5,
+                "suffix": "-blackhole",
+                "heatLight": true,
+                "heatColor": "7090ea",
+                "heatProgress": "charge",
+                "heatLightOpacity": 1,
+                "color": "7090ea",
+                "colorTo": "7090ea",
+                "moveRot": 2880,
                 "progress": {
                     "type": "charge",
                     "op": "curve",
-                    "interp": "pow3In"
-                }
-
-            },
-            {
-                "type": "ShapePart",
-                "circle": true,
-                "hollow": true,
-                "radius": 0,
-                "radiusTo": 8,
-                "y": 8,
-                "stroke": 0,
-                "strokeTo": 2,
-                "color": "7090ea",
-                "progress": {
-                    "type": "charge",
-                    "op": "curve",
-                    "interp": "pow3In"
+                    "interp": "circleIn"
                 },
-                "layer": 110
+                "layer": 100,
+                "outline": false,
+                "xScl": 0,
+                "yScl": 0,
+                "growX": 0.23,
+                "growY": 0.23,
+                "growProgress": {"type": "charge", "op": "curve", "interp": "pow3In"}
             },
             {
                 "type": "ShapePart",
@@ -60,7 +48,8 @@
                     "type": "charge",
                     "op": "curve",
                     "interp": "pow3In"
-                }
+                },
+                "layer": 99
             },
             {
                 "type": "RegionPart",
@@ -125,13 +114,28 @@
                     "colorTo": "000000",
                     "lifetime": 180,
                     "layer": 90,
-                    "interp":"pow3In"
+                    "interp":"exp10In"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 1,
+                    "randLength": false,
+                    "length": 0,
+                    "sizeFrom": 75,
+                    "lightColor": "7090ea",
+                    "sizeTo": 0,
+                    "colorFrom": "7090ea",
+                    "colorTo": "7090ea",
+                    "lifetime": 180,
+                    "layer": 100,
+                    "interp":"exp10In",
+                    "region": "mindustry-expansion-blackhole"
                 },
                 {
                     "type": "ParticleEffect",
                     "particles": 50,
                     "length": -30,
-                    "baseLength": 30,
+                    "baseLength": 50,
                     "sizeFrom": 8,
                     "sizeTo": 0,
                     "colorFrom": "00000000",
@@ -144,7 +148,7 @@
                     "type": "ParticleEffect",
                     "particles": 50,
                     "length": -30,
-                    "baseLength": 30,
+                    "baseLength": 50,
                     "sizeFrom": 8,
                     "sizeTo": 0,
                     "colorFrom": "00000000",
@@ -157,7 +161,7 @@
                     "type": "ParticleEffect",
                     "particles": 50,
                     "length": -30,
-                    "baseLength": 30,
+                    "baseLength": 50,
                     "sizeFrom": 8,
                     "sizeTo": 0,
                     "colorFrom": "00000000",
@@ -170,7 +174,7 @@
                     "type": "ParticleEffect",
                     "particles": 50,
                     "length": -30,
-                    "baseLength": 30,
+                    "baseLength": 50,
                     "sizeFrom": 8,
                     "sizeTo": 0,
                     "colorFrom": "00000000",
@@ -183,7 +187,7 @@
                     "type": "ParticleEffect",
                     "particles": 50,
                     "length": -30,
-                    "baseLength": 30,
+                    "baseLength": 50,
                     "sizeFrom": 8,
                     "sizeTo": 0,
                     "colorFrom": "00000000",
@@ -196,7 +200,7 @@
                     "type": "ParticleEffect",
                     "particles": 50,
                     "length": -30,
-                    "baseLength": 30,
+                    "baseLength": 50,
                     "sizeFrom": 8,
                     "sizeTo": 0,
                     "colorFrom": "00000000",
@@ -209,54 +213,40 @@
         },
         "parts": [
             {
-                "type": "HaloPart",
-                "color": "7090ea",
-                "layer": 110,
-                "y": 8,
-                "haloRadius": 8,
-                "haloRadiusTo": 1,
-                "haloRotateSpeed": 8,
-                "shapes": 2,
-                "tri": true,
-                "triLength": 5,
-                "triLengthTo": 0,
-                "progress": {
-                    "type": "life",
-                    "op": "curve",
-                    "interp": "pow3In"
-                }
-
-            },
-            {
-                "type": "ShapePart",
-                "circle": true,
-                "hollow": true,
-                "radius": 8,
-                "radiusTo": 1,
-                "y": 8,
-                "stroke": 2,
-                "strokeTo": 0,
-                "color": "7090ea",
-                "progress": {
-                    "type": "life",
-                    "op": "curve",
-                    "interp": "pow3In"
-                },
-                "layer": 110
-            },
-            {
                 "type": "ShapePart",
                 "circle": true,
                 "radius": 8,
                 "radiusTo": 1,
-                "y": 8,
                 "color": "000000ff",
-                "layer": 80,
+                "layer": 99,
                 "progress": {
                     "type": "life",
                     "op": "curve",
-                    "interp": "pow3In"
+                    "interp": "linear"
                 }
+            },
+            {
+                "type": "RegionPart",
+                "name": "mindustry-expansion-dark-blackhole",
+                "color": "7090ea",
+                "colorTo": "7090ea",
+                
+                "heatLight": true,
+                "heatColor": "7090ea",
+                "heatProgress": "life",
+                "heatLightOpacity": 1,
+                "moveRot": 3600,
+                "progress": {
+                    "type": "life",
+                    "op": "curve",
+                    "interp": "pow3Out"
+                },
+                "layer": 100,
+                "outline": false,
+                "xScl": 0.23,
+                "yScl": 0.23,
+                "growX": -0.22,
+                "growY": -0.22
             }
         ]
     },
