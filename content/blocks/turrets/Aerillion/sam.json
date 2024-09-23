@@ -24,6 +24,7 @@
     "ammoTypes": {
       "lead": {
         "lightRadius": 48,
+        "collidesGround": false,
         "damage": 12,
         "hitSize": 24,
         "splashDamage": 1,
@@ -110,6 +111,7 @@
       },
       "coal": {
         "lightRadius": 48,
+        "collidesGround": false,
         "damage": 25,
         "hitSize": 24,
         "splashDamage": 10,
