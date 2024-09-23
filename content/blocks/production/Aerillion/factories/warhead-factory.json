@@ -1,5 +1,8 @@
 {
-    "type":"GenericCrafter",
+    "type":"AttributeCrafter",
+    "baseEfficiency": 0.2,
+    "boostScale": 0.1,
+    "maxBoost": 1,
     "drawer": {
         "type": "DrawMulti",
         "drawers": [
@@ -28,13 +31,15 @@
         "power": 4.16666666667,
         "items": [
             "thorium/20",
-            "lead/5"
+            "lead/30",
+            "phase-fabric/15"
         ]
     },
     "requirements": [
+        "copper/550",
         "graphite/180",
         "lead/180",
-        "silicon/60",
+        "silicon/90",
         "thorium/80"
     ],
     "##comment": "ntar dibenerin sesuai kondisi buat tech tree silahkan dihapus comment ini klo udh slese",
