@@ -1,13 +1,13 @@
 {
     "type": "ConsumeGenerator",
-    "health": 1200,
+    "health": 2200,
     "size": 5,
     "itemDuration": 300,
     "liquidCapacity": 500,
     "itemCapacity": 4,
     "consumes": {
         "items": ["warhead/1"],
-        "liquids": ["water/8.31666666667"]
+        "liquids": ["water/21.6666666667"]
     },
     "drawer": {
         "type": "DrawMulti",
@@ -37,14 +37,16 @@
     "explosionDamage": 2000,
     "explosionShake": 3,
     "explodeOnFull": true,
-    "powerProduction": 172,
-    "outputLiquid": "mindustry-expansion-boiled-water/2.08333333333",
+    "powerProduction": 425,
+    "outputLiquid": "mindustry-expansion-boiled-water/5",
     "requirements": [
-        "lead/620",
-        "metaglass/100",
-        "titanium/120",
+        "copper/1600",
+        "lead/1220",
+        "metaglass/390",
+        "titanium/390",
         "thorium/200",
-        "silicon/200"
+        "silicon/490",
+        "surge-alloy/350"
     ],
     "ambientSound": "machine",
     "loopSound": "electricHum",
@@ -129,8 +131,8 @@
                 "particles": 1,
                 "randLength": false,
                 "length": 0,
-                "sizeFrom": 100000,
-                "sizeTo": 100000,
+                "sizeFrom": 2000,
+                "sizeTo": 2000,
                 "colorFrom": "ffffff",
                 "colorTo": "ffffff00",
                 "lifetime": 340,

@@ -1,11 +1,14 @@
 {
     "type": "GenericCrafter",
     "size": 4,
-    "outputLiquid": "water/8.33333333333",
-    "liquidCapacity": 500,
+    "outputLiquid": "water/21.7",
+    "liquidCapacity": 1500,
     "consumes": {
-        "liquid": "mindustry-expansion-boiled-water/2.08333333333",
-        "power": 5.33333333333
+        "liquid": "mindustry-expansion-boiled-water/5",
+        "power": 5.33333333333,
+        "items": [
+            "titanium/2"
+        ]
     },
     "craftTime": 30,
     "craftEffect": {
@@ -121,10 +124,11 @@
         ]
     },
     "requirements": [
-        "lead/280",
-        "thorium/50",
+        "copper/1500",
+        "lead/700",
+        "thorium/120",
         "silicon/320",
-        "metaglass/20"
+        "titanium/450"
     ],
     "category": "power"
 }
