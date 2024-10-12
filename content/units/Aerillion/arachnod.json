@@ -1,10 +1,10 @@
 {   
+    "name": "Arachnod, Arachyes, arachEerything",
+    "description": "A lame version of arachno, the original code and sprite is this literal thing. Unresearchable",
     "groundLayer": 80,
-    "outlineColor": "1d1d23",
     "drawShields": false,
     "singleTarget": true,
     "lightRadius": 520,
-    "legGroupSize": 4,
     "armor": 20,
     "type": "legs",
     "canDrown": false,
@@ -15,18 +15,18 @@
     "targetAir": true,
     "rotateSpeed": 0.8,
     "legCount": 8,
-    "legMoveSpace": 0.5,
+    "legMoveSpace": 0.3,
     "legLength": 260,
     "legContinuousMove": true,
     "shadowElevation": 1,
     "flying": false,
     "legBaseOffset": 0,
-    "legExtension": -30,
+    "legExtension": -40,
     "legSpeed": 0.07,
     "legMaxLength": 1.20,
     "legMinLength": 0.40,
     "legForwardScl": 2,
-    "legPairOffset": 1.3,
+    "legPairOffset": 2,
     "rippleScale": 10,
     "stepShake": 30,
     "legSplashDamage": 500,
@@ -38,10 +38,6 @@
         {
             "name": "arachno-blaster",
             "parentizeEffects": true,
-            "chargeSound": "charging",
-            "soundPitchMin": 1.0,
-            "soundPitchMax": 1.0,
-            "shake": 70,
             "parts": [
                 {
                     "type": "ShapePart",
@@ -138,41 +134,23 @@
                     "type": "FlarePart",
                     "progress": {
                         "type": "charge",
-                        "ops": [
-                            {
-                                "op": "compress",
-                                "start": 0.7,
-                                "end": 1.0
-                            },
-                            {
-                                "op": "curve",
-                                "interp": "pow10In"
-                            }
-                        ]
+                        "op": "curve",
+                        "interp": "pow5In"
                     },
                     "color1": "ffffff",
                     "color2": "c0ecff",
                     "layer": 110,
                     "radius": 0,
                     "radiusTo": 100,
-                    "spinSpeed": 8,
+                    "spinSpeed": 3,
                     "y": 40
                 },
                 {
                     "type": "FlarePart",
                     "progress": {
                         "type": "recoil",
-                        "ops": [
-                            {
-                                "op": "compress",
-                                "start": 0.8,
-                                "end": 1.0
-                            },
-                            {
-                                "op": "curve",
-                                "interp": "pow5In"
-                            }
-                        ]
+                        "op": "curve",
+                        "interp": "pow10In"
                     },
                     "color1": "ffffff",
                     "color2": "c0ecff",
@@ -194,39 +172,9 @@
                     "6586b0aa", 
                     "7090ea55"
                 ],
-                "chargeEffect": {
-                    "type": "ParticleEffect",
-                    "followParent": true,
-                    "particles": 1,
-                    "rotWithParent": true,
-                    "sizeTo": 2000,
-                    "sizeFrom": 2000,
-                    "lifetime": 30,
-                    "colorTo": "000000d4",
-                    "colorFrom": "00000000",
-                    "randLength": false,
-                    "length": 0,
-                    "lightOpacity": 0,
-                    "startDelay": 330,
-                    "layer": 220
-                },
                 "shootEffect": [
-                        {                            
-                            "type": "ParticleEffect",
-                            "followParent": true,
-                            "particles": 1,
-                            "rotWithParent": true,
-                            "sizeTo": 2000,
-                            "sizeFrom": 2000,
-                            "lifetime": 10,
-                            "colorTo": "ffffff80",
-                            "colorFrom": "ffffff80",
-                            "randLength": false,
-                            "length": 0,
-                            "lightOpacity": 0,
-                            "layer": 220
-                        },
                         {
+
                             "type": "ParticleEffect",
                             "followParent": true,
                             "rotWithParent": true,
@@ -273,7 +221,7 @@
                 "frontLength": 135,
                 "backLength": 30
             },
-            "shootSound": "flameblast",
+            "shootSound": "beam",
             "continuous": true,
             "reload": 370,
             "mirror": false,
@@ -286,196 +234,42 @@
             "shootCone": 60
         },
         {
-            "name": "arachnoweapon",
-            "shootY": 80,
-            "linearWarmup": "true",
-            "minWarmup": 1,
-            "shootWarmupSpeed": 0.00333333333,
+            "name": "arachno-macgun",
+            "rotateSpeed": 0.8,
+            "rotate": true,
             "predictTarget": false,
-            "mirror": false,
-            "reload": 120,
-            "shootCone": 45,
-            "recoil": 0,
-            "shootSound": "laserblast",
-            "x": 0,
-            "y": 0,
-            "bullet": {
-                "type": "LaserBulletType",
-                "lifetime": 60,
-                "maxRange": 350,
-                "damage": 320,
-                "hitSize": 30,
-                "width": 50,
-                "height": 350,
-                "colors": ["ffffff", "ab20fd", "200589"],
-                "laserEffect": {
-                    "particles": 20,
-                    "type": "ParticleEffect",
-                    "length": 120,
-                    "lifetime": 60,
-                    "interp": "sineOut",
-                    "line": true,
-                    "strokeFrom": 10,
-                    "strokeTo": 0,
-                    "lenFrom": 0,
-                    "lenTo": 20
-                },
-                "sideLength": 70,
-                "sideAngle": 160
-            },
+            "mirror": true,
+            "reload": 2.5,
+            "shootCone": 10,
+            "recoil": 1,
+            "shootSound": "mchgun",
+            "x": 35,
+            "y": -15,
+            "shootY": 55,
+            "rotationLimit":  70,
             "parts": [
                 {
                     "type": "RegionPart",
-                    "yScl": 0.1,
                     "suffix": "-barrel",
-                    "y": -20,
-                    "moves": [
-                        {
-                            "type": "PartMove",
-                            "progress": {
-                                "type": "warmup",
-                                "ops": [
-                                    {
-                                        "op": "compress",
-                                        "start": 0.5,
-                                        "end": 0.8
-                                    },
-                                    {
-                                        "op": "curve",
-                                        "interp": "sine"
-                                    }
-                                ]
-                            },
-                            "gy": 0.5
-                        },
-                        {
-                            "type": "PartMove",
-                            "progress": {
-                                "type": "warmup",
-                                "ops": [
-                                    {
-                                        "op": "compress",
-                                        "start": 0.8,
-                                        "end": 0.9
-                                    },
-                                    {
-                                        "op": "curve",
-                                        "interp": "sine"
-                                    }
-                                ]
-                            },
-                            "y": 20
-                        },
-                        {
-                            "type": "PartMove",
-                            "progress":{
-                                "type": "warmup",
-                                "ops": [
-                                    {
-                                        "op": "compress",
-                                        "start": 0.9,
-                                        "end": 1.0
-                                    },
-                                    {
-                                        "op": "curve",
-                                        "interp": "sine"
-                                    }
-                                ]
-                            },
-                            "y": 50,
-                            "gy": 0.4
-                        },
-                        {
-                            "y": -20,
-                            "progress": { 
-                                "type": "recoil",
-                                "op":"curve",
-                                "interp": "sineOut"
-                            }   
-                        }
-                    ]
-                },
-                {
-                    "type": "RegionPart",
-                    "suffix": "-body",
-                    "mirror": false,
-                    "outline": true,
-                    "xScl": 0.5,
-                    "yScl": 0.5,
-                    "y": -20,
-                    "color": "ffffff33",
-                    "colorTo": "ffffffff",
-                    "moves": [
-                            {
-                            "type": "PartMove",
-                            "progress":{
-                                "type": "warmup",
-                                "ops": [
-                                    {
-                                        "op": "compress",
-                                        "start": 0.5,
-                                        "end": 0.8
-                                    },
-                                    {
-                                        "op": "curve",
-                                        "interp": "sine"
-                                    }
-                                ]
-                            },
-                            "gx": 0.5,
-                            "gy": 0.5
-                        },
-                        {
-                            "type": "PartMove",
-                            "progress":{
-                                "type": "warmup",
-                                "ops": [
-                                    {
-                                        "op": "compress",
-                                        "start": 0.8,
-                                        "end": 0.9
-                                    },
-                                    {
-                                        "op": "curve",
-                                        "interp": "sine"
-                                    }
-                                ]
-                            },
-                            "y": 20
-                        }
-                    ],
-                    "progress": {
-                        "type": "warmup",
-                        "op": "curve",
-                        "interp": "pow5Out"
-                    }
-                },
-                {
-                    "type": "RegionPart",
-                    "suffix": "-cover",
-                    "mirror": false,
-                    "moves": [
-                        {
-                            "type": "PartMove",
-                            "progress": {
-                                "type": "warmup",
-                                "ops": [
-                                    {
-                                        "op": "compress",
-                                        "start": 0.0,
-                                        "end": 0.5
-                                    },
-                                    {
-                                        "op": "curve",
-                                        "interp": "sine"
-                                    }
-                                ]
-                            },
-                            "y": -55
-                        }
-                    ]       
-                }   
-            ] 
+                    "y": 20,
+                    "moveY": 10,
+                    "progress": "recoil",
+                    "under": true
+                }
+            ],
+            "bullet": {
+                "type": "BasicBulletType",
+                "speed": 30,
+                "lifetime": 8,
+                "damage": 110,
+                "hitSize": 10,
+                "width": 20,
+                "height": 40,
+                "hitEffect": "hitBulletBig",
+                "shootEffect": "shootBig",
+                "smokeEffect": "shootBigSmoke",
+                "despawnEffect": "hitBulletBig"
+            }
         }
     ],
     "parts": [
