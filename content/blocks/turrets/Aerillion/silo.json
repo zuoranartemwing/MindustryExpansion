@@ -20,13 +20,16 @@
   "ammoTypes": {
     "warhead": {
       "type": "PointBulletType",
-      "collides": false,
+      "collidesGround": false,
+      "collidesAir": false,
       "trailSpacing": 14,
       "fragBullets": 1,
       "fragOffsetMax": 1,
       "fragVelocityMin": 1,
       "fragBullet": {
           "type": "BulletType",
+          "collidesGround": false,
+          "collidesAir": false,
           "lifetime": 360,
           "speed": 0,
           "fragBullets": 1,
@@ -383,6 +386,6 @@
     "lead/9100",
     "titanium/4300",
     "thorium/1800",
-    "surge-alloy/23000"
+    "surge-alloy/2300"
   ]
 }
