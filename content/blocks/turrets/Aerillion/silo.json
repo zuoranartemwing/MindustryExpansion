@@ -1,0 +1,388 @@
+{
+  "//comment": "thx to lixie(allure owner), abunakki, Liz (Steamworks owner), 6f6626 to help me with the effect part! original idea by dazlezle",
+  "type": "ItemTurret",
+  "health": 3900,
+  "size": 6,
+  "ammoUseEffect": "none",
+  "range": 960,
+  "reload": 1200,
+  "ammoPerShot": 1,
+  "shootCone": 45,
+  "predictTarget": false,
+  "maxAmmo": 1,
+  "targetAir": false,
+  "recoil": 0,
+  "minWarmup": 0.78,
+  "coolantMultiplier": 0,
+  "shootSound": "missileLaunch",
+  "rotateSpeed": 4,
+  "category": "turret",
+  "ammoTypes": {
+    "warhead": {
+      "type": "PointBulletType",
+      "collides": false,
+      "trailSpacing": 14,
+      "fragBullets": 1,
+      "fragOffsetMax": 1,
+      "fragVelocityMin": 1,
+      "fragBullet": {
+          "type": "BulletType",
+          "lifetime": 360,
+          "speed": 0,
+          "fragBullets": 1,
+          "fragOffsetMax": 1,
+          "fragVelocityMin": 1,
+          "collides": false,
+          "fragBullet": {
+              "type": "ExplosionBulletType",
+              "collidesAir": false,
+              "hitEffect": [
+                  {
+                      "type": "ParticleEffect",
+                      "particles": 1,
+                      "colorFrom": "ce2029",
+                      "colorTo": "a8a9ad00",
+                      "lifetime": 360,
+                      "interp": "pow3In",
+                      "sizeFrom": 320,
+                      "sizeTo": 460,
+                      "layer": 109.8
+                  },
+                  {
+                      "type": "WaveEffect",
+                      "sizeTo": 550,
+                      "strokeFrom": 10,
+                      "interp": "sineOut",
+                      "colorFrom": "faff77",
+                      "colorTo": "a8a9ad00",
+                      "lifetime": 540,
+                      "layer": 109.9
+                  },
+                  {
+                      "type": "ParticleEffect",
+                      "particles": 1,
+                      "colorFrom": "faff77",
+                      "colorTo": "a8a9ad00",
+                      "lifetime": 360,
+                      "interp": "pow3In",
+                      "sizeFrom": 120,
+                      "sizeTo": 320,
+                      "layer": 110
+                  },
+                  {
+                      "type": "ParticleEffect",
+                      "particles": 1,
+                      "colorFrom": "ffffff",
+                      "colorTo": "ffffff00",
+                      "lifetime": 60,
+                      "interp": "pow3In",
+                      "sizeFrom": 2000,
+                      "sizeTo": 2000,
+                      "layer": 220
+                  }
+              ],
+              "hitSoundVolume": 0.9,
+              "hitSound": "nuclearExplosion",
+              "buildingDamageMultiplier": 1,
+              "splashDamage": 23909,
+              "damage": 120,
+              "splashDamageRadius": 320,
+              "scaledSplashDamage": true,
+              "ammoMultiplier": 1,
+              "status": "mindustry-expansion-radiated",
+              "killShooter": false,
+              "statusDuration": 300
+          }
+      },
+      "hitEffect": [ 
+          {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "layer": 110,
+              "sizeFrom": 50,
+              "sizeTo": 0,
+              "lenTo": 0,
+              "spin": 0.5,
+              "region": "mindustry-expansion-target",
+              "lifetime": 240,
+              "sizeInterp": "pow10In",
+              "length": 0,
+              "colorFrom": "ffff00",
+              "colorTo": "ffff00"
+          },
+          {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "layer": 111,
+              "sizeFrom": 120,
+              "sizeTo": 24,
+              "spin": 1,
+              "region": "mindustry-expansion-silo-bulaven-under",
+              "lifetime": 120,
+              "startDelay": 240,
+              "sizeInterp": "sineIn",
+              "length": 0,
+              "colorFrom": "ffffff00",
+              "colorTo": "ffffff",
+              "lightScl": 0,
+              "interp": "exp10Out"
+          }
+      ],
+      "shootEffect": {
+          "type": "ParticleEffect",
+          "particles": 1,
+          "layer": 111,
+          "offset": -80,
+          "offsetX": -24,
+          "sizeFrom": 12,
+          "sizeTo": 80,
+          "spin": 1,
+          "region": "mindustry-expansion-silo-bulaven-in",
+          "lifetime": 180,
+          "length": 0,
+          "colorFrom": "ffffff",
+          "colorTo": "ffffff00",
+          "lightScl": 0,
+          "interp": "exp10In"
+
+      },
+      "smokeEffect":[
+          {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "colorFrom": "faff77",
+              "colorTo": "a8a9ad",
+              "offsetX": -24,
+              "length": 80,
+              "interp": "pow3Out",
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "lifetime": 180,
+              "lightOpacity": 1,
+              "lightScl": 1
+          },
+          {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "colorFrom": "faff77",
+              "colorTo": "a8a9ad",
+              "offsetX": -24,
+              "length": 80,
+              "interp": "pow3Out",
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "lifetime": 180,
+              "startDelay": 10,
+              "lightOpacity": 1,
+              "lightScl": 1
+          },
+          {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "colorFrom": "faff77",
+              "colorTo": "a8a9ad",
+              "offsetX": -24,
+              "length": 80,
+              "interp": "pow3Out",
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "lifetime": 180,
+              "startDelay": 20,
+              "lightOpacity": 1,
+              "lightScl": 1
+          },
+          {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "colorFrom": "faff77",
+              "colorTo": "a8a9ad",
+              "offsetX": -24,
+              "length": 80,
+              "interp": "pow3Out",
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "lifetime": 180,
+              "startDelay": 30,
+              "lightOpacity": 1,
+              "lightScl": 1
+          },
+          {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "colorFrom": "faff77",
+              "colorTo": "a8a9ad",
+              "offsetX": -24,
+              "length": 80,
+              "interp": "pow3Out",
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "lifetime": 180,
+              "startDelay": 40,
+              "lightOpacity": 1,
+              "lightScl": 1
+          },
+          {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "colorFrom": "faff77",
+              "colorTo": "a8a9ad",
+              "offsetX": -24,
+              "length": 80,
+              "interp": "pow3Out",
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "lifetime": 180,
+              "startDelay": 50,
+              "lightOpacity": 1,
+              "lightScl": 1
+          },
+          {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "colorFrom": "faff77",
+              "colorTo": "a8a9ad",
+              "offsetX": -24,
+              "length": 80,
+              "interp": "pow3Out",
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "lifetime": 180,
+              "startDelay": 60,
+              "lightOpacity": 1,
+              "lightScl": 1
+          },
+          {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "colorFrom": "faff77",
+              "colorTo": "a8a9ad",
+              "offsetX": -24,
+              "length": 80,
+              "interp": "pow3Out",
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "lifetime": 180,
+              "startDelay": 70,
+              "lightOpacity": 1,
+              "lightScl": 1
+          },
+          {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "colorFrom": "faff77",
+              "colorTo": "a8a9ad",
+              "offsetX": -24,
+              "length": 80,
+              "interp": "pow3Out",
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "lifetime": 180,
+              "startDelay": 80,
+              "lightOpacity": 1,
+              "lightScl": 1
+          },
+          {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "colorFrom": "faff77",
+              "colorTo": "a8a9ad",
+              "offsetX": -24,
+              "length": 80,
+              "interp": "pow3Out",
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "lifetime": 180,
+              "startDelay": 90,
+              "lightOpacity": 1,
+              "lightScl": 1
+          },
+          {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "colorFrom": "faff77",
+              "colorTo": "a8a9ad",
+              "offsetX": -24,
+              "length": 80,
+              "interp": "pow3Out",
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "lifetime": 180,
+              "startDelay": 100,
+              "lightOpacity": 1,
+              "lightScl": 1
+          }
+      ],
+      "ammoMultiplier": 1,
+      "trailEffect": {
+          "type": "ParticleEffect",
+          "particles": 1,
+          "length": 0,
+          "colorFrom": "ffff00",
+          "colorTo": "ffff00",
+          "sizeFrom": 5,
+          "sizeTo": 0,
+          "lenTo": 0,
+          "layer": 110,
+          "lifetime": 240
+      }
+    }
+  },
+  "drawer": {
+      "type": "DrawTurret",
+      "parts": [
+          {
+              "type": "RegionPart",
+              "suffix": "-body"
+          },
+          {
+              "type": "RegionPart",
+              "suffix": "-bulaven-in",
+              "growX": -0.3,
+              "growY": -0.3,
+              "outline": false,
+              "progress": {
+                  "type": "reload",
+                  "ops": [
+                      {
+                          "op": "compress",
+                          "start": 0.4,
+                          "end": 1.0
+                      },
+                      {
+                          "op": "curve",
+                          "interp": "sine"
+                      }
+                  ]
+              },
+              "color": "FFFFFF",
+              "colorTo": "01010100",
+              "mixColorTo": "2D2B2A",
+              "mixColor": "01010100",
+              "growProgress": { 
+                  "type": "reload",
+                  "ops": [
+                      {
+                          "op": "compress",
+                          "start": 0.0,
+                          "end": 0.4
+                      },
+                      {
+                          "op": "curve",
+                          "interp": "sine"
+                      }
+                  ]
+              }
+          }
+      ]
+  },
+  "consumes": {
+    "power": 8
+  },
+  "requirements": [
+    "copper/12000",
+    "lead/9100",
+    "titanium/4300",
+    "thorium/1800",
+    "surge-alloy/23000"
+  ]
+}
